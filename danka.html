@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Danuta Paraficz | Senior AI Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Essential Navigation Logic */
+        .page-section { display: none; }
+        .page-section:target { display: block; }
+        #home-view:not(:has(~ .page-section:target)) { display: block; }
+        #home-view:has(~ .page-section:target) { display: none; }
+
+        /* Typography & Layout */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .prose-text p { margin-bottom: 1.5rem; line-height: 1.6; color: #374151; }
+        .placeholder-box { background-color: #f3f4f6; border: 1px dashed #d1d5db; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <!-- HEADER -->
+    <header class="max-w-5xl mx-auto px-6 py-10 border-b border-gray-100">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <a href="#" class="hover:opacity-70 transition flex items-center gap-4">
+                <img src="logo.png" alt="ADA Institute logo" class="h-46 md:h-54 w-auto object-contain">
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight">DR. DANUTA PARAFICZ</h1>
+                    <p class="text-xs text-gray-400 font-medium uppercase tracking-widest">Senior AI Scientist | ADA Institute</p>
+                </div>
+            </a>
+            <nav class="flex gap-6 text-[11px] font-bold uppercase tracking-widest text-gray-500">
+                <a href="#" class="hover:text-red-600 transition">Bio</a>
+                <a href="#team" class="hover:text-red-600 transition">Team</a>
+                <a href="#archive" class="hover:text-red-600 transition">Archive</a>
+                <a href="https://www.linkedin.com/in/dr-danuta-paraficz-41306911b/" target="_blank" rel="noopener noreferrer" class="hover:text-red-600 transition">LinkedIn</a>
+                <a href="mailto:danuta.paraficz@ffhs.ch" class="text-red-600 underline">Email</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+
+        <!-- MAIN VIEW -->
+        <div id="home-view">
+            <!-- BIO SECTION -->
+            <section class="grid md:grid-cols-3 gap-12 mb-24 pb-12 border-b">
+                <div class="md:col-span-2 prose-text text-lg">
+                    <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>
+                    <p>Dr. Danuta (Danka) Paraficz is a distinguished AI Research Scientist at Fernfachhochschule Schweiz (FFHS), where she applies advanced machine learning and deep learning architectures to solve complex, real-world challenges. With a background rooted in high-level astrophysics and industrial data science, she bridges the gap between theoretical research and scalable, live production environments.</p>
+                    <p>Danuta’s career is defined by a transition from exploring the mysteries of the universe to optimizing green energy through data:
+
+Energy Sector (DXT Commodities): For over seven years, she served as a Data Scientist in the energy trading sector. She developed  forecasting models using satellite and meteorological data to predict wind and solar production across Europe. Her work in probabilistic forecasting and automated pricing systems helped position her team as a leader in energy forecasting.
+<p>
+Astrophysics Research (EPFL & LAM): As a Postdoctoral Researcher at EPFL and the Laboratoire d'Astrophysique de Marseille, Danuta specialized in gravitational lensing and dark matter. She developed scientific software  and led international collaborations using high-performance computing clusters and advanced statistical methods.
+</p>
+Education & Academic Contributions
+PhD in Astronomy and Astrophysics: University of Copenhagen (Niels Bohr Institute). Her thesis on strong gravitational lensing introduced a new theoretical approach to measuring dark matter.</p>
+                </div>
+                <div>
+                    <!-- Placeholder for Headshot -->
+                    <div class="aspect-square rounded-full mb-4 overflow-hidden border border-gray-200">
+                        <img src="danka.png" alt="Professional headshot of Dr. Danuta Paraficz" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-xs text-gray-600 leading-relaxed space-y-2">
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">Telefon</span><br>+41 44 512 09 14</p>
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">E-Mail</span><br>danuta.paraficz(at)ffhs.ch</p>
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">Arbeitsort</span><br>Zürich</p>
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">Arbeitstage</span><br>Mo Di Mi Do Fr</p>
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">LinkedIn</span><br><a href="https://www.linkedin.com/in/dr-danuta-paraficz-41306911b/" target="_blank" rel="noopener noreferrer" class="text-red-600 font-semibold hover:underline">linkedin.com/in/dr-danuta-paraficz-41306911b</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HACKATHON WIN -->
+            <section class="mb-20 p-8 border-2 border-red-600 rounded-lg">
+                <div class="flex items-center gap-4 mb-4 text-red-600">
+                    <i class="fas fa-trophy text-2xl"></i>
+                    <h2 class="text-lg font-bold uppercase tracking-widest">Latest Achievement</h2>
+                </div>
+                <h3 class="text-3xl font-extrabold mb-4">Milano-Cortina 2026 Olympic Hackathon Winner</h3>
+                <p class="text-gray-600 mb-6 max-w-3xl">Dr. Paraficz led an elite team of FFHS students to victory in the official Olympic App Challenge. The team developed a groundbreaking AI solution for the 2026 Winter Olympics in Milano. <a href="https://www.ffhs.ch/de/ffhs/events/detail/2026-02-17-ffhs-studierende-praesentieren-app-bei-den-olympischen-winterspielen-in-mailand" target="_blank" class="text-red-600 font-bold underline ml-1 italic">Official Announcement</a></p>
+                <!-- Placeholder for Hackathon Team Photo -->
+                <div class="h-64 w-full rounded-md overflow-hidden border border-gray-200">
+                    <img src="win.jpeg" alt="Hackathon winning team" class="w-full h-full object-cover">
+                </div>
+            </section>
+
+            <!-- RESEARCH PORTFOLIO GRID -->
+            <section>
+                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10 italic">Research Portfolio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <a href="projects.html#eagle" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
+                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">Project EAGLE</h4>
+                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Renewable Energy Reliability</p>
+                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Deep learning approach to photovoltaics diagnostics via multi-spectral imaging.</p>
+                        <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
+                            <img src="bilbao.jpg" alt="Project EAGLE presentation in Bilbao" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+
+                    <a href="projects.html#birdnet" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
+                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">BirdNet</h4>
+                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Eco-Acoustics</p>
+                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Deep sound classification for biodiversity monitoring in alpine regions.</p>
+                        <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
+                            <img src="birds.png" alt="Bird in forest" class="w-full h-full object-cover">
+                        </div>                    </a>
+
+                    <a href="projects.html#rag" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
+                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">RAG for N.O.T.</h4>
+                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">NLP / Space Science</p>
+                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">AI retrieval systems for technical documentation at the Nordic Optical Telescope.</p>
+                        <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
+                            <img src="not.png" alt="Nordic Optical Telescope team celebration" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+
+                    <a href="projects.html#holzbau" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
+                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">Holzbau AI</h4>
+                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Industry 4.0 / Vision</p>
+                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Computer vision for quality control in sustainable timber construction.</p>
+                        <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
+                            <img src="holzbau.jpg" alt="Holzbau AI project visual" class="w-full h-full object-cover">
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- SECTION: TEAM -->
+        <div id="team" class="page-section">
+            <a href="#" class="inline-block text-xs font-bold text-red-600 uppercase border border-red-600 px-4 py-2 rounded mb-10 hover:bg-red-50 transition">&larr; Back</a>
+            <h2 class="text-4xl font-bold mb-10 uppercase tracking-tighter italic">ADA Institute Team</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="p-10 bg-gray-50 rounded">
+                    <h4 class="font-bold text-sm uppercase tracking-widest text-red-600 mb-6">Researchers</h4>
+                    <ul class="space-y-4 font-bold text-sm underline underline-offset-4 decoration-gray-200">
+                        <li>Mauro Caccivio</li>
+                        <li>Ralf Jandl</li>
+                        <li>Ebrar Özkalay</li>
+                        <li>Natasa Sarafijanovic-Djukic</li>
+                    </ul>
+                </div>
+                <div class="prose-text">
+                    <p>Led by <strong>Dr. Paraficz</strong>, the ADA team consists of senior data scientists and research engineers transitioning from the LWS Laboratory foundation. The team specializes in bridging high-level AI research with industrial implementation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION: ARCHIVE -->
+        <div id="archive" class="page-section">
+            <a href="#" class="inline-block text-xs font-bold text-red-600 uppercase border border-red-600 px-4 py-2 rounded mb-10 hover:bg-red-50 transition">&larr; Back</a>
+            <h2 class="text-4xl font-bold mb-12 uppercase tracking-tighter italic">LWS Legacy Archive</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="border-b pb-6">
+                    <h4 class="font-bold text-lg mb-2 underline decoration-red-600">AI-Skills Management</h4>
+                    <p class="text-sm text-gray-500 italic">NLP-based identification of professional profiles and talent validation.</p>
+                </div>
+                <div class="border-b pb-6">
+                    <h4 class="font-bold text-lg mb-2 underline decoration-red-600">Smart Irrigation Predictors</h4>
+                    <p class="text-sm text-gray-500 italic">Predictive ML models for Swiss agricultural water demand.</p>
+                </div>
+                <div class="border-b pb-6">
+                    <h4 class="font-bold text-lg mb-2 underline decoration-red-600">Acoustic Diagnostics</h4>
+                    <p class="text-sm text-gray-500 italic">Deep sound analysis for identifying manufacturing failures.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="max-w-5xl mx-auto border-t py-16 px-6 text-[10px] text-gray-400 font-bold uppercase tracking-widest">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <p class="text-black mb-2">ADA Institute (FFHS)</p>
+                <p>Zollstrasse 17, 8005 Zürich, Switzerland</p>
+                <p>PhD Astrophysics | Senior AI Scientist</p>
+            </div>
+            <div class="md:text-right">
+                <p class="text-black mb-2">Contact</p>
+                <p>Dr. Danuta Paraficz</p>
+                <p><a href="mailto:danuta.paraficz@ffhs.ch" class="text-red-600 hover:underline">danuta.paraficz@ffhs.ch</a></p>
+                <p><a href="https://www.linkedin.com/in/dr-danuta-paraficz-41306911b/" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:underline">linkedin.com/in/dr-danuta-paraficz-41306911b</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

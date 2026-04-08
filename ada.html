@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADA Institute | Applied Data Science and AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Single-Page Navigation Logic */
+        .page-section { display: none; }
+        .page-section:target { display: block; }
+        #home-view:not(:has(~ .page-section:target)) { display: block; }
+        #home-view:has(~ .page-section:target) { display: none; }
+
+        .back-btn { 
+            display: inline-flex; align-items: center; padding: 10px 20px; 
+            background: #f1f5f9; color: #e62b1e; font-weight: bold; 
+            border-radius: 6px; margin-bottom: 30px; border: 1px solid #e2e8f0;
+        }
+        .back-btn:hover { background: #fff; border-color: #e62b1e; }
+        .prose-academic p { margin-bottom: 1.5rem; line-height: 1.8; color: #334155; text-align: justify; }
+        .tech-pill { display: inline-block; background: #fee2e2; color: #991b1b; padding: 2px 10px; border-radius: 99px; font-size: 10px; font-weight: 800; text-transform: uppercase; margin-right: 5px; margin-bottom: 5px; }
+        .research-box { border-left: 4px solid #e62b1e; background: #f8fafc; padding: 2rem; border-radius: 0 1rem 1rem 0; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 font-sans selection:bg-red-100">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="max-w-6xl mx-auto border-b border-slate-100 py-8 px-6 mb-12">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <a href="#" class="group">
+                <h1 class="text-4xl font-black tracking-tighter group-hover:text-red-600 transition">ADA INSTITUTE</h1>
+                <p class="text-slate-400 uppercase tracking-[0.2em] text-[10px] font-bold">Applied Data Science and AI (Formerly LWS)</p>
+            </a>
+            <nav class="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-500">
+                <a href="#" class="hover:text-red-600">Research</a>
+                <a href="#team" class="hover:text-red-600">Team</a>
+                <a href="#archive" class="hover:text-red-600">LWS Archive</a>
+            </nav>
+        </div>
+        
+        <!-- OLYMPIC WIN NEWS -->
+        <div class="mt-10 p-6 bg-slate-900 rounded-2xl text-white flex flex-col md:flex-row items-center gap-8 shadow-2xl border border-slate-800">
+            <div class="bg-red-600 p-4 rounded-2xl text-3xl shadow-lg shadow-red-600/20"><i class="fas fa-award"></i></div>
+            <div>
+                <h2 class="font-bold text-xl italic tracking-tight">Milano-Cortina 2026 Hackathon Winner</h2>
+                <p class="text-slate-400 text-sm mt-1">Our ADA student team, under the direction of <strong>Dr. Danuta Paraficz</strong>, secured first place with an innovative mobile solution for the upcoming Olympic Winter Games. <a href="https://www.ffhs.ch/de/ffhs/events/detail/2026-02-17-ffhs-studierende-praesentieren-app-bei-den-olympischen-winterspielen-in-mailand" target="_blank" class="text-red-500 underline font-bold ml-1 italic">Read Official Press Release</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24">
+
+        <!-- MAIN VIEW: HOME GRID -->
+        <div id="home-view">
+            <h2 class="text-xl font-bold mb-10 uppercase tracking-[0.3em] text-slate-300 italic">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="#eagle" class="group border border-slate-100 p-8 rounded-3xl hover:shadow-2xl hover:border-red-600 transition-all duration-500 bg-slate-50/50">
+                    <span class="tech-pill">Deep Learning</span>
+                    <h4 class="font-black text-2xl mt-2 mb-4 group-hover:text-red-600">EAGLE</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">Multispectral reliability analysis for next-generation PV modules.</p>
+                </a>
+
+                <a href="#pronto" class="group border border-slate-100 p-8 rounded-3xl hover:shadow-2xl hover:border-red-600 transition-all duration-500 bg-slate-50/50">
+                    <span class="tech-pill">Agrotech</span>
+                    <h4 class="font-black text-2xl mt-2 mb-4 group-hover:text-red-600">PRONTO</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">Electrophysiology-based sprouting prediction for food logistics.</p>
+                </a>
+
+                <a href="#rag" class="group border border-slate-100 p-8 rounded-3xl hover:shadow-2xl hover:border-red-600 transition-all duration-500 bg-slate-50/50">
+                    <span class="tech-pill">LLM / RAG</span>
+                    <h4 class="font-black text-2xl mt-2 mb-4 group-hover:text-red-600">RAG for N.O.T.</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">Knowledge retrieval system for the Nordic Optical Telescope.</p>
+                </a>
+
+                <a href="#birdnet" class="group border border-slate-100 p-8 rounded-3xl hover:shadow-2xl hover:border-red-600 transition-all duration-500 bg-slate-50/50">
+                    <span class="tech-pill">Eco-Acoustics</span>
+                    <h4 class="font-black text-2xl mt-2 mb-4 group-hover:text-red-600">BirdNet</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">Deep sound classification for biodiversity in the Swiss Alps.</p>
+                </a>
+
+                <a href="#holzbau" class="group border border-slate-100 p-8 rounded-3xl hover:shadow-2xl hover:border-red-600 transition-all duration-500 bg-slate-50/50">
+                    <span class="tech-pill">Industry 4.0</span>
+                    <h4 class="font-black text-2xl mt-2 mb-4 group-hover:text-red-600">Holzbau AI</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed italic">Computer vision for digitalized timber construction safety.</p>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- DETAIL PAGE: EAGLE -->
+        <div id="eagle" class="page-section">
+            <a href="#" class="back-btn">&larr; Back to Research Overview</a>
+            <div class="grid lg:grid-cols-3 gap-16">
+                <div class="lg:col-span-2 prose-academic">
+                    <h2 class="text-5xl font-black mb-8 italic tracking-tighter uppercase">EAGLE</h2>
+                    <h3 class="text-sm font-bold text-red-600 uppercase tracking-widest mb-6 italic underline underline-offset-8">A Deep Learning Approach to Photovoltaics Reliability</h3>
+                    
+                    <p>EAGLE addresses the critical decarbonization challenge: ensuring that photovoltaic systems meet and exceed their 25-year lifespan. As high-efficiency modules (PERC, HJT, TOPCon) lack long-term track records, automated, scalable diagnostic tools are vital.</p>
+
+                    <p><strong>Methodology & Hardware:</strong> We utilize the <strong>PhaseOne iXM-MV150 (150 Mpx)</strong> multispectral sensor. This unique setup allows for the acquisition of 7-channel images, fusing <strong>Visible (RGB)</strong>, <strong>Electroluminescence (EL)</strong>, and <strong>Ultraviolet Fluorescence (UVf)</strong> data. This multi-bandwidth approach enables the tracking of degradation modes—such as moisture ingress and silver busbar oxidation—that are invisible to single-camera setups.</p>
+
+                    <div class="research-box">
+                        <h4 class="font-bold text-slate-900 mb-4">Neural Architecture Evolution</h4>
+                        <p class="text-sm mb-0">Initial research utilized <strong>Detectron2</strong> for cell segmentation; however, current ADA research has transitioned to the <strong>Segment Anything Model (SAM)</strong> by Meta AI for zero-shot robustness across varied module architectures. For failure classification, we deploy <strong>ChannelViT</strong> (a specialized Vision Transformer), which processes each spectral channel independently to maximize accuracy in identifying six specific defect labels: <em>good, crack, dark, corrosion, discolouration,</em> and <em>delamination.</em></p>
+                    </div>
+
+                    <p><strong>Collaborations:</strong> In synergy with the <strong>ACHILLES</strong> project, EAGLE also investigates hail resistance, using high-resolution EL imaging to detect micro-defects at the cell level that trigger crack propagation during hailstorms.</p>
+                </div>
+                <div class="space-y-8">
+                    <div class="p-6 bg-slate-900 rounded-3xl text-white">
+                        <h5 class="font-black text-[10px] text-red-500 uppercase mb-4 tracking-widest">Key Performance</h5>
+                        <div class="space-y-4">
+                            <div><p class="text-2xl font-black">150Mpx</p><p class="text-[10px] uppercase opacity-50 font-bold">Image Resolution</p></div>
+                            <div><p class="text-2xl font-black">94.4%</p><p class="text-[10px] uppercase opacity-50 font-bold">Prediction Accuracy</p></div>
+                        </div>
+                    </div>
+                    <div class="p-6 border rounded-2xl border-slate-100">
+                        <h5 class="text-[10px] font-bold uppercase text-slate-400 mb-4">Labels Identified</h5>
+                        <ul class="text-xs space-y-2 font-bold text-slate-600">
+                            <li># CRACKS</li>
+                            <li># CORROSION</li>
+                            <li># DISCOLOURATION</li>
+                            <li># DELAMINATION</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DETAIL PAGE: PRONTO -->
+        <div id="pronto" class="page-section">
+            <a href="#" class="back-btn">&larr; Back to Research Overview</a>
+            <div class="grid lg:grid-cols-3 gap-16">
+                <div class="lg:col-span-2 prose-academic">
+                    <h2 class="text-5xl font-black mb-8 italic tracking-tighter uppercase">PRONTO</h2>
+                    <h3 class="text-sm font-bold text-red-600 uppercase tracking-widest mb-6 italic underline underline-offset-8">Predicting Potato Sprouting to Optimise Tuber Storage</h3>
+                    
+                    <p>PRONTO is an Innosuisse-funded project (CHF 953k) addressing a critical gap in the food supply chain. Since the banning of the anti-sprouting agent CIPC in the EU/Switzerland (2020), alternative treatments have proven more expensive and less effective. Over 90% of potatoes require long-term storage, where sprouting leads to significant weight and quality loss.</p>
+
+                    <p><strong>The Innovation:</strong> Our solution exploits the <strong>electrophysiological signals</strong> of tubers. Using <strong>PhytlSigns Researcher</strong> sensors, we monitor internal plant signals interpreted through <strong>Supervised Machine Learning</strong>. This allows for a prediction window <strong>up to 3 weeks</strong> before visual symptoms appear.</p>
+
+                    <div class="research-box italic">
+                        <h4 class="font-bold text-slate-900 not-italic mb-2">Explainable AI (XAI) Framework</h4>
+                        <p class="text-sm mb-0">To ensure industrial adoption, we integrate XAI frameworks (<strong>LIME, SHAP</strong>) and uncertainty quantification. This provides farmers and storage managers (like <strong>fenaco</strong> and <strong>Zweifel</strong>) with a "reasoning path" behind the model's alerts, preventing unnecessary chemical applications and maximizing trust in the system.</p>
+                    </div>
+
+                    <p><strong>Consortium:</strong> ADA Institute (FFHS) leads the algorithm development and treatment data analysis in collaboration with <strong>Vivent SA</strong>, <strong>Agroscope</strong>, <strong>SUPSI</strong>, and industry implementation partners.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="p-8 bg-red-600 rounded-[2.5rem] text-white">
+                        <h5 class="text-[10px] font-black uppercase mb-4 opacity-70">Economic Benefit</h5>
+                        <p class="text-4xl font-black tracking-tighter mb-2">CHF 43k</p>
+                        <p class="text-[10px] uppercase font-bold opacity-70">Saved per 1000t storage season</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 border border-slate-100 rounded-3xl">
+                        <h5 class="text-[10px] font-bold uppercase text-slate-400 mb-4 tracking-widest">Research Timeline</h5>
+                        <p class="text-xs font-bold text-slate-800">JUL 2023 — OCT 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DETAIL PAGE: RAG FOR N.O.T. -->
+        <div id="rag" class="page-section">
+            <a href="#" class="back-btn">&larr; Back to Research Overview</a>
+            <div class="grid lg:grid-cols-3 gap-16">
+                <div class="lg:col-span-2 prose-academic">
+                    <h2 class="text-5xl font-black mb-8 italic tracking-tighter uppercase">RAG for N.O.T.</h2>
+                    <h3 class="text-sm font-bold text-red-600 uppercase tracking-widest mb-6 italic underline underline-offset-8">KI trifft Astronomie: Efficient Knowledge Access</h3>
+                    
+                    <p>Modern astronomy at the <strong>Nordic Optical Telescope (NOT)</strong> on La Palma generates immense amounts of technical documentation, scientific logs, and observation protocols. Accessing this information quickly is vital for telescope operations and research efficiency.</p>
+
+                    <p><strong>Implementation Strategy:</strong> ADA is developing a domain-specific <strong>Retrieval-Augmented Generation (RAG)</strong> system. Unlike standard LLMs, this system cites original observatory sources, ensuring that technical queries are answered with scientific transparency and zero hallucination.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+                        <div class="p-6 bg-slate-50 rounded-2xl">
+                            <h4 class="font-bold text-xs uppercase mb-2">Phase AFE1</h4>
+                            <p class="text-xs text-slate-500">Cloud-based RAG development for natural language querying of PDF archives and technical manuals.</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl">
+                            <h4 class="font-bold text-xs uppercase mb-2">Phase AFE2</h4>
+                            <p class="text-xs text-slate-500">Scaling to process numerical sensor data, tables, and integrated image recognition for astronomical charts.</p>
+                        </div>
+                    </div>
+
+                    <p>Project Lead: <strong>Dr. Danuta Paraficz</strong>. Leveraging state-of-the-art tools including <strong>Gemini API</strong> and <strong>RAG-Anything</strong>.</p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/400x500/020617/FFF?text=La+Palma+Observatory" class="rounded-3xl shadow-2xl mb-8">
+                </div>
+            </div>
+        </div>
+
+        <!-- DETAIL PAGE: TEAM -->
+        <div id="team" class="page-section">
+            <a href="#" class="back-btn">&larr; Back</a>
+            <h2 class="text-5xl font-black mb-12 italic tracking-tighter">Institute Team</h2>
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h4 class="text-3xl font-black mb-2">Dr. Danuta Paraficz</h4>
+                    <p class="text-red-600 font-bold text-xs uppercase tracking-[0.3em] mb-6 italic underline decoration-2">Head of ADA Institute</p>
+                    <p class="text-slate-600 leading-relaxed italic mb-8">
+                        A specialist in high-level Applied Data Science and International Research Management. Dr. Paraficz led the team of MSc Business Informatics students to victory in the 2026 Olympic App challenge. She serves as the primary investigator for the N.O.T. RAG project and oversees the Institute's transition from LWS to ADA.
+                    </p>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-[3rem] border border-slate-100">
+                    <h5 class="font-black text-xs uppercase mb-6 tracking-widest text-slate-400 italic">Academic Researchers</h5>
+                    <div class="space-y-4">
+                        <p class="text-sm font-bold text-slate-700 underline decoration-red-200">Mauro Caccivio</p>
+                        <p class="text-sm font-bold text-slate-700 underline decoration-red-200">Ralf Jandl</p>
+                        <p class="text-sm font-bold text-slate-700 underline decoration-red-200">Ebrar Özkalay</p>
+                        <p class="text-sm font-bold text-slate-700 underline decoration-red-200">Natasa Sarafijanovic-Djukic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DETAIL PAGE: ARCHIVE -->
+        <div id="archive" class="page-section">
+            <a href="#" class="back-btn">&larr; Back</a>
+            <h2 class="text-5xl font-black mb-12 italic tracking-tighter uppercase">LWS Legacy Archive</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="border-b pb-8 border-slate-100">
+                    <h4 class="font-bold text-xl mb-2 italic">AI-Skills Management</h4>
+                    <p class="text-slate-500 text-sm">Automated identification and validation of professional profiles using NLP to support corporate talent scouting and HR digitalization.</p>
+                </div>
+                <div class="border-b pb-8 border-slate-100">
+                    <h4 class="font-bold text-xl mb-2 italic">Smart Irrigation Analytics</h4>
+                    <p class="text-slate-500 text-sm">Machine Learning models predicting water demand for Swiss agriculture, integrating weather forecasts with local soil sensor networks.</p>
+                </div>
+                <div class="border-b pb-8 border-slate-100">
+                    <h4 class="font-bold text-xl mb-2 italic">Acoustic Industry Diagnostics</h4>
+                    <p class="text-slate-500 text-sm">Deep learning research into using sound patterns for identifying mechanical wear and failure in high-speed industrial manufacturing.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLACEHOLDERS FOR BIRDNET & HOLZBAU -->
+        <div id="birdnet" class="page-section"><a href="#" class="back-btn">&larr; Back</a><h2 class="text-5xl font-black italic mb-6">BirdNet</h2><p class="text-slate-600 italic">Applying Deep CNN architectures for soundscape classification to monitor biodiversity in the Swiss Alpine regions.</p></div>
+        <div id="holzbau" class="page-section"><a href="#" class="back-btn">&larr; Back</a><h2 class="text-5xl font-black italic mb-6 uppercase">Holzbau AI</h2><p class="text-slate-600 italic">Advanced Computer Vision for the structural monitoring and digitalization of sustainable timber architecture.</p></div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="max-w-6xl mx-auto border-t border-slate-100 mt-40 pt-12 pb-24 px-6">
+        <div class="grid md:grid-cols-2 gap-12 text-[10px] text-slate-400 font-bold uppercase tracking-widest">
+            <div>
+                <p class="text-slate-900 mb-2 font-black">ADA Institute (FFHS)</p>
+                <p>Zollstrasse 17, 8005 Zürich, Switzerland</p>
+                <p>Formerly Laboratory for Data Science (LWS)</p>
+            </div>
+            <div class="md:text-right">
+                <p class="text-slate-900 mb-2 font-black tracking-tighter">Contact Investigator</p>
+                <p>Dr. Danuta Paraficz | <a href="mailto:danuta.paraficz@ffhs.ch" class="text-red-600 hover:underline">danuta.paraficz@ffhs.ch</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

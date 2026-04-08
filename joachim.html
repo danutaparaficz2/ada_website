@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joachim Steinwendner | AI Research & Applied Machine Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-section { display: none; }
+        .page-section:target { display: block; }
+        #home-view:not(:has(~ .page-section:target)) { display: block; }
+        #home-view:has(~ .page-section:target) { display: none; }
+
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .prose-text p { margin-bottom: 1.5rem; line-height: 1.6; color: #374151; }
+        .placeholder-box {
+            background-color: #f3f4f6;
+            border: 1px dashed #d1d5db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <header class="max-w-5xl mx-auto px-6 py-10 border-b border-gray-100">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <a href="#" class="hover:opacity-70 transition flex items-center gap-4">
+                <img src="logo.png" alt="ADA Institute logo" class="h-22 md:h-30 w-auto object-contain">
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight">PROF. DR. JOACHIM STEINWENDNER</h1>
+                    <p class="text-xs text-gray-400 font-medium uppercase tracking-widest">Head of Research Field GeoHealth Analytics | Senior Lecturer</p>
+                </div>
+            </a>
+            <nav class="flex gap-6 text-[11px] font-bold uppercase tracking-widest text-gray-500">
+                <a href="#" class="hover:text-red-600 transition">Bio</a>
+                <a href="#projects" class="hover:text-red-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-red-600 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+
+        <div id="home-view">
+            <section class="grid md:grid-cols-3 gap-12 mb-24 pb-12 border-b">
+                <div class="md:col-span-2 prose-text text-lg">
+                    <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>
+                    <p>JProf. Dr. Joachim Steinwendner is a distinguished expert in Artificial Intelligence (AI), Machine Learning, and Digitalization, specializing in high-impact applications within the Health and Geosciences. As the Head of the GeoHealth Analytics research field at the Institute of Applied Datascience and AI (ADA), he bridges the gap between advanced data science and complex spatial-medical challenges.</p>
+                    <p>His work focuses on developing robust, practical systems that integrate data-driven intelligence into critical sectors:
+
+Healthcare & Public Health: Implementing applied mobile solutions and AI-driven analytics for medical research.
+
+Insurance & Finance: Advanced fraud detection utilizing high-dimensional data processing.
+
+Digital Education: Innovation in AI-assisted e-assessment and automated proctoring workflows.
+
+Joachim is recognized for his commitment to measurable real-world impact, ensuring that theoretical machine learning models translate into reliable, scalable implementations.</p>
+                    <p>In addition to his research leadership, he serves as a lecturer at Fernfachhochschule Schweiz (FFHS) and ETH Zurich, shaping the next generation of data scientists. He is also the co-author of the acclaimed technical textbook Neuronale Netze programmieren mit Python (Neural Networks Programming with Python), published by Rheinwerk Verlag.</p>
+                    <p>Core Focus Areas
+Geospatial Data Analytics
+
+Neural Network Development
+
+AI Security & Proctoring Systems
+
+Digital Health Transformation</p>
+                    <h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Research Interests</h3>
+                    <ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">
+                        <li><strong>GeoHealth Analytics:</strong> Utilizing spatial data to analyze health trends and environmental impacts.</li>
+                        <li><strong>Artificial Intelligence &amp; Machine Learning:</strong> Developing predictive models and deep learning architectures.</li>
+                        <li><strong>Data Science:</strong> Implementing robust data processing and visualization techniques.</li>
+                        <li><strong>Digitalization in Healthcare:</strong> Modernizing health systems through intelligent technology.</li>
+                    </ul>
+                    <h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Academic Degrees</h3>
+                    <p>Dr. nat. techn. (Doctor of Natural Resources and Life Sciences)<br>MSc in Computer Science (Informatik)</p>
+                    <h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Teaching Areas</h3>
+                    <ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">
+                        <li>Data Science &amp; Machine Learning (FFHS &amp; ETH Zurich)</li>
+                        <li>Neural Network Development</li>
+                        <li>Python for Scientific Computing</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="aspect-square rounded-full mb-4 overflow-hidden border border-gray-200">
+                        <img src="joachim.jpg" alt="Portrait of Prof. Dr. Joachim Steinwendner" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-xs text-gray-600 leading-relaxed space-y-2">
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">Telefon</span><br>+41 44 512 09 31</p>
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">E-Mail</span><br>joachim.steinwendner(at)ffhs.ch</p>
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">Arbeitsort</span><br>Zürich</p>
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">Arbeitstage</span><br>Mo Di Mi Do Fr</p>
+                        <p><span class="font-bold uppercase tracking-widest text-gray-500">LinkedIn</span><br><a href="https://www.linkedin.com/in/joachim-steinwendner-52979418/" target="_blank" rel="noopener noreferrer" class="text-red-600 font-semibold hover:underline">linkedin.com/in/joachim-steinwendner-52979418</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-20 p-8 border border-gray-200 rounded-lg">
+                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Publications &amp; Professional Networks</h2>
+                <div class="prose-text max-w-4xl">
+                    <h3 class="text-lg font-bold uppercase tracking-wider mb-4 text-gray-900">Featured Book</h3>
+                    <p><strong>Schwaiger, R., &amp; Steinwendner, J. (2019).</strong> <em>Neuronale Netze programmieren mit Python.</em> Rheinwerk Verlag.</p>
+                    <p>This guide provides a practical introduction to building neural networks from scratch, making complex AI concepts accessible to developers and students alike.</p>
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <a href="https://www.linkedin.com/in/joachim-steinwendner-52979418/" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-red-600 border border-red-600 px-4 py-2 rounded hover:bg-red-50 transition">LinkedIn Profile</a>
+                        <a href="https://www.ffhs.ch/de/ueber-uns/institute/laboratory-web-science" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-red-600 border border-red-600 px-4 py-2 rounded hover:bg-red-50 transition">Laboratory for Web Science (LWS)</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10 italic">Project Portfolio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <a href="#suva2" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
+                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">SUVA 2</h4>
+                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Insurance / Fraud Detection</p>
+                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Deep Learning methods for detecting rare fraud patterns in high-dimensional insurance datasets.</p>
+                        <div class="placeholder-box w-full h-32 rounded">Project Placeholder</div>
+                    </a>
+
+                    <a href="#eassessment" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
+                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">E-Assessment AI</h4>
+                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">EdTech / AI Proctoring</p>
+                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Home-based examination with AI-assisted proctoring and video-based anomaly monitoring.</p>
+                        <div class="placeholder-box w-full h-32 rounded">Project Placeholder</div>
+                    </a>
+
+                    <a href="#iron" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
+                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">Iron Supplementation Study</h4>
+                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">HealthTech / SNF</p>
+                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">App-supported monitoring of side effects in oral iron supplementation during pregnancy.</p>
+                        <div class="placeholder-box w-full h-32 rounded">Project Placeholder</div>
+                    </a>
+
+                    <a href="#homecare" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
+                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">Trigger Tools in Home Care</h4>
+                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Public Health / Decision Support</p>
+                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Algorithms for management and risk-oriented support of chronically ill home-care patients.</p>
+                        <div class="placeholder-box w-full h-32 rounded">Project Placeholder</div>
+                    </a>
+
+                </div>
+            </section>
+        </div>
+
+        <div id="suva2" class="page-section">
+            <a href="#" class="inline-block text-xs font-bold text-red-600 uppercase border border-red-600 px-4 py-2 rounded mb-10 hover:bg-red-50 transition">&larr; Back to Portfolio</a>
+            <h2 class="text-4xl font-bold mb-6 uppercase tracking-tighter">SUVA 2 (Dienstleistungsprojekt)</h2>
+            <div class="prose-text max-w-3xl">
+                <p>The project investigated fraud detection in personal insurance using Machine Learning and Deep Learning methods.</p>
+                <p>Data characteristics included high dimensionality (up to 1500 features) and strong class imbalance (fraud in permille range), motivating both supervised and unsupervised approaches including deep neural networks, GANs, and autoencoder variants.</p>
+                <p><strong>Contact:</strong> Joachim Steinwendner<br><strong>Duration:</strong> 3 months</p>
+            </div>
+        </div>
+
+        <div id="eassessment" class="page-section">
+            <a href="#" class="inline-block text-xs font-bold text-red-600 uppercase border border-red-600 px-4 py-2 rounded mb-10 hover:bg-red-50 transition">&larr; Back to Portfolio</a>
+            <h2 class="text-4xl font-bold mb-6 uppercase tracking-tighter">E-Assessment: AI-Proctored Examinations</h2>
+            <div class="prose-text max-w-3xl">
+                <p>Developed and tested home-based examination processes with AI support during fully online semesters.</p>
+                <p>The system used screen and candidate video streams to support post-hoc review and anomaly detection in remote exam contexts, with academic exchange in the DACH distance-university network.</p>
+                <p><strong>Contact:</strong> Joachim Steinwendner<br><strong>Duration:</strong> 1 year</p>
+            </div>
+        </div>
+
+        <div id="iron" class="page-section">
+            <a href="#" class="inline-block text-xs font-bold text-red-600 uppercase border border-red-600 px-4 py-2 rounded mb-10 hover:bg-red-50 transition">&larr; Back to Portfolio</a>
+            <h2 class="text-4xl font-bold mb-6 uppercase tracking-tighter">Optimization of Oral Iron Supplementation (SNF)</h2>
+            <div class="prose-text max-w-3xl">
+                <p>The project targeted dosage strategies with maximum absorption and minimum gastrointestinal side effects during pregnancy.</p>
+                <p>LWS contributed an app that enabled participants to report side effects, supporting structured data collection and analysis in a medical study workflow.</p>
+                <p><strong>Contacts:</strong> Joachim Steinwendner, Diego Moretti<br><strong>Duration:</strong> April 2019 - March 2022</p>
+            </div>
+        </div>
+
+        <div id="homecare" class="page-section">
+            <a href="#" class="inline-block text-xs font-bold text-red-600 uppercase border border-red-600 px-4 py-2 rounded mb-10 hover:bg-red-50 transition">&larr; Back to Portfolio</a>
+            <h2 class="text-4xl font-bold mb-6 uppercase tracking-tighter">Trigger Tools and Algorithms in Home Care</h2>
+            <div class="prose-text max-w-3xl">
+                <p>Internal project conducted in collaboration with social systems and public health partners.</p>
+                <p>The goal was to improve management of chronically ill home-care patients through structured triggers and data-supported decision workflows.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="contact" class="max-w-5xl mx-auto border-t py-16 px-6 text-[10px] text-gray-400 font-bold uppercase tracking-widest">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <p class="text-black mb-2">ADA Institute (FFHS)</p>
+                <p>Zollstrasse 17, 8005 Zurich, Switzerland</p>
+                <p>FFHS Gleisarena Campus Zurich</p>
+                <p>Head of Research Field GeoHealth Analytics</p>
+            </div>
+            <div class="md:text-right">
+                <p class="text-black mb-2">Contact</p>
+                <p>Prof. Dr. Joachim Steinwendner</p>
+                <p><a href="mailto:joachim.steinwendner@ffhs.ch" class="text-red-600 hover:underline">joachim.steinwendner@ffhs.ch</a></p>
+                <p>+41 44 512 09 31</p>
+                <p><a href="https://www.linkedin.com/in/joachim-steinwendner-52979418/" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:underline">LinkedIn Profile</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

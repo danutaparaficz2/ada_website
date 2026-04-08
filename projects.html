@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADA Shared Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .page-section { display: none; }
+        .page-section:target { display: block; }
+        #projects-home:not(:has(~ .page-section:target)) { display: block; }
+        #projects-home:has(~ .page-section:target) { display: none; }
+        .prose-text p { margin-bottom: 1.25rem; line-height: 1.6; color: #374151; }
+        .project-credit {
+            margin-top: 1.5rem;
+            padding: 0.875rem 1rem;
+            border-left: 4px solid #2563eb;
+            background: #eff6ff;
+            border-radius: 0 0.75rem 0.75rem 0;
+        }
+        .project-credit a {
+            color: #1d4ed8;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .project-credit a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <header class="max-w-6xl mx-auto px-6 py-10 border-b border-slate-200">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+                <h1 class="text-3xl font-extrabold tracking-tight">Shared ADA Projects</h1>
+            </div>
+            <div class="flex flex-wrap gap-3 text-xs font-bold uppercase tracking-widest">
+                <a href="ada_better.html#projects" class="px-4 py-2 border border-slate-300 rounded hover:bg-slate-100 transition">ADA</a>
+                <a href="natasa.html" class="px-4 py-2 border border-slate-300 rounded hover:bg-slate-100 transition">Natasa</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-10 space-y-16">
+        <div id="projects-home" class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+            <h2 class="text-2xl font-bold mb-4 uppercase tracking-tight">Projects</h2>
+            <p class="text-slate-600 mb-6">Choose a project to view its full details.</p>
+            <div class="flex flex-wrap gap-3 text-xs font-bold uppercase tracking-widest">
+                <a href="#eagle" class="px-4 py-2 border border-slate-300 rounded hover:bg-slate-100 transition">EAGLE</a>
+                <a href="#pronto" class="px-4 py-2 border border-slate-300 rounded hover:bg-slate-100 transition">PRONTO</a>
+                <a href="#rag" class="px-4 py-2 border border-slate-300 rounded hover:bg-slate-100 transition">RAG for N.O.T.</a>
+                <a href="#birdnet" class="px-4 py-2 border border-slate-300 rounded hover:bg-slate-100 transition">Soundscapes</a>
+                <a href="#holzbau" class="px-4 py-2 border border-slate-300 rounded hover:bg-slate-100 transition">Holzbau AI</a>
+            </div>
+        </div>
+
+        <section id="eagle" class="page-section scroll-mt-10 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+            <a href="projects.html" class="inline-block text-xs font-bold text-blue-600 uppercase border border-blue-600 px-4 py-2 rounded mb-6 hover:bg-blue-50 transition">&larr; Back to Projects</a>
+            <h2 class="text-3xl font-bold mb-3 uppercase tracking-tight">Project EAGLE</h2>
+            <p class="text-lg text-slate-700 font-medium italic mb-4">A Deep Learning Approach to Photovoltaic Reliability</p>
+            <div class="grid lg:grid-cols-3 gap-10">
+                <div class="lg:col-span-2 prose-text">
+                    <p>As the world scales up solar installations to meet carbon reduction goals, the long-term reliability of photovoltaic (PV) systems becomes a critical economic and environmental factor. Project EAGLE, a collaboration between FFHS and SUPSI, addresses this by moving beyond traditional manual inspections toward an automated, AI-powered diagnostic framework.</p>
+                    <div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">
+                        <h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">The Challenge: Hidden Defects</h4>
+                        <p class="text-sm text-slate-600">Solar panels are exposed to harsh environments for decades. Over time, they develop hidden defects such as micro-cracks, moisture ingress, or cell hotspots that are invisible to the naked eye but significantly reduce energy yield. Detecting these defects across large solar farms is traditionally slow, expensive, and subjective.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">
+                        <h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">The Innovation: Multi-Spectral AI Analytics</h4>
+                        <p class="text-sm text-slate-600">The EAGLE project pioneered a methodology using Computer Vision and Deep Learning to analyze panel images across three spectral bands:</p>
+                        <ul class="text-sm space-y-2 text-slate-600 mt-3">
+                            <li>&bull; <strong>Electroluminescence (EL):</strong> "X-raying" cells to identify internal cracks.</li>
+                            <li>&bull; <strong>Ultraviolet Fluorescence (UVf):</strong> Detecting aging and chemical changes in encapsulant materials.</li>
+                            <li>&bull; <strong>Visible (VI):</strong> Capturing external damage such as soiling or glass breakage.</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 mt-3">To automate diagnosis at scale, the team developed specialized Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) for high-precision defect classification.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">
+                        <h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Key Technical Highlights</h4>
+                        <ul class="text-sm space-y-2 text-slate-600">
+                            <li>&bull; <strong>Multimodal Fusion:</strong> Correlating defect signatures across modalities with electrical performance loss.</li>
+                            <li>&bull; <strong>State-of-the-Art Architecture:</strong> Leveraging models such as EfficientNet and Segment Anything (SAM) to isolate and diagnose individual solar cells within modules.</li>
+                            <li>&bull; <strong>Predictive Maintenance:</strong> Quantifying degradation to guide optimal cleaning, repair, and replacement decisions for improved ROI.</li>
+                        </ul>
+                    </div>
+                    <div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">
+                        <h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Real-World Impact</h4>
+                        <p class="text-sm text-slate-600">Findings from Project EAGLE, presented at the EU PVSEC conference in Bilbao, provide a scalable blueprint for smart operations and maintenance (Smart O&amp;M). By automating solar health checks, EAGLE helps ensure that the green transition is built on durable, high-performing infrastructure.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <a href="https://www.aramis.admin.ch/Texte/?ProjectID=51667" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">View on ARAMIS</a>
+                        <a href="https://www.eupvsec.org/images/2025/conference/EUPVSEC2025_ConferenceProgram_web_v6.pdf" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">EU PVSEC Program (PDF)</a>
+                    </div>
+                    <div class="project-credit">
+                        <p class="text-sm text-slate-700 mb-0">This project was made by <a href="danka.html">Danuta Paraficz</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p>
+                    </div>
+                </div>
+                <div class="h-80 rounded-xl overflow-hidden border border-slate-200">
+                    <img src="bilbao.jpg" alt="EAGLE project presentation in Bilbao" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="mt-8 flex justify-center">
+                <a href="30_poster_ai-driven-defect-detection_pvt25.pdf" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-6 py-3 rounded hover:bg-blue-50 transition">Download AI-Driven Defect Detection Poster (PDF)</a>
+            </div>
+        </section>
+
+        <section id="pronto" class="page-section scroll-mt-10 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+            <a href="projects.html" class="inline-block text-xs font-bold text-blue-600 uppercase border border-blue-600 px-4 py-2 rounded mb-6 hover:bg-blue-50 transition">&larr; Back to Projects</a>
+            <h2 class="text-3xl font-bold mb-3 uppercase tracking-tight">Project PRONTO</h2>
+            <div class="grid lg:grid-cols-3 gap-10">
+                <div class="lg:col-span-2 prose-text">
+                    <p class="text-lg text-slate-700 font-medium italic mb-2">Predicting potato sprouting to optimize tuber storage and reduce agricultural waste.</p>
+                    <p>Project PRONTO addresses a major challenge in agricultural supply chains: predicting and controlling the sprouting of stored potatoes. By analyzing <strong>electrophysiological plant signals</strong> with machine learning, the project can forecast sprouting weeks in advance.</p>
+                    <p>This approach reduces reliance on chemical sprout suppressants and minimizes food waste, contributing to more sustainable and cost-effective storage practices for Swiss agriculture.</p>
+                    <div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">
+                        <h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Partners</h4>
+                        <p class="text-sm text-slate-600">Agroscope &amp; Vivent SA</p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <a href="https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Read FFHS News Article</a>
+                        <a href="https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Read Watson Article</a>
+                    </div>
+                    <div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">This project was made by <a href="aris.html">Aris Marcolongo</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>
+                </div>
+                <div class="h-72 rounded-xl overflow-hidden border border-slate-200">
+                    <img src="potatos.png" alt="Potato storage" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="rag" class="page-section scroll-mt-10 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+            <a href="projects.html" class="inline-block text-xs font-bold text-blue-600 uppercase border border-blue-600 px-4 py-2 rounded mb-6 hover:bg-blue-50 transition">&larr; Back to Projects</a>
+            <h2 class="text-3xl font-bold mb-3 uppercase tracking-tight">RAG for N.O.T.</h2>
+            <div class="grid lg:grid-cols-3 gap-10">
+                <div class="lg:col-span-2 prose-text">
+                    <p class="text-lg text-slate-700 font-medium italic mb-2">Retrieval-Augmented AI for Observatory Knowledge Access</p>
+                    <p>In collaboration with the <strong>Nordic Optical Telescope (NOT)</strong> on La Palma, ADA is developing a domain-specific <strong>Retrieval-Augmented Generation (RAG)</strong> system to support astronomers and technical teams in their daily work.</p>
+                    <p>The objective is to make complex observatory documentation, operational procedures, and scientific logs searchable through natural-language queries while preserving traceability and factual reliability.</p>
+
+                    <div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">
+                        <h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Core Challenge</h4>
+                        <p class="text-sm text-slate-600">Critical observatory knowledge is distributed across technical manuals, instrument notes, and historical logs. Traditional search workflows are time-consuming and can make it difficult to retrieve context quickly during operations.</p>
+                    </div>
+
+                    <div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">
+                        <h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Technical Approach</h4>
+                        <ul class="text-sm space-y-2 text-slate-600">
+                            <li>&bull; <strong>Document Retrieval Layer:</strong> Indexing trusted observatory sources for relevant context selection.</li>
+                            <li>&bull; <strong>Grounded Generation:</strong> Generating answers conditioned on retrieved evidence, not on model memory alone.</li>
+                            <li>&bull; <strong>Citation and Verifiability:</strong> Returning source-linked responses to support transparent decision-making.</li>
+                        </ul>
+                    </div>
+
+                    <div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">
+                        <h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Expected Impact</h4>
+                        <p class="text-sm text-slate-600">The platform reduces search friction, accelerates expert workflows, and lowers the risk of unsupported responses by grounding outputs in trusted records. This creates a practical AI assistant tailored to scientific infrastructure environments.</p>
+                    </div>
+
+                    <div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">This project was made by <a href="danka.html">Danuta Paraficz</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>
+                </div>
+                <div class="h-72 rounded-xl overflow-hidden border border-slate-200">
+                    <img src="not.png" alt="Nordic Optical Telescope" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="birdnet" class="page-section scroll-mt-10 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+            <a href="projects.html" class="inline-block text-xs font-bold text-blue-600 uppercase border border-blue-600 px-4 py-2 rounded mb-6 hover:bg-blue-50 transition">&larr; Back to Projects</a>
+            <h2 class="text-3xl font-bold mb-3 uppercase tracking-tight">The Soundscapes Project</h2>
+            <div class="grid lg:grid-cols-3 gap-10">
+                <div class="lg:col-span-2 prose-text">
+                    <p>The <strong>Soundscapes project</strong> (also known as the Cambrian Soundscapes initiative) was launched in January 2024 by the Cambrian Mountains Society to systematically collate and analyze data on the region's biodiversity. The project was initiated because existing biodiversity records for the Cambrian Mountains were found to be patchy and inconsistent, making it difficult to determine exact population trends.</p>
+
+                    <h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">Technology & Methodology</h3>
+                    <p>The project utilizes <strong>AudioMoths</strong>, which are low-cost bioacoustic monitoring devices that can record for up to 189 hours and be left in the field for months. The Society deployed 25 of these recorders across various habitats, set to a 24-hour schedule where they record sound for one minute out of every ten.</p>
+
+                    <h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">Origins</h3>
+                    <p>The idea was proposed by member Guy Bennett following a successful pilot survey on his family's land in Cilycwm, which identified unexpected rare birds like the yellow wagtail and yellow-browed warbler.</p>
+
+                    <h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">FFHS Partnership & Data Processing</h3>
+                    <p>Initially, the Society used BirdNET software to identify bird species from the recordings. However, the sheer volume of data led to a strategic partnership with the <strong>Big Data team from Fernfachhochschule Schweiz (FFHS) in Zurich</strong>, including <strong>Professor Joachim Steinwendner</strong> and <strong>Dr. Danuta Paraficz</strong>. This team provides the computing power necessary to process massive datasets, demonstrating how academic institutions can support real-world conservation efforts.</p>
+
+                    <div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">
+                        <h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Scientific Impact</h4>
+                        <p class="text-sm text-slate-600">Partnering with a world-class academic team provides the project's research with substantial scientific credibility, which is essential when a small volunteer-led organization presents its findings to the broader scientific community.</p>
+                    </div>
+
+                    <h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">Future Vision</h3>
+                    <p>While currently focused on bird populations and migratory patterns, the Society hopes to expand the project to identify other fauna, such as bats and small mammals. There is also interest in potentially using bird data to draw inferences about fish populations.</p>
+                    <div class="project-credit">
+                        <p class="text-sm text-slate-700 mb-0">This project was made by <a href="joachim.html">Joachim Steinwendner</a> and <a href="danka.html">Danuta Paraficz</a>  </p>
+                    </div>
+                </div>
+                <div class="h-72 rounded-xl overflow-hidden border border-slate-200">
+                    <img src="birdss.jpg" alt="Bird in forest" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="mt-8 flex justify-center">
+                <a href="CMS journal 2025 electronic copy.pdf" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-6 py-3 rounded hover:bg-blue-50 transition">Download CMS Journal 2025 (PDF)</a>
+            </div>
+        </section>
+
+        <section id="holzbau" class="page-section scroll-mt-10 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+            <a href="projects.html" class="inline-block text-xs font-bold text-blue-600 uppercase border border-blue-600 px-4 py-2 rounded mb-6 hover:bg-blue-50 transition">&larr; Back to Projects</a>
+            <h2 class="text-3xl font-bold mb-3 uppercase tracking-tight">Holzbau AI</h2>
+            <div class="grid lg:grid-cols-3 gap-10">
+                <div class="lg:col-span-2 prose-text">
+                    <p>Modern timber construction requires high-precision quality control. This project utilizes <strong>Computer Vision</strong> to automate the structural health monitoring and inspection of wood architecture.</p>
+                    <p>Our research develops on-premise AI models that identify structural anomalies during construction, supporting the digital transformation of sustainable Swiss timber industries (Industry 4.0).</p>
+                    <div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">This project was made by <a href="danka.html">Danuta Paraficz</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>
+                </div>
+                <div class="h-72 rounded-xl overflow-hidden border border-slate-200">
+                    <img src="holzbau.jpg" alt="Timber construction quality control" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
