@@ -74,38 +74,6 @@
                 window.location.replace("projects.html#" + currentHash);
             }
         })();
-
-        document.addEventListener("DOMContentLoaded", function () {
-            var mountPoint = document.getElementById("current-projects-grid");
-            if (!mountPoint) {
-                return;
-            }
-
-            fetch("projects.html")
-                .then(function (response) {
-                    if (!response.ok) {
-                        throw new Error("Failed to load projects.html");
-                    }
-                    return response.text();
-                })
-                .then(function (html) {
-                    var parser = new DOMParser();
-                    var doc = parser.parseFromString(html, "text/html");
-                    var sourceGrid = doc.querySelector("#projects-home .grid");
-                    if (!sourceGrid) {
-                        return;
-                    }
-
-                    sourceGrid.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-                        anchor.setAttribute("href", "projects.html" + anchor.getAttribute("href"));
-                    });
-
-                    mountPoint.innerHTML = sourceGrid.innerHTML;
-                })
-                .catch(function () {
-                    // Keep static fallback cards if dynamic loading is unavailable.
-                });
-        });
     </script>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -169,11 +137,80 @@
                 </div>
             </div>
 
-            <div id="current-projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <a href="projects.html" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition duration-300 block p-8">
-                    <h4 class="text-xl font-bold mb-3">Project Portfolio</h4>
-                    <p class="text-slate-600 text-sm leading-relaxed">Current project cards are loaded from the shared projects page.</p>
-                    <p class="text-xs text-slate-400 font-mono mt-4">Source: projects.html</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+
+
+                <!-- Project: EAGLE -->
+                <a href="projects.html#eagle" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-xl transition duration-300 block">
+                    <div class="h-56 bg-slate-200 overflow-hidden relative">
+                        <img src="eagle_photo.png" alt="Project EAGLE presentation in Bilbao" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Renewable Energy</div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3">Project EAGLE</h4>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Deep Learning approach to photovoltaics reliability. Utilizing multispectral imaging (UV, IR, Visible) and Vision Transformers to detect cell-level failures automatically.
+                        </p>
+                        <div class="text-xs text-slate-400 font-mono">Partner: SUPSI / SFOE</div>
+                    </div>
+                </a>
+
+                <!-- Project: PRONTO -->
+                <a href="projects.html#pronto" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-xl transition duration-300 block">
+                    <div class="h-56 bg-slate-200 overflow-hidden relative">
+                        <img src="potatos.png" alt="Potatoes in storage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Smart Agrotech</div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3">Project PRONTO</h4>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Predicting potato sprouting to optimize tuber storage. Analyzing electrophysiological plant signals with ML to reduce chemical use and food waste.
+                        </p>
+                        <div class="text-xs text-slate-400 font-mono">Partner: Agroscope / Vivent</div>
+                    </div>
+                </a>
+                                <!-- Project: Holzbau -->
+                <a href="projects.html#holzbau" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-xl transition duration-300 block">
+                    <div class="h-56 bg-slate-200 overflow-hidden relative">
+                        <img src="holzbau.jpg" alt="Timber construction" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-amber-800 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Civil Engineering</div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3">Holzbau AI</h4>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Implementing computer vision for quality control and structural health monitoring in timber construction, ensuring the sustainability of modern wood-based architecture.
+                        </p>
+                        <div class="text-xs text-slate-400 font-mono">Domain: Industrial Vision</div>
+                    </div>
+                </a>
+                <!-- Project: RAG for N.O.T. -->
+                <a href="projects.html#rag" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-xl transition duration-300 block">
+                    <div class="h-56 bg-slate-200 overflow-hidden relative">
+                        <img src="not.png" alt="Nordic Optical Telescope" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Astronomy AI</div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3">RAG for Nordic Optical Telescope</h4>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Implementing a Retrieval-Augmented Generation (RAG) system to allow astronomers to query complex observatory documentation and scientific logs using natural language.
+                        </p>
+                        <div class="text-xs text-slate-400 font-mono">Lead: Dr. Danuta Paraficz</div>
+                    </div>
+                </a>
+                <!-- Project: BirdNet -->
+                <a href="projects.html#birdnet" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-xl transition duration-300 block">
+                    <div class="h-56 bg-slate-200 overflow-hidden relative">
+                        <img src="birdss.jpg" alt="Bird in forest" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-indigo-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Bio-Acoustics</div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold mb-3">BirdNet Classification</h4>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Advanced acoustic monitoring system using CNNs to identify bird species in Swiss alpine regions, supporting biodiversity conservation through automated data analysis.
+                        </p>
+                        <div class="text-xs text-slate-400 font-mono">Domain: Environmental Data Science</div>
+                    </div>
                 </a>
 
                 <input id="more-projects-toggle" type="checkbox">
