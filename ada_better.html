@@ -59,6 +59,22 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+        (function () {
+            var canonicalProjectSections = {
+                eagle: true,
+                pronto: true,
+                rag: true,
+                birdnet: true,
+                holzbau: true
+            };
+
+            var currentHash = window.location.hash.replace("#", "");
+            if (canonicalProjectSections[currentHash]) {
+                window.location.replace("projects.html#" + currentHash);
+            }
+        })();
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
