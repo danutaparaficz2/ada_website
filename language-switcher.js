@@ -397,8 +397,8 @@
         }, lang);
 
         setSectionProse('holzbau', {
-            de: '<p>Moderner Holzbau erfordert hochpräzise Qualitätskontrolle. Dieses Projekt nutzt <strong>Computer Vision</strong>, um das strukturelle Gesundheitsmonitoring und die Inspektion von Holzarchitektur zu automatisieren.</p>'
-                + '<p>Unsere Forschung entwickelt On-Premise-KI-Modelle, die strukturelle Anomalien während der Bauphase erkennen und damit die digitale Transformation der nachhaltigen Schweizer Holzindustrie (Industrie 4.0) unterstützen.</p>'
+            de: '<p>Das Projekt unter dem Titel <strong>„Architectural Knowledge Retrieval (The Holzbau RAG)"</strong> ist eine Zusammenarbeit zwischen <strong>Makiol Wiederkehr AG (MW)</strong> und dem <strong>Laboratory for Web Science (LWS/FFHS)</strong>. Es hat erfolgreich die Machbarkeit eines intelligenten, on-premise KI-Suchsystems nachgewiesen, das erhebliche manuelle Suchaufwände eliminiert.</p>'
+                + '<p>Unsere Forschung entwickelt On-Premise-KI-Modelle, die komplexes architektonisches und bautechnisches Wissen sofort zugänglich machen und damit die digitale Transformation der nachhaltigen Schweizer Holzindustrie (Industrie 4.0) unterstützen.</p>'
                 + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
