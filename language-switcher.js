@@ -397,8 +397,8 @@
         }, lang);
 
         setSectionProse('holzbau', {
-            de: '<p>Dieses Projekt stellt ein hochmodernes <strong>Agentic-RAG-System (Retrieval-Augmented Generation)</strong> vor, das speziell für die besonderen Anforderungen der Holzbau- und Architekturbranche entwickelt wurde.</p>'
-                + '<p>Über generische KI hinaus agiert die Plattform als intelligenter Assistent, der umfangreiche Archive technischer Dokumente, Normen und Projektdaten mit beispielloser Präzision durchsuchen und erschließen kann.</p>'
+            de: '<p>Dieses Projekt führt ein hochmodernes <strong>Agentic-RAG-System (Retrieval-Augmented Generation)</strong> ein, das speziell für die einzigartigen Anforderungen der Holzbau- und Architekturbranche entwickelt wurde.</p>'
+                + '<p>Indem die Plattform über generische KI hinausgeht, agiert sie als intelligenter Assistent, der umfangreiche Archive technischer Dokumente, Normen und Projektdaten mit beispielloser Präzision durchsuchen kann.</p>'
                 + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
