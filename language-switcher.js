@@ -402,6 +402,19 @@
                 + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
+        setSectionProse('skillsfinder', {
+            de: '<p class="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">Neue Plattform zur automatischen Kompetenzextraktion &amp; Profilvalidierung zur Talentidentifikation</p>'
+                + '<p>Dieses Gemeinschaftsprojekt mit dem Start-up Skills Finder AG wird von Innosuisse gefördert. Ziel ist der Aufbau einer Plattform zur Verarbeitung von Bewerbungsunterlagen, die relevante Informationen aus Lebensläufen automatisch extrahiert und gegen Referenzen und Zeugnisse der Kandidatinnen und Kandidaten validiert. Die Verarbeitungspipeline nutzt aktuelle Fortschritte in der Dokumentenbildverarbeitung und im Natural Language Processing (NLP).</p>'
+                + '<p>Der erste Schritt besteht darin, den Text unter Berücksichtigung der korrekten Lesereihenfolge zu extrahieren. Da Lebensläufe sehr unterschiedliche Layouts aufweisen, konnte kein bestehendes Tool den Text zuverlässig extrahieren. Zur Erkennung dieser komplexen Layouts wird ein CV-Layout-Modell mit Deep Layout Parser trainiert – einem Framework für Deep-Learning-basierte Dokumentenbildanalyse.</p>'
+                + '<p>Im nächsten Schritt kommt eine NLP-Komponente zur Informationsextraktion zum Einsatz. Wir verwenden Named Entity Recognition (NER) mit einem vortrainierten mehrsprachigen BERT-Modell, das wir mit eigenen Labels auf unserem Datensatz feinabstimmen.</p>'
+                + '<p>Der letzte Schritt in der Pipeline ist die Informationsvalidierung. Dabei berechnen wir semantische Ähnlichkeit zwischen Wortphrasen mithilfe von BERT-Ausgabevektoren und Mean Pooling.</p>'
+                + '<div class="border-l-4 border-slate-400 pl-6 my-6 py-2 bg-slate-50 rounded-r">'
+                + '<p class="text-sm text-slate-600"><strong>Konferenz:</strong> Swiss Text Analytics Conference (SwissText) 2022</p>'
+                + '<p class="text-sm text-slate-600"><strong>Präsentation:</strong> <a href="https://www.youtube.com/watch?v=i7viysHUwcA">SwissText 2022</a></p>'
+                + '</div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="natasa.html">Natasa Sarafijanovic-Djukic</a> und <a href="beatrice.html">Beatrice Paoli</a>.</p></div>'
+        }, lang);
+
         setSectionProse('stack4ffhs', {
             en: '<p class="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">LWS Archive Project</p>'
                 + '<p>STACK4FFHS is an internal teaching-development project. <strong>STACK</strong> is a Moodle plugin that allows students to submit mathematical expressions and formulas as answers.</p>'
