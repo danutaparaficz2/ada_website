@@ -293,62 +293,113 @@
     function setSectionProse(sectionId, htmlByLang, lang) {
         var node = document.querySelector('#' + sectionId + ' .prose-text');
         if (node) {
+            if (!node.dataset.originalHtml) {
+                node.dataset.originalHtml = node.innerHTML;
+            }
+            if (lang === 'en' && typeof htmlByLang.en === 'undefined') {
+                node.innerHTML = node.dataset.originalHtml;
+                return;
+            }
             node.innerHTML = pick(htmlByLang, lang);
         }
     }
 
     function applyProjectDetailLongForm(lang) {
         setSectionProse('eagle', {
-            en: '<p class="text-lg text-slate-700 font-medium italic mb-4">A Deep Learning Approach to Photovoltaic Reliability</p>'
-                + '<p>Project EAGLE develops an automated AI diagnostic workflow for photovoltaic systems, replacing costly and slow manual inspections with scalable, data-driven quality assessment.</p>'
-                + '<p>The approach combines computer vision and deep learning across electroluminescence, UV fluorescence, and visible imagery to detect hidden defects such as micro-cracks and hotspots.</p>'
-                + '<p>The result is faster defect detection, better maintenance planning, and improved long-term performance of solar infrastructure.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="ralf.html">Ralf Jandl</a> and <a href="danka.html">Danuta Paraficz</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>',
             de: '<p class="text-lg text-slate-700 font-medium italic mb-4">Ein Deep-Learning-Ansatz für die Zuverlässigkeit von Photovoltaik</p>'
-                + '<p>Projekt EAGLE entwickelt einen automatisierten KI-Diagnoseprozess für Photovoltaiksysteme und ersetzt aufwendige manuelle Inspektionen durch skalierbare, datengetriebene Qualitätsanalysen.</p>'
-                + '<p>Der Ansatz kombiniert Computer Vision und Deep Learning über Elektrolumineszenz-, UV-Fluoreszenz- und sichtbare Bilddaten, um versteckte Defekte wie Mikrorisse und Hotspots zu erkennen.</p>'
-                + '<p>Das Ergebnis sind schnellere Fehlererkennung, bessere Wartungsplanung und eine höhere Langzeitperformance von Solarinfrastruktur.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="ralf.html">Ralf Jandl</a>, <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a> durchgeführt.</p></div>'
+                + '<p>Mit dem weltweiten Ausbau von Solaranlagen zur Erreichung der Klimaziele wird die Langzeitzuverlässigkeit von Photovoltaik-(PV-)Systemen zu einem entscheidenden wirtschaftlichen und ökologischen Faktor. Projekt EAGLE, eine Zusammenarbeit zwischen FFHS und SUPSI, adressiert dies, indem traditionelle Handprüfungen durch ein automatisiertes, KI-gestütztes Diagnosesystem ersetzt werden.</p>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Die Herausforderung: Versteckte Defekte</h4>'
+                + '<p class="text-sm text-slate-600">Solarmodule sind über Jahrzehnte rauen Umgebungsbedingungen ausgesetzt. Mit der Zeit entstehen versteckte Defekte wie Mikrorisse, Feuchtigkeitseindringung oder Hotspots – für das bloße Auge unsichtbar, aber mit erheblicher Auswirkung auf den Energieertrag. Das Aufspüren dieser Defekte in großen Solarparks ist traditionell langsam, kostspielig und fehleranfällig.</p>'
+                + '</div>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Die Innovation: Multispektrale KI-Analytik</h4>'
+                + '<p class="text-sm text-slate-600">Das EAGLE-Projekt entwickelte eine Methodik, die Computer Vision und Deep Learning einsetzt, um Modulbilder aus drei Spektralbereichen zu analysieren:</p>'
+                + '<ul class="text-sm space-y-2 text-slate-600 mt-3">'
+                + '<li>&bull; <strong>Elektrolumineszenz (EL):</strong> «Röntgenaufnahmen» der Zellen zur Erkennung innerer Risse.</li>'
+                + '<li>&bull; <strong>UV-Fluoreszenz (UVf):</strong> Nachweis von Alterung und chemischen Veränderungen im Einbettmaterial.</li>'
+                + '<li>&bull; <strong>Sichtbares Spektrum (VI):</strong> Erfassung äußerer Schäden wie Verschmutzung oder Glasbruch.</li>'
+                + '</ul>'
+                + '<p class="text-sm text-slate-600 mt-3">Zur automatisierten Diagnose im großen Maßstab entwickelte das Team spezialisierte Convolutional Neural Networks (CNNs) und Vision Transformers (ViTs) für eine hochpräzise Defektklassifikation.</p>'
+                + '</div>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Technische Highlights</h4>'
+                + '<ul class="text-sm space-y-2 text-slate-600">'
+                + '<li>&bull; <strong>Multimodale Fusion:</strong> Korrelation von Defektsignaturen über Modalitäten hinweg mit elektrischen Leistungsverlusten.</li>'
+                + '<li>&bull; <strong>State-of-the-Art-Architektur:</strong> Einsatz von Modellen wie EfficientNet und Segment Anything (SAM) zur Isolierung und Diagnose einzelner Solarzellen in Modulen.</li>'
+                + '<li>&bull; <strong>Predictive Maintenance:</strong> Quantifizierung der Degradation zur Optimierung von Reinigung, Reparatur und Austausch für besseren ROI.</li>'
+                + '</ul>'
+                + '</div>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Reale Wirkung</h4>'
+                + '<p class="text-sm text-slate-600">Die Ergebnisse von Projekt EAGLE, präsentiert auf der EU PVSEC-Konferenz in Bilbao, liefern einen skalierbaren Rahmen für intelligenten Betrieb und Wartung (Smart O&amp;M). Durch die Automatisierung von Solardiagnosen trägt EAGLE dazu bei, dass die grüne Energiewende auf dauerhafter, leistungsstarker Infrastruktur aufbaut.</p>'
+                + '</div>'
+                + '<div class="flex flex-wrap gap-3 mt-4">'
+                + '<a href="https://www.aramis.admin.ch/Texte/?ProjectID=51667" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Auf ARAMIS ansehen</a>'
+                + '<a href="https://www.eupvsec.org/images/2025/conference/EUPVSEC2025_ConferenceProgram_web_v6.pdf" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">EU PVSEC Programm (PDF)</a>'
+                + '</div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="ralf.html">Ralf Jandl</a>, <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
         setSectionProse('pronto', {
-            en: '<p class="text-lg text-slate-700 font-medium italic mb-2">Predicting potato sprouting to optimize storage and reduce agricultural waste.</p>'
-                + '<p>Project PRONTO predicts potato sprouting from electrophysiological plant signals using machine learning.</p>'
-                + '<p>This enables earlier interventions, reduced use of chemical suppressants, and more sustainable storage workflows.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="aris.html">Aris Marcolongo</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>',
-            de: '<p class="text-lg text-slate-700 font-medium italic mb-2">Vorhersage der Kartoffelkeimung zur Optimierung der Lagerung und Reduktion von Food Waste.</p>'
-                + '<p>Projekt PRONTO sagt die Keimung von Kartoffeln anhand elektrophysiologischer Pflanzensignale mit Machine Learning voraus.</p>'
-                + '<p>Dadurch werden frühere Maßnahmen möglich, der Einsatz chemischer Keimhemmer reduziert und nachhaltigere Lagerprozesse unterstützt.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="aris.html">Aris Marcolongo</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a> durchgeführt.</p></div>'
+            de: '<p class="text-lg text-slate-700 font-medium italic mb-2">Vorhersage der Kartoffelkeimung zur Optimierung der Lagerung und Reduktion von Lebensmittelverschwendung.</p>'
+                + '<p>Projekt PRONTO befasst sich mit einer zentralen Herausforderung in landwirtschaftlichen Lieferketten: der Vorhersage und Kontrolle der Keimung gelagerter Kartoffeln. Durch die Analyse <strong>elektrophysiologischer Pflanzensignale</strong> mit maschinellem Lernen kann das Projekt das Keimen Wochen im Voraus prognostizieren.</p>'
+                + '<p>Dieser Ansatz reduziert die Abhängigkeit von chemischen Keimhemmern und minimiert Lebensmittelverschwendung – ein Beitrag zu nachhaltigeren und kosteneffizienteren Lagerprozessen in der Schweizer Landwirtschaft.</p>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Partner</h4>'
+                + '<p class="text-sm text-slate-600">Agroscope &amp; Vivent SA</p>'
+                + '</div>'
+                + '<div class="flex flex-wrap gap-3 mt-4">'
+                + '<a href="https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">FFHS-Newsartikel lesen</a>'
+                + '<a href="https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Watson-Artikel lesen</a>'
+                + '</div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="aris.html">Aris Marcolongo</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
         setSectionProse('rag', {
-            en: '<p class="text-lg text-slate-700 font-medium italic mb-2">Retrieval-Augmented AI for Observatory Knowledge Access</p>'
-                + '<p>In collaboration with the Nordic Optical Telescope, ADA is developing a domain-specific RAG system for technical and scientific knowledge retrieval.</p>'
-                + '<p>The platform provides grounded answers over trusted documentation and operational logs, improving speed, traceability, and reliability in expert workflows.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="danka.html">Danuta Paraficz</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>',
             de: '<p class="text-lg text-slate-700 font-medium italic mb-2">Retrieval-gestützte KI für den Zugriff auf Observatoriumswissen</p>'
-                + '<p>In Zusammenarbeit mit dem Nordic Optical Telescope entwickelt ADA ein domänenspezifisches RAG-System für technische und wissenschaftliche Wissensabfragen.</p>'
-                + '<p>Die Plattform liefert quellenbasierte Antworten auf Basis verlässlicher Dokumentation und Betriebsprotokolle und verbessert so Geschwindigkeit, Nachvollziehbarkeit und Verlässlichkeit in Expertenworkflows.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a> durchgeführt.</p></div>'
+                + '<p>In Zusammenarbeit mit dem <strong>Nordic Optical Telescope (NOT)</strong> auf La Palma entwickelt ADA ein domänenspezifisches <strong>Retrieval-Augmented Generation (RAG)</strong>-System, das Astronominnen, Astronomen und technische Teams in ihrer täglichen Arbeit unterstützt.</p>'
+                + '<p>Ziel ist es, komplexe Observatoriumsdokumentationen, Betriebsabläufe und wissenschaftliche Protokolle über natürlichsprachliche Suchanfragen zugänglich zu machen – bei vollständiger Nachvollziehbarkeit und sachlicher Verlässlichkeit.</p>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Kernherausforderung</h4>'
+                + '<p class="text-sm text-slate-600">Kritisches Observatoriumswissen ist über technische Handbücher, Instrumentenbeschreibungen und historische Protokolle verteilt. Traditionelle Suchabläufe sind zeitaufwendig und erschweren die schnelle Kontextermittlung während des Betriebs.</p>'
+                + '</div>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Technischer Ansatz</h4>'
+                + '<ul class="text-sm space-y-2 text-slate-600">'
+                + '<li>&bull; <strong>Dokumenten-Retrievalschicht:</strong> Indexierung vertrauenswürdiger Observatoriumsquellen zur Auswahl relevanter Kontexte.</li>'
+                + '<li>&bull; <strong>Quellenbasierte Generierung:</strong> Antworterzeugung auf Basis abgerufener Evidenz – nicht allein aus dem Modellgedächtnis.</li>'
+                + '<li>&bull; <strong>Zitierbarkeit und Nachvollziehbarkeit:</strong> Rückgabe quellenverknüpfter Antworten zur Unterstützung transparenter Entscheidungsprozesse.</li>'
+                + '</ul>'
+                + '</div>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Erwartete Wirkung</h4>'
+                + '<p class="text-sm text-slate-600">Die Plattform reduziert Suchaufwand, beschleunigt Expertenworkflows und verringert das Risiko unbegründeter Antworten, indem Ausgaben in vertrauenswürdigen Quellen verankert werden. So entsteht ein praxistauglicher KI-Assistent, der auf wissenschaftliche Infrastrukturumgebungen zugeschnitten ist.</p>'
+                + '</div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
         setSectionProse('birdnet', {
-            en: '<p>The Soundscapes project analyzes biodiversity acoustics with automated species recognition from long-duration field recordings.</p>'
-                + '<p>Using BirdNET-based pipelines and scalable computing support, the project helps transform fragmented observation records into actionable ecological insights.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="joachim.html">Joachim Steinwendner</a> and <a href="danka.html">Danuta Paraficz</a>.</p></div>',
-            de: '<p>Das Soundscapes-Projekt analysiert Bioakustikdaten zur Biodiversität mit automatisierter Arterkennung aus Langzeitaufnahmen im Feld.</p>'
-                + '<p>Durch BirdNET-basierte Pipelines und skalierbare Rechenunterstützung werden fragmentierte Beobachtungsdaten in nutzbare ökologische Erkenntnisse überführt.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="joachim.html">Joachim Steinwendner</a> und <a href="danka.html">Danuta Paraficz</a> durchgeführt.</p></div>'
+            de: '<p>Das <strong>Soundscapes-Projekt</strong> (auch bekannt als Cambrian Soundscapes Initiative) wurde im Januar 2024 von der Cambrian Mountains Society ins Leben gerufen, um Daten zur Biodiversität der Region systematisch zu erfassen und auszuwerten. Hintergrund war die Erkenntnis, dass bestehende Biodiversitätsaufzeichnungen für die Cambrian Mountains lückenhaft und inkonsistent waren, was verlässliche Aussagen über Populationstrends erschwerte.</p>'
+                + '<h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">Technologie &amp; Methodik</h3>'
+                + '<p>Das Projekt setzt <strong>AudioMoths</strong> ein – kostengünstige biakustische Aufzeichnungsgeräte, die bis zu 189 Stunden aufnehmen können und über Monate im Gelände verbleiben. Die Society stationierte 25 dieser Recorder in verschiedenen Lebensräumen, eingestellt auf einen 24-Stunden-Rhythmus mit einer Aufzeichnungsminute pro 10 Minuten.</p>'
+                + '<h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">Entstehung</h3>'
+                + '<p>Die Idee stammte vom Mitglied Guy Bennett nach einer erfolgreichen Pilotstudie auf dem Land seiner Familie in Cilycwm, bei der seltene, unerwartete Vögel wie die Schafstelze und der Gelbbrauenlaubsänger nachgewiesen wurden.</p>'
+                + '<h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">FFHS-Partnerschaft &amp; Datenverarbeitung</h3>'
+                + '<p>Anfänglich verwendete die Society die BirdNET-Software zur Artenidentifikation aus den Aufnahmen. Das schiere Datenvolumen führte jedoch zu einer strategischen Partnerschaft mit dem <strong>Big-Data-Team der Fernfachhochschule Schweiz (FFHS) in Zürich</strong>, darunter <strong>Professor Joachim Steinwendner</strong> und <strong>Dr. Danuta Paraficz</strong>. Dieses Team stellt die notwendige Rechenleistung zur Verarbeitung enormer Datensätze bereit und zeigt, wie akademische Institutionen reale Naturschutzbemühungen unterstützen können.</p>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Wissenschaftliche Bedeutung</h4>'
+                + '<p class="text-sm text-slate-600">Die Zusammenarbeit mit einem hochrangigen akademischen Team verleiht der Forschung des Projekts erhebliche wissenschaftliche Glaubwürdigkeit – von großer Bedeutung, wenn eine kleine, ehrenamtlich geführte Organisation ihre Ergebnisse der breiteren Wissenschaftsgemeinschaft präsentiert.</p>'
+                + '</div>'
+                + '<h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">Zukunftsvision</h3>'
+                + '<p>Derzeit liegt der Fokus auf Vogelpopulationen und Zugmustern. Die Society möchte das Projekt künftig auf weitere Tiergruppen wie Fledermäuse und Kleinsäuger ausweiten. Auch die Nutzung von Vogeldaten zur Ableitung von Aussagen über Fischpopulationen wird erwogen.</p>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="joachim.html">Joachim Steinwendner</a> und <a href="danka.html">Danuta Paraficz</a></p></div>'
         }, lang);
 
         setSectionProse('holzbau', {
-            en: '<p>Holzbau AI applies computer vision to quality assurance and structural monitoring in timber construction.</p>'
-                + '<p>The project supports industrial workflows for sustainable construction through robust, deployment-ready AI models.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="danka.html">Danuta Paraficz</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>',
-            de: '<p>Holzbau KI setzt Computer Vision für Qualitätssicherung und strukturelles Monitoring im Holzbau ein.</p>'
-                + '<p>Das Projekt unterstützt industrielle Prozesse im nachhaltigen Bauen durch robuste, produktionsnahe KI-Modelle.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a> durchgeführt.</p></div>'
+            de: '<p>Moderner Holzbau erfordert hochpräzise Qualitätskontrolle. Dieses Projekt nutzt <strong>Computer Vision</strong>, um das strukturelle Gesundheitsmonitoring und die Inspektion von Holzarchitektur zu automatisieren.</p>'
+                + '<p>Unsere Forschung entwickelt On-Premise-KI-Modelle, die strukturelle Anomalien während der Bauphase erkennen und damit die digitale Transformation der nachhaltigen Schweizer Holzindustrie (Industrie 4.0) unterstützen.</p>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
         setSectionProse('stack4ffhs', {
@@ -723,131 +774,115 @@
     function applyProfileLongForm(page, lang) {
         if (page === 'ann-karin.html') {
             var annKarinBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (annKarinBio) {
-                annKarinBio.innerHTML = pick({
-                    en: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>'
-                        + '<p>Dr. Ann-Karin Sanchez is an Expert Researcher at the Laboratory for Web Science (LWS), Fernfachhochschule Schweiz (FFHS), based in Zurich.</p>',
-                    de: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                        + '<p>Dr. Ann-Karin Sanchez ist Expert Researcher am Laboratory for Web Science (LWS) der Fernfachhochschule Schweiz (FFHS) in Zurich.</p>'
-                }, lang);
+            if (annKarinBio && !annKarinBio.dataset.originalHtml) {
+                annKarinBio.dataset.originalHtml = annKarinBio.innerHTML;
+            }
+            if (annKarinBio && lang === 'de') {
+                annKarinBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
+                    + '<p>Dr. Ann-Karin Sanchez ist Expert Researcher am Laboratory for Web Science (LWS) der Fernfachhochschule Schweiz (FFHS) in Zurich.</p>';
+            } else if (annKarinBio && annKarinBio.dataset.originalHtml) {
+                annKarinBio.innerHTML = annKarinBio.dataset.originalHtml;
             }
         }
 
         if (page === 'aris.html') {
             var arisBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (arisBio) {
-                arisBio.innerHTML = pick({
-                    en: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>'
-                        + '<p>Dr. Aris Marcolongo is a senior researcher and data scientist specializing in applied machine learning at Fernfachhochschule Schweiz (FFHS).</p>',
-                    de: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                        + '<p>Dr. Aris Marcolongo ist Senior Researcher und Data Scientist mit Spezialisierung auf angewandtes Machine Learning an der Fernfachhochschule Schweiz (FFHS).</p>'
-                }, lang);
+            if (arisBio && !arisBio.dataset.originalHtml) {
+                arisBio.dataset.originalHtml = arisBio.innerHTML;
+            }
+            if (arisBio && lang === 'de') {
+                arisBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
+                    + '<p>Dr. Aris Marcolongo ist Senior Researcher und Data Scientist mit Spezialisierung auf angewandtes Machine Learning an der Fernfachhochschule Schweiz (FFHS).</p>';
+            } else if (arisBio && arisBio.dataset.originalHtml) {
+                arisBio.innerHTML = arisBio.dataset.originalHtml;
             }
         }
 
         if (page === 'beatrice.html') {
             var beatriceBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (beatriceBio) {
-                beatriceBio.innerHTML = pick({
-                    en: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>'
-                        + '<p>Prof. Dr. Beatrice Paoli is Institutsleiterin LWS / LWS Director and Fachbereichsleiterin Data Science / Head of Data Science at Fernfachhochschule Schweiz (FFHS).</p>'
-                        + '<p>She contributes to the strategic and scientific development of data science across research, teaching, and applied innovation.</p>',
-                    de: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                        + '<p>Prof. Dr. Beatrice Paoli ist Institutsleiterin LWS / LWS Director und Fachbereichsleiterin Data Science / Head of Data Science an der Fernfachhochschule Schweiz (FFHS).</p>'
-                        + '<p>Sie prägt die strategische und wissenschaftliche Weiterentwicklung der Data Science in Forschung, Lehre und angewandter Innovation.</p>'
-                }, lang);
+            if (beatriceBio && !beatriceBio.dataset.originalHtml) {
+                beatriceBio.dataset.originalHtml = beatriceBio.innerHTML;
+            }
+            if (beatriceBio && lang === 'de') {
+                beatriceBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
+                    + '<p>Prof. Dr. Beatrice Paoli ist Institutsleiterin LWS / LWS Director und Fachbereichsleiterin Data Science / Head of Data Science an der Fernfachhochschule Schweiz (FFHS).</p>'
+                    + '<p>Sie prägt die strategische und wissenschaftliche Weiterentwicklung der Data Science in Forschung, Lehre und angewandter Innovation.</p>';
+            } else if (beatriceBio && beatriceBio.dataset.originalHtml) {
+                beatriceBio.innerHTML = beatriceBio.dataset.originalHtml;
             }
         }
 
         if (page === 'danka.html') {
             var dankaBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (dankaBio) {
-                dankaBio.innerHTML = pick({
-                    en: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>'
-                        + '<p>Dr. Danuta (Danka) Paraficz is an AI research scientist at Fernfachhochschule Schweiz (FFHS), working on machine learning and deep learning solutions for real-world systems.</p>'
-                        + '<p>Her professional path bridges academic research and production-grade AI. In the energy sector, she developed forecasting models based on satellite and meteorological data for wind and solar production across Europe. In astrophysics research (EPFL and LAM Marseille), she worked on gravitational lensing and dark matter, building scientific software and leading international data-intensive collaborations.</p>'
-                        + '<p>She holds a PhD in Astronomy and Astrophysics from the University of Copenhagen (Niels Bohr Institute), where her dissertation introduced a theoretical approach for measuring dark matter via strong gravitational lensing.</p>',
-                    de: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                        + '<p>Dr. Danuta (Danka) Paraficz ist KI-Forschungswissenschaftlerin an der Fernfachhochschule Schweiz (FFHS) und arbeitet an praxisnahen Machine-Learning- und Deep-Learning-Lösungen.</p>'
-                        + '<p>Ihr beruflicher Weg verbindet akademische Forschung mit produktionsreifen KI-Systemen. Im Energiesektor entwickelte sie Prognosemodelle auf Basis von Satelliten- und Wetterdaten für Wind- und Solarproduktion in Europa. In der Astrophysikforschung (EPFL und LAM Marseille) arbeitete sie zu Gravitationslinsen und Dunkler Materie, entwickelte wissenschaftliche Software und leitete internationale datenintensive Kooperationen.</p>'
-                        + '<p>Sie promovierte in Astronomie und Astrophysik an der Universität Kopenhagen (Niels-Bohr-Institut). Ihre Dissertation führte einen theoretischen Ansatz zur Messung Dunkler Materie über starke Gravitationslinsen ein.</p>'
-                }, lang);
+            if (dankaBio && !dankaBio.dataset.originalHtml) {
+                dankaBio.dataset.originalHtml = dankaBio.innerHTML;
+            }
+            if (dankaBio && lang === 'de') {
+                dankaBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
+                    + '<p>Dr. Danuta (Danka) Paraficz ist KI-Forschungswissenschaftlerin an der Fernfachhochschule Schweiz (FFHS) und arbeitet an praxisnahen Machine-Learning- und Deep-Learning-Lösungen.</p>'
+                    + '<p>Ihr beruflicher Weg verbindet akademische Forschung mit produktionsreifen KI-Systemen. Im Energiesektor entwickelte sie Prognosemodelle auf Basis von Satelliten- und Wetterdaten für Wind- und Solarproduktion in Europa. In der Astrophysikforschung (EPFL und LAM Marseille) arbeitete sie zu Gravitationslinsen und Dunkler Materie, entwickelte wissenschaftliche Software und leitete internationale datenintensive Kooperationen.</p>'
+                    + '<p>Sie promovierte in Astronomie und Astrophysik an der Universität Kopenhagen (Niels-Bohr-Institut). Ihre Dissertation führte einen theoretischen Ansatz zur Messung Dunkler Materie über starke Gravitationslinsen ein.</p>';
+            } else if (dankaBio && dankaBio.dataset.originalHtml) {
+                dankaBio.innerHTML = dankaBio.dataset.originalHtml;
             }
         }
 
         if (page === 'joachim.html') {
             var joachimBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (joachimBio) {
-                joachimBio.innerHTML = pick({
-                    en: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>'
-                        + '<p>Prof. Dr. Joachim Steinwendner is an expert in Artificial Intelligence, Machine Learning, and digital transformation with a focus on health and geoscience applications. As Head of the GeoHealth Analytics research field at ADA, he links advanced analytics with high-impact practical deployment.</p>'
-                        + '<p>His work includes applied mobile and AI solutions for healthcare, fraud detection in insurance and finance, and AI-supported e-assessment/proctoring in digital education. He is known for turning research concepts into scalable, reliable production systems.</p>'
-                        + '<p>In addition to research leadership, he teaches at FFHS and ETH Zurich and co-authored the technical book <em>Neuronale Netze programmieren mit Python</em> (Rheinwerk Verlag).</p>'
-                        + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Research Interests</h3>'
-                        + '<ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">'
-                        + '<li><strong>GeoHealth Analytics:</strong> Spatial data analysis for health trends and environmental effects.</li>'
-                        + '<li><strong>AI &amp; Machine Learning:</strong> Predictive modeling and deep-learning architectures.</li>'
-                        + '<li><strong>Data Science:</strong> Robust processing pipelines and visualization.</li>'
-                        + '<li><strong>Digital Healthcare:</strong> Modernizing health systems through intelligent technology.</li>'
-                        + '</ul>'
-                        + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Academic Degrees</h3>'
-                        + '<p>Dr. nat. techn. (Doctor of Natural Resources and Life Sciences)<br>MSc in Computer Science</p>'
-                        + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Teaching Areas</h3>'
-                        + '<ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">'
-                        + '<li>Data Science &amp; Machine Learning (FFHS &amp; ETH Zurich)</li>'
-                        + '<li>Neural Network Development</li>'
-                        + '<li>Python for Scientific Computing</li>'
-                        + '</ul>',
-                    de: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                        + '<p>Prof. Dr. Joachim Steinwendner ist Experte für Artificial Intelligence, Machine Learning und digitale Transformation mit Schwerpunkt auf Anwendungen in Gesundheit und Geowissenschaften. Als Leiter des Forschungsfelds GeoHealth Analytics am ADA verbindet er fortgeschrittene Analytik mit praxisnaher Umsetzung.</p>'
-                        + '<p>Seine Arbeit umfasst mobile und KI-gestützte Lösungen im Gesundheitswesen, Betrugserkennung in Versicherung und Finanzwesen sowie KI-unterstütztes E-Assessment/Proctoring in der digitalen Lehre. Er ist dafür bekannt, Forschungskonzepte in skalierbare und verlässliche Produktivsysteme zu überführen.</p>'
-                        + '<p>Neben seiner Forschungsleitung unterrichtet er an FFHS und ETH Zürich und ist Mitautor des Fachbuchs <em>Neuronale Netze programmieren mit Python</em> (Rheinwerk Verlag).</p>'
-                        + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Forschungsinteressen</h3>'
-                        + '<ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">'
-                        + '<li><strong>GeoHealth Analytics:</strong> Räumliche Datenanalyse für Gesundheitstrends und Umwelteinflüsse.</li>'
-                        + '<li><strong>KI &amp; Machine Learning:</strong> Prädiktive Modelle und Deep-Learning-Architekturen.</li>'
-                        + '<li><strong>Data Science:</strong> Robuste Verarbeitungspipelines und Visualisierung.</li>'
-                        + '<li><strong>Digitale Gesundheit:</strong> Modernisierung von Gesundheitssystemen durch intelligente Technologien.</li>'
-                        + '</ul>'
-                        + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Akademische Abschlüsse</h3>'
-                        + '<p>Dr. nat. techn.<br>MSc in Informatik</p>'
-                        + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Lehrgebiete</h3>'
-                        + '<ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">'
-                        + '<li>Data Science &amp; Machine Learning (FFHS &amp; ETH Zürich)</li>'
-                        + '<li>Entwicklung neuronaler Netze</li>'
-                        + '<li>Python für wissenschaftliches Rechnen</li>'
-                        + '</ul>'
-                }, lang);
+            if (joachimBio && !joachimBio.dataset.originalHtml) {
+                joachimBio.dataset.originalHtml = joachimBio.innerHTML;
+            }
+            if (joachimBio && lang === 'de') {
+                joachimBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
+                    + '<p>Prof. Dr. Joachim Steinwendner ist Experte für Artificial Intelligence, Machine Learning und digitale Transformation mit Schwerpunkt auf Anwendungen in Gesundheit und Geowissenschaften. Als Leiter des Forschungsfelds GeoHealth Analytics am ADA verbindet er fortgeschrittene Analytik mit praxisnaher Umsetzung.</p>'
+                    + '<p>Seine Arbeit umfasst mobile und KI-gestützte Lösungen im Gesundheitswesen, Betrugserkennung in Versicherung und Finanzwesen sowie KI-unterstütztes E-Assessment/Proctoring in der digitalen Lehre. Er ist dafür bekannt, Forschungskonzepte in skalierbare und verlässliche Produktivsysteme zu überführen.</p>'
+                    + '<p>Neben seiner Forschungsleitung unterrichtet er an FFHS und ETH Zürich und ist Mitautor des Fachbuchs <em>Neuronale Netze programmieren mit Python</em> (Rheinwerk Verlag).</p>'
+                    + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Forschungsinteressen</h3>'
+                    + '<ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">'
+                    + '<li><strong>GeoHealth Analytics:</strong> Räumliche Datenanalyse für Gesundheitstrends und Umwelteinflüsse.</li>'
+                    + '<li><strong>KI &amp; Machine Learning:</strong> Prädiktive Modelle und Deep-Learning-Architekturen.</li>'
+                    + '<li><strong>Data Science:</strong> Robuste Verarbeitungspipelines und Visualisierung.</li>'
+                    + '<li><strong>Digitale Gesundheit:</strong> Modernisierung von Gesundheitssystemen durch intelligente Technologien.</li>'
+                    + '</ul>'
+                    + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Akademische Abschlüsse</h3>'
+                    + '<p>Dr. nat. techn.<br>MSc in Informatik</p>'
+                    + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Lehrgebiete</h3>'
+                    + '<ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">'
+                    + '<li>Data Science &amp; Machine Learning (FFHS &amp; ETH Zürich)</li>'
+                    + '<li>Entwicklung neuronaler Netze</li>'
+                    + '<li>Python für wissenschaftliches Rechnen</li>'
+                    + '</ul>';
+            } else if (joachimBio && joachimBio.dataset.originalHtml) {
+                joachimBio.innerHTML = joachimBio.dataset.originalHtml;
             }
         }
 
         if (page === 'natasa.html') {
             var natasaBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (natasaBio) {
-                natasaBio.innerHTML = pick({
-                    en: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>'
-                        + '<p>Dr. Natasa Sarafijanovic-Djukic is an applied machine-learning researcher at Fernfachhochschule Schweiz (FFHS), with more than a decade of experience across academia and industry.</p>'
-                        + '<p>Since joining FFHS in 2021, she has focused on practical AI systems. Her background includes work as a Marie Skłodowska-Curie research fellow at Iris Technology Solutions (industrial data science) and postdoctoral research at Inria in France (web privacy and user tracking).</p>'
-                        + '<p>Her expertise includes computer vision, natural language processing, RAG systems, time-series modeling, and interpretable machine learning. She holds a PhD in Computer and Communication Science from EPFL.</p>',
-                    de: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                        + '<p>Dr. Natasa Sarafijanovic-Djukic ist Forscherin für angewandtes Machine Learning an der Fernfachhochschule Schweiz (FFHS) und verfügt über mehr als ein Jahrzehnt Erfahrung in Wissenschaft und Industrie.</p>'
-                        + '<p>Seit ihrem Einstieg an der FFHS im Jahr 2021 konzentriert sie sich auf praxisnahe KI-Systeme. Zuvor war sie Marie-Skłodowska-Curie-Fellow bei Iris Technology Solutions (industrielle Data Science) sowie Postdoktorandin bei Inria in Frankreich (Web-Privacy und User-Tracking).</p>'
-                        + '<p>Ihre Schwerpunkte umfassen Computer Vision, Natural Language Processing, RAG-Systeme, Zeitreihenmodellierung und interpretierbares Machine Learning. Sie promovierte in Computer and Communication Science an der EPFL.</p>'
-                }, lang);
+            if (natasaBio && !natasaBio.dataset.originalHtml) {
+                natasaBio.dataset.originalHtml = natasaBio.innerHTML;
+            }
+            if (natasaBio && lang === 'de') {
+                natasaBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
+                    + '<p>Dr. Natasa Sarafijanovic-Djukic ist Forscherin für angewandtes Machine Learning an der Fernfachhochschule Schweiz (FFHS) und verfügt über mehr als ein Jahrzehnt Erfahrung in Wissenschaft und Industrie.</p>'
+                    + '<p>Seit ihrem Einstieg an der FFHS im Jahr 2021 konzentriert sie sich auf praxisnahe KI-Systeme. Zuvor war sie Marie-Skłodowska-Curie-Fellow bei Iris Technology Solutions (industrielle Data Science) sowie Postdoktorandin bei Inria in Frankreich (Web-Privacy und User-Tracking).</p>'
+                    + '<p>Ihre Schwerpunkte umfassen Computer Vision, Natural Language Processing, RAG-Systeme, Zeitreihenmodellierung und interpretierbares Machine Learning. Sie promovierte in Computer and Communication Science an der EPFL.</p>';
+            } else if (natasaBio && natasaBio.dataset.originalHtml) {
+                natasaBio.innerHTML = natasaBio.dataset.originalHtml;
             }
         }
 
         if (page === 'ralf.html') {
             var ralfBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (ralfBio) {
-                ralfBio.innerHTML = pick({
-                    en: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>'
-                        + '<p>Ralf Jandl is Forschungsfeldleiter Energie, Umwelt, Materialien / Research Field Lead Energy, Environment, Materials at the Laboratory for Web Science (LWS), Fernfachhochschule Schweiz (FFHS).</p>'
-                        + '<p>His background combines software development, team leadership, and project consulting, with academic training in business information systems and artificial intelligence.</p>',
-                    de: '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                        + '<p>Ralf Jandl ist Forschungsfeldleiter Energie, Umwelt, Materialien / Research Field Lead Energy, Environment, Materials am Laboratory for Web Science (LWS), Fernfachhochschule Schweiz (FFHS).</p>'
-                        + '<p>Sein Hintergrund verbindet Softwareentwicklung, Teamleitung und Projektberatung mit akademischer Ausbildung in Wirtschaftsinformatik und Künstlicher Intelligenz.</p>'
-                }, lang);
+            if (ralfBio && !ralfBio.dataset.originalHtml) {
+                ralfBio.dataset.originalHtml = ralfBio.innerHTML;
+            }
+            if (ralfBio && lang === 'de') {
+                ralfBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
+                    + '<p>Ralf Jandl ist Forschungsfeldleiter Energie, Umwelt, Materialien / Research Field Lead Energy, Environment, Materials am Laboratory for Web Science (LWS), Fernfachhochschule Schweiz (FFHS).</p>'
+                    + '<p>Sein Hintergrund verbindet Softwareentwicklung, Teamleitung und Projektberatung mit akademischer Ausbildung in Wirtschaftsinformatik und Künstlicher Intelligenz.</p>';
+            } else if (ralfBio && ralfBio.dataset.originalHtml) {
+                ralfBio.innerHTML = ralfBio.dataset.originalHtml;
             }
         }
     }
