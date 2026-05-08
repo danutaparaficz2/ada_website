@@ -186,7 +186,7 @@
         var cardTranslations = [
             { badge: { en: 'Renewable Energy', de: 'Erneuerbare Energien' }, desc: { en: 'Deep Learning approach to photovoltaics reliability. Utilizing multispectral imaging (UV, IR, Visible) and Vision Transformers to detect cell-level failures automatically.', de: 'Deep-Learning-Ansatz für die Zuverlässigkeit von Photovoltaik. Multispektrale Bildgebung (UV, IR, sichtbar) und Vision Transformer erkennen Zellfehler automatisch.' }, meta: { en: 'Partner: SUPSI / SFOE', de: 'Partner: SUPSI / SFOE' } },
             { badge: { en: 'Smart Agrotech', de: 'Smarte Agrartechnik' }, desc: { en: 'Predicting potato sprouting to optimize tuber storage. Analyzing electrophysiological plant signals with ML to reduce chemical use and food waste.', de: 'Vorhersage der Kartoffelkeimung zur Optimierung der Lagerung. Analyse elektrophysiologischer Pflanzensignale mit ML zur Reduktion von Chemikalieneinsatz und Food Waste.' }, meta: { en: 'Partner: Agroscope / Vivent', de: 'Partner: Agroscope / Vivent' } },
-            { badge: { en: 'Civil Engineering', de: 'Bauingenieurwesen' }, desc: { en: 'On-premise AI knowledge retrieval for timber architecture and construction workflows.', de: 'On-Premise-KI-Wissenssuche für Holzarchitektur und Bauprozesse.' }, meta: { en: 'Domain: Architectural AI Search', de: 'Bereich: Architektonische KI-Suche' } },
+            { badge: { en: 'Civil Engineering', de: 'Bauingenieurwesen' }, desc: { en: 'Agentic-RAG assistant for timber construction and architecture workflows.', de: 'Agentic-RAG-Assistent für Arbeitsabläufe in Holzbau und Architektur.' }, meta: { en: 'Domain: Agentic-RAG Systems', de: 'Bereich: Agentic-RAG-Systeme' } },
             { badge: { en: 'Astronomy AI', de: 'KI für wissenschaftliche Systeme' }, desc: { en: 'Implementing a Retrieval-Augmented Generation (RAG) system to allow experts to query complex observatory documentation and technical logs using natural language.', de: 'Implementierung eines Retrieval-Augmented-Generation-Systems (RAG), damit Fachpersonen komplexe Dokumentation und technische Protokolle in natürlicher Sprache abfragen können.' }, meta: { en: 'Lead: Dr. Danuta Paraficz', de: 'Leitung: Dr. Danuta Paraficz' } },
             { badge: { en: 'Bio-Acoustics', de: 'Bioakustik' }, desc: { en: 'Advanced acoustic monitoring system using CNNs to identify bird species in Swiss alpine regions, supporting biodiversity conservation through automated data analysis.', de: 'Fortgeschrittenes akustisches Monitoringsystem mit CNNs zur Identifikation von Vogelarten in Schweizer Alpenregionen und zur Unterstützung des Biodiversitätsschutzes.' }, meta: { en: 'Domain: Environmental Data Science', de: 'Bereich: Umwelt-Datenwissenschaft' } },
             { badge: { en: 'Talent AI', de: 'KI für Talente' }, desc: { en: 'New platform for automatic skills extraction and profile validation to identify talents and support recruitment workflows.', de: 'Neue Plattform zur automatischen Extraktion von Kompetenzen und zur Profilvalidierung, um Talente zu identifizieren und Recruiting-Prozesse zu unterstützen.' }, meta: { en: 'Domain: Talent Intelligence', de: 'Bereich: Talent Intelligence' } }
@@ -228,7 +228,7 @@
         var homeCardTranslations = [
             { badge: { en: 'Renewable Energy', de: 'Erneuerbare Energien' }, title: { en: 'Project EAGLE', de: 'Projekt EAGLE' }, desc: { en: 'Deep Learning approach to photovoltaics reliability.', de: 'Deep-Learning-Ansatz für die Zuverlässigkeit von Photovoltaik.' } },
             { badge: { en: 'Smart Agrotech', de: 'Smarte Agrartechnik' }, title: { en: 'Project PRONTO', de: 'Projekt PRONTO' }, desc: { en: 'ML forecasting of potato sprouting for sustainable storage.', de: 'ML-gestützte Prognose der Kartoffelkeimung für nachhaltige Lagerung.' } },
-            { badge: { en: 'Civil Engineering', de: 'Bauingenieurwesen' }, title: { en: 'Holzbau AI', de: 'Holzbau KI' }, desc: { en: 'On-premise AI knowledge retrieval for timber architecture.', de: 'On-Premise-KI-Wissenssuche für Holzarchitektur.' } },
+            { badge: { en: 'Civil Engineering', de: 'Bauingenieurwesen' }, title: { en: 'Holzbau AI', de: 'Holzbau KI' }, desc: { en: 'Agentic-RAG assistant for timber construction and architecture knowledge.', de: 'Agentic-RAG-Assistent für Wissen aus Holzbau und Architektur.' } },
             { badge: { en: 'Astronomy AI', de: 'KI für wissenschaftliche Systeme' }, title: { en: 'RAG for Nordic Optical Telescope', de: 'RAG für das Nordic Optical Telescope' }, desc: { en: 'Retrieval-augmented answers over observatory knowledge.', de: 'Retrieval-gestützte Antworten über Observatoriumswissen.' } },
             { badge: { en: 'Bio-Acoustics', de: 'Bioakustik' }, title: { en: 'Soundscapes / BirdNET', de: 'Soundscapes / BirdNET' }, desc: { en: 'Automated biodiversity analytics from audio data.', de: 'Automatisierte Biodiversitätsanalyse aus Audiodaten.' } }
         ];
@@ -397,8 +397,8 @@
         }, lang);
 
         setSectionProse('holzbau', {
-            de: '<p>Das Projekt unter dem Titel <strong>„Architectural Knowledge Retrieval (The Holzbau RAG)"</strong> ist eine Zusammenarbeit zwischen <strong>Makiol Wiederkehr AG (MW)</strong> und dem <strong>Laboratory for Web Science (LWS/FFHS)</strong>. Es hat erfolgreich die Machbarkeit eines intelligenten, on-premise KI-Suchsystems nachgewiesen, das erhebliche manuelle Suchaufwände eliminiert.</p>'
-                + '<p>Unsere Forschung entwickelt On-Premise-KI-Modelle, die komplexes architektonisches und bautechnisches Wissen sofort zugänglich machen und damit die digitale Transformation der nachhaltigen Schweizer Holzindustrie (Industrie 4.0) unterstützen.</p>'
+            de: '<p>Dieses Projekt stellt ein hochmodernes <strong>Agentic-RAG-System (Retrieval-Augmented Generation)</strong> vor, das speziell für die besonderen Anforderungen der Holzbau- und Architekturbranche entwickelt wurde.</p>'
+                + '<p>Über generische KI hinaus agiert die Plattform als intelligenter Assistent, der umfangreiche Archive technischer Dokumente, Normen und Projektdaten mit beispielloser Präzision durchsuchen und erschließen kann.</p>'
                 + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
@@ -411,6 +411,9 @@
                 + '<div class="border-l-4 border-slate-400 pl-6 my-6 py-2 bg-slate-50 rounded-r">'
                 + '<p class="text-sm text-slate-600"><strong>Konferenz:</strong> Swiss Text Analytics Conference (SwissText) 2022</p>'
                 + '<p class="text-sm text-slate-600"><strong>Präsentation:</strong> <a href="https://www.youtube.com/watch?v=i7viysHUwcA">SwissText 2022</a></p>'
+                + '</div>'
+                + '<div class="flex flex-wrap gap-3 mt-4">'
+                + '<a href="https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Auf ARAMIS ansehen</a>'
                 + '</div>'
                 + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="natasa.html">Natasa Sarafijanovic-Djukic</a> und <a href="beatrice.html">Beatrice Paoli</a>.</p></div>'
         }, lang);
