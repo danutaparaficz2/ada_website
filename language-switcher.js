@@ -403,6 +403,19 @@
         }, lang);
 
         setSectionProse('skillsfinder', {
+            en: '<p class="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">New platform for automatic skills extraction &amp; profiles validation to identify talents</p>'
+                + '<p>This is a joint project with the start-up company Skills Finder AG, funded by Innosuisse. The goal of the project is to build a platform for processing job application documents that automates the extraction of relevant information from candidates&rsquo; CVs and validates this information against candidates&rsquo; references and certificates. Our processing pipeline uses the latest advances in both document image processing and Natural Language Processing (NLP).</p>'
+                + '<p>The first step in processing any document is to extract the text while taking the correct reading order into account. Since CVs have highly diverse layouts, none of the existing tools were able to extract the text correctly. To detect these complex layouts, we train a CV layout model using Deep Layout Parser, a unified toolkit for deep learning-based document image analysis.</p>'
+                + '<p>The next step is an NLP component for information extraction. We use Named Entity Recognition (NER) with a pretrained multilingual BERT model, which we fine-tune on our dataset using custom labels.</p>'
+                + '<p>The final step in our processing pipeline is information validation. We calculate semantic similarity between word phrases using output feature vectors from the BERT model and mean pooling.</p>'
+                + '<div class="border-l-4 border-slate-400 pl-6 my-6 py-2 bg-slate-50 rounded-r">'
+                + '<p class="text-sm text-slate-600"><strong>Conference:</strong> Swiss Text Analytics Conference (SwissText) 2022</p>'
+                + '<p class="text-sm text-slate-600"><strong>Presentation:</strong> <a href="https://www.youtube.com/watch?v=i7viysHUwcA">SwissText 2022</a></p>'
+                + '</div>'
+                + '<div class="flex flex-wrap gap-3 mt-4">'
+                + '<a href="https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">View on ARAMIS</a>'
+                + '</div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="natasa.html">Natasa Sarafijanovic-Djukic</a> and <a href="beatrice.html">Beatrice Paoli</a>.</p></div>',
             de: '<p class="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">Neue Plattform zur automatischen Kompetenzextraktion &amp; Profilvalidierung zur Talentidentifikation</p>'
                 + '<p>Dieses Gemeinschaftsprojekt mit dem Start-up Skills Finder AG wird von Innosuisse gefördert. Ziel ist der Aufbau einer Plattform zur Verarbeitung von Bewerbungsunterlagen, die relevante Informationen aus Lebensläufen automatisch extrahiert und gegen Referenzen und Zeugnisse der Kandidatinnen und Kandidaten validiert. Die Verarbeitungspipeline nutzt aktuelle Fortschritte in der Dokumentenbildverarbeitung und im Natural Language Processing (NLP).</p>'
                 + '<p>Der erste Schritt besteht darin, den Text unter Berücksichtigung der korrekten Lesereihenfolge zu extrahieren. Da Lebensläufe sehr unterschiedliche Layouts aufweisen, konnte kein bestehendes Tool den Text zuverlässig extrahieren. Zur Erkennung dieser komplexen Layouts wird ein CV-Layout-Modell mit Deep Layout Parser trainiert – einem Framework für Deep-Learning-basierte Dokumentenbildanalyse.</p>'
