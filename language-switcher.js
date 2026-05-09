@@ -345,6 +345,19 @@
         }, lang);
 
         setSectionProse('pronto', {
+            en: '<p class="text-lg text-slate-700 font-medium italic mb-2">Predicting potato sprouting to optimize tuber storage and reduce agricultural waste.</p>'
+                + '<p>Project PRONTO addresses a major challenge in agricultural supply chains: predicting and controlling the sprouting of stored potatoes. By analyzing <strong>electrophysiological plant signals</strong> with machine learning, the project can forecast sprouting weeks in advance.</p>'
+                + '<p>This approach reduces reliance on chemical sprout suppressants and minimizes food waste, contributing to more sustainable and cost-effective storage practices for Swiss agriculture.</p>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Partners</h4>'
+                + '<p class="text-sm text-slate-600">Agroscope &amp; Vivent SA</p>'
+                + '</div>'
+                + '<div class="flex flex-wrap gap-3 mt-4">'
+                + '<a href="https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Read FFHS News Article</a>'
+                + '<a href="https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Read Watson Article</a>'
+                + '<a href="https://ieeexplore.ieee.org/abstract/document/11081491" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Read Publication</a>'
+                + '</div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="aris.html">Aris Marcolongo</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>',
             de: '<p class="text-lg text-slate-700 font-medium italic mb-2">Vorhersage der Kartoffelkeimung zur Optimierung der Lagerung und Reduktion von Lebensmittelverschwendung.</p>'
                 + '<p>Projekt PRONTO befasst sich mit einer zentralen Herausforderung in landwirtschaftlichen Lieferketten: der Vorhersage und Kontrolle der Keimung gelagerter Kartoffeln. Durch die Analyse <strong>elektrophysiologischer Pflanzensignale</strong> mit maschinellem Lernen kann das Projekt das Keimen Wochen im Voraus prognostizieren.</p>'
                 + '<p>Dieser Ansatz reduziert die Abhängigkeit von chemischen Keimhemmern und minimiert Lebensmittelverschwendung – ein Beitrag zu nachhaltigeren und kosteneffizienteren Lagerprozessen in der Schweizer Landwirtschaft.</p>'
@@ -355,6 +368,7 @@
                 + '<div class="flex flex-wrap gap-3 mt-4">'
                 + '<a href="https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">FFHS-Newsartikel lesen</a>'
                 + '<a href="https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Watson-Artikel lesen</a>'
+                + '<a href="https://ieeexplore.ieee.org/abstract/document/11081491" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Publikation lesen</a>'
                 + '</div>'
                 + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="aris.html">Aris Marcolongo</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
@@ -403,6 +417,27 @@
             de: '<p>Dieses Projekt führt ein hochmodernes <strong>Agentic-RAG-System (Retrieval-Augmented Generation)</strong> ein, das speziell für die einzigartigen Anforderungen der Holzbau- und Architekturbranche entwickelt wurde.</p>'
                 + '<p>Indem die Plattform über generische KI hinausgeht, agiert sie als intelligenter Assistent, der umfangreiche Archive technischer Dokumente, Normen und Projektdaten mit beispielloser Präzision durchsuchen kann.</p>'
                 + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
+        }, lang);
+
+        setSectionProse('murs', {
+            en: '<p class="text-lg text-slate-700 font-medium italic mb-2">This project explores a more interpretable alternative to transformer attention mechanisms, the core component of the neural network architecture used in many modern AI models. Inspired by particle interactions, the proposed Multi-Representation Scattering (MuRS) framework models relationships between data elements in a simpler and more transparent way. The goal is to better understand what models learn and when they may fail, while still achieving strong performance on standard machine learning tasks. This work is especially relevant for applications where trust, accountability, and explainability are important.</p>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Partners</h4>'
+                + '<p class="text-sm text-slate-600">Data Science Lab (University of Bern)</p>'
+                + '</div>'
+                + '<div class="flex flex-wrap gap-3 mt-4">'
+                + '<a href="https://www.ffhs.ch/de/ffhs/news/artikel/2026-03-25-warum-ki-oft-schwer-zu-verstehen-ist" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Read FFHS News Article</a>'
+                + '</div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">This project was made by <a href="aris.html">Aris Marcolongo</a> and <a href="danka.html">Danuta Paraficz</a> and funded by the Hasler Foundation.</p></div>',
+            de: '<p class="text-lg text-slate-700 font-medium italic mb-2">Dieses Projekt erforscht eine besser interpretierbare Alternative zu Transformer-Aufmerksamkeitsmechanismen, der Kernkomponente der Neuronalen-Netzwerk-Architektur in vielen modernen KI-Modellen. Inspiriert von Partikelwechselwirkungen modelliert das vorgeschlagene Multi-Representation Scattering (MuRS) Framework Beziehungen zwischen Datenelementen auf einfachere und transparentere Weise. Ziel ist es, besser zu verstehen, was Modelle lernen und wann sie fehlschlagen können, während gleichzeitig starke Leistungen bei Standard-Machine-Learning-Aufgaben erzielt werden. Diese Arbeit ist besonders für Anwendungen relevant, in denen Vertrauen, Rechenschaftspflicht und Erklärbarkeit wichtig sind.</p>'
+                + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
+                + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Partner</h4>'
+                + '<p class="text-sm text-slate-600">Data Science Lab (Universität Bern)</p>'
+                + '</div>'
+                + '<div class="flex flex-wrap gap-3 mt-4">'
+                + '<a href="https://www.ffhs.ch/de/ffhs/news/artikel/2026-03-25-warum-ki-oft-schwer-zu-verstehen-ist" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">FFHS-Newsartikel lesen</a>'
+                + '</div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="aris.html">Aris Marcolongo</a> und <a href="danka.html">Danuta Paraficz</a> erstellt und von der Hasler-Stiftung finanziert.</p></div>'
         }, lang);
 
         setSectionProse('skillsfinder', {
