@@ -468,7 +468,7 @@ class DataRenderer {
 
     if (descriptions[0]) {
       const text = this.currentLang === 'de' 
-        ? 'Institut für Angewandte Datenwissenschaft und KI. <br>Teil der Fernfachhochschule Schweiz (FFHS).'
+        ? 'Institute of Applied Data Science & AI. <br>Teil der Fernfachhochschule Schweiz (FFHS).'
         : 'Institute of Applied Datascience and AI. <br>Part of the Fernfachhochschule Schweiz (FFHS).';
       descriptions[0].innerHTML = text;
     }

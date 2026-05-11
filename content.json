@@ -2,11 +2,11 @@
   "site": {
     "title": {
       "en": "ADA Institute | Applied Data Science and AI",
-      "de": "ADA Institut | Angewandte Datenwissenschaft und KI"
+      "de": "ADA Institute | Applied Data Science and AI"
     },
     "description": {
       "en": "Institute of Applied Datascience and AI",
-      "de": "Institut für Angewandte Datenwissenschaft und KI"
+      "de": "Institute of Applied Data Science & AI"
     },
     "address": "Zollstrasse 17, CH-8005 Zurich, Switzerland",
     "email": "danuta.paraficz@ffhs.ch",
@@ -19,7 +19,7 @@
     },
     "title": {
       "en": "Institute of <span class=\"gradient-text\">Applied Data Science & AI</span>",
-      "de": "Institut für <span class=\"gradient-text\">Angewandte Datenwissenschaft & KI</span>"
+      "de": "Institute of <span class=\"gradient-text\">Applied Data Science & AI</span>"
     },
     "description": {
       "en": "Bridging the gap between academic research and industry application. We transform complex data into actionable intelligence.",
