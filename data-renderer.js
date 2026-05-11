@@ -80,10 +80,6 @@ class DataRenderer {
         background: #dc2626; 
         color: white; 
       }
-      body[data-lang='en'] .more-projects-label::after { content: 'Show More'; }
-      body[data-lang='en'] #more-projects-toggle:checked + .more-projects-label::after { content: 'Show Less'; }
-      body[data-lang='de'] .more-projects-label::after { content: 'Mehr anzeigen'; }
-      body[data-lang='de'] #more-projects-toggle:checked + .more-projects-label::after { content: 'Weniger anzeigen'; }
     `;
     document.head.appendChild(style);
 
@@ -134,6 +130,7 @@ class DataRenderer {
     
     // Update projects
     this.updateProjectCards();
+    this.updateMoreProjectsLabel();
     this.renderProjectsActiveGrid();
     this.renderProjectsArchiveGrid();
     this.renderActiveProjectDetails();
@@ -327,7 +324,7 @@ class DataRenderer {
     if (!grid || !Array.isArray(this.content?.projects)) return;
 
     const archiveProjects = this.content.projects.filter(project => project.status === 'archive');
-    const placeholderLabel = this.currentLang === 'de' ? 'LWS Archiv' : 'LWS Archive';
+    const placeholderLabel = this.t(this.content?.ui?.archivePlaceholder) || (this.currentLang === 'de' ? 'LWS Archiv' : 'LWS Archive');
 
     grid.innerHTML = archiveProjects.map((project) => {
       const title = this.t(project.shortTitle || project.title);
@@ -346,6 +343,21 @@ class DataRenderer {
         </a>
       `;
     }).join('');
+  }
+
+  updateMoreProjectsLabel() {
+    const label = document.querySelector('.more-projects-label');
+    const toggle = document.getElementById('more-projects-toggle');
+    const map = this.content?.ui?.moreProjects;
+    if (!label || !map) return;
+
+    const key = toggle && toggle.checked ? 'expanded' : 'collapsed';
+    label.textContent = this.t(map[key]);
+
+    if (toggle && !toggle.dataset.langBound) {
+      toggle.addEventListener('change', () => this.updateMoreProjectsLabel());
+      toggle.dataset.langBound = '1';
+    }
   }
 
   updateHeroSection() {
@@ -374,7 +386,7 @@ class DataRenderer {
     if (!section) return;
 
     const title = section.querySelector('h2');
-    if (title) title.textContent = this.currentLang === 'de' ? 'Forschungsfelder' : 'Research Fields';
+    if (title) title.textContent = this.t(this.content?.ui?.researchFieldsTitle) || (this.currentLang === 'de' ? 'Forschungsfelder' : 'Research Fields');
 
     const cards = section.querySelectorAll('.grid > div');
     this.content.researchFields.forEach((field, i) => {
@@ -419,7 +431,7 @@ class DataRenderer {
     const homeArchiveGrid = document.getElementById('home-archive-project-grid');
     if (homeArchiveGrid && Array.isArray(this.content?.projects)) {
       const archiveProjects = this.content.projects.filter(project => project.status === 'archive');
-      const placeholderLabel = this.currentLang === 'de' ? 'LWS Archiv' : 'LWS Archive';
+      const placeholderLabel = this.t(this.content?.ui?.archivePlaceholder) || (this.currentLang === 'de' ? 'LWS Archiv' : 'LWS Archive');
       homeArchiveGrid.innerHTML = archiveProjects.map((project) => {
         const imageBlock = project.image
           ? `<div class="h-40 bg-slate-200 overflow-hidden relative border-b border-slate-200"><img src="${this.escapeHtml(project.image)}" alt="${this.escapeHtml(this.t(project.title))}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"></div>`
@@ -462,15 +474,17 @@ class DataRenderer {
     const titles = footer.querySelectorAll('h5');
     const descriptions = footer.querySelectorAll('p.text-slate-400.leading-relaxed');
 
-    if (titles[0]) titles[0].textContent = this.currentLang === 'de' ? 'ADA Institut' : 'ADA Institute';
-    if (titles[1]) titles[1].textContent = this.currentLang === 'de' ? 'Standort' : 'Location';
-    if (titles[2]) titles[2].textContent = this.currentLang === 'de' ? 'Kontakt' : 'Contact';
+    const footerUi = this.content?.ui?.footer;
+    if (titles[0]) titles[0].textContent = this.t(footerUi?.instituteTitle) || (this.currentLang === 'de' ? 'ADA Institut' : 'ADA Institute');
+    if (titles[1]) titles[1].textContent = this.t(footerUi?.locationTitle) || (this.currentLang === 'de' ? 'Standort' : 'Location');
+    if (titles[2]) titles[2].textContent = this.t(footerUi?.contactTitle) || (this.currentLang === 'de' ? 'Kontakt' : 'Contact');
 
     if (descriptions[0]) {
-      const text = this.currentLang === 'de' 
-        ? 'Institute of Applied Data Science & AI. <br>Teil der Fernfachhochschule Schweiz (FFHS).'
-        : 'Institute of Applied Datascience and AI. <br>Part of the Fernfachhochschule Schweiz (FFHS).';
-      descriptions[0].innerHTML = text;
+      descriptions[0].innerHTML = this.t(footerUi?.description) || (
+        this.currentLang === 'de'
+          ? 'Institute of Applied Data Science & AI. <br>Teil der Fernfachhochschule Schweiz (FFHS).'
+          : 'Institute of Applied Datascience and AI. <br>Part of the Fernfachhochschule Schweiz (FFHS).'
+      );
     }
   }
 }

@@ -58,23 +58,6 @@ Each project object in projects[] should include:
 - Keep altText accurate and specific to each image.
 - For external resources, use full https links.
 
-## 5) Linking Rules
-- Use local profile pages where available (bio-name.html).
-- Verify project anchors match project ids exactly (#<id>).
-- Avoid stale references to old filenames.
-
-## 6) QA Before Commit
-- Reload ada_better.html and projects.html in both EN and DE.
-- Open at least one active project detail and one archive project detail.
-- Verify image and PDF links resolve correctly.
-- Check there are no missing local assets (404 errors in browser console).
-- Run git status and review changed files before commit.
-
-## 7) Release Notes (Optional but Recommended)
-- Note which JSON sections changed.
-- Note whether changes are automatic-render only or required manual page edits.
-- Note any follow-up tasks still pending.
-
 ## 8) Copy-Paste Project Template
 Use this as a starting point when adding a new project to projects[] in content.json.
 
