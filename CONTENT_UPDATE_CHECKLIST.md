@@ -150,10 +150,7 @@ Projects appear on a bio page when the project entry in content.json matches the
 - Always use the explicit `"people"` array for reliable and maintainable linking.
 - Update this array whenever a project's key contributors change.
 
-### 4.4 Language Support
-- Project cards on bio pages inherit language switching from language-switcher.js.
-- All bilingual text (title, description, meta) in the project entry automatically switches when users toggle language.
-- No additional work required.
+
 
 Notes:
 - status must be either active or archive.
