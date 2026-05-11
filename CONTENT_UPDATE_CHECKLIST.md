@@ -10,26 +10,13 @@ Use this checklist before publishing any content change.
 	- projects.html
 - Language labels and some UI text are also adjusted by language-switcher.js.
 
-## 2) What Is Automatic vs Manual
-- Automatic from content.json:
-	- Site title/description text used by the renderer.
-	- Hero section text and buttons.
-	- Research fields.
-	- Project cards (active and archive).
-	- Project detail sections (including long-form detail blocks).
-	- News card content.
-	- **Bio page "Related Projects" sections** (rendered by bio-projects.js).
-- Manual (not generated from content.json):
-	- Static biography page content (e.g., researcher bio text, education history).
-	- Page-specific layout markup outside rendered content regions.
+## 2) Required JSON Structure
 
-## 3) Required JSON Structure
-
-### 3.1 Bilingual text pattern
+### 2.1 Bilingual text pattern
 - Any user-facing text that should switch language should use this structure:
 	- { "en": "...", "de": "..." }
 
-### 3.2 Minimum project fields (required)
+### 2.2 Minimum project fields (required)
 Each project object in projects[] should include:
 - id: unique anchor-safe identifier (example: eagle, murs).
 - status: active or archive.
@@ -39,7 +26,7 @@ Each project object in projects[] should include:
 - altText: plain string for accessibility.
 - description: bilingual object.
 
-### 3.3 Recommended project fields (strongly recommended)
+### 2.3 Recommended project fields (strongly recommended)
 - shortTitle: short display title.
 - meta: bilingual short context line (partners/domain/lead).
 - details object containing one of these patterns:
@@ -53,20 +40,20 @@ Each project object in projects[] should include:
 		- html.en and html.de arrays with preformatted HTML blocks
 		- optional credits string
 
-## 4) Media and File Paths
+## 3) Media and File Paths
 - Store local media in images/.
 - Use images/... paths in content.json for image and PDF links.
 - Keep altText accurate and specific to each image.
 - For external resources, use full https links.
 
-## 5) Automatic Bio Project Linking
+## 4) Automatic Bio Project Linking
 
-### 5.1 How It Works
+### 4.1 How It Works
 - All bio pages (bio-*.html) automatically display related projects from content.json.
 - The bio-projects.js script runs on page load and matches projects to the current person.
 - **No manual edits to bio pages are needed.** Update content.json only.
 
-### 5.2 How Projects Get Linked to People
+### 4.2 How Projects Get Linked to People
 
 Projects appear on a bio page when the project entry in content.json matches the person through any of these methods (in priority order):
 
@@ -93,16 +80,16 @@ Projects appear on a bio page when the project entry in content.json matches the
    - Only works if the name is a clear substring match.
    - Not reliable for common names.
 
-### 5.3 Best Practice
+### 4.3 Best Practice
 - Always use the explicit `"people"` array for reliable and maintainable linking.
 - Update this array whenever a project's key contributors change.
 
-### 5.4 Language Support
+### 4.4 Language Support
 - Project cards on bio pages inherit language switching from language-switcher.js.
 - All bilingual text (title, description, meta) in the project entry automatically switches when users toggle language.
 - No additional work required.
 
-## 6) Copy-Paste Project Template
+## 5) Copy-Paste Project Template
 Use this as a starting point when adding a new project to projects[] in content.json.
 
 ```json
