@@ -18,8 +18,9 @@ Use this checklist before publishing any content change.
 	- Project cards (active and archive).
 	- Project detail sections (including long-form detail blocks).
 	- News card content.
+	- **Bio page "Related Projects" sections** (rendered by bio-projects.js).
 - Manual (not generated from content.json):
-	- Static biography pages bio-*.html.
+	- Static biography page content (e.g., researcher bio text, education history).
 	- Page-specific layout markup outside rendered content regions.
 
 ## 3) Required JSON Structure
@@ -57,6 +58,49 @@ Each project object in projects[] should include:
 - Use images/... paths in content.json for image and PDF links.
 - Keep altText accurate and specific to each image.
 - For external resources, use full https links.
+
+## 5) Automatic Bio Project Linking
+
+### 5.1 How It Works
+- All bio pages (bio-*.html) automatically display related projects from content.json.
+- The bio-projects.js script runs on page load and matches projects to the current person.
+- **No manual edits to bio pages are needed.** Update content.json only.
+
+### 5.2 How Projects Get Linked to People
+
+Projects appear on a bio page when the project entry in content.json matches the person through any of these methods (in priority order):
+
+1. **Explicit "people" array** (strongest, recommended):
+   - Add a `"people"` array to the project object in content.json.
+   - List the bio page filenames (e.g., `["bio-aris.html", "bio-natasa.html"]`).
+   - Example:
+     ```json
+     {
+       "id": "my-project",
+       "title": { "en": "Project Name", "de": "Projektname" },
+       "people": ["bio-aris.html", "bio-natasa.html"],
+       ...
+     }
+     ```
+
+2. **HTML credits link** (medium strength):
+   - In the project's `details.credits` field, include a link to the bio page.
+   - Example: `"credits": "Led by <a href='bio-aris.html'>Aris Marcolongo</a>"`
+   - The script detects the href and matches the project to that bio page.
+
+3. **Credits text match** (weakest):
+   - The script checks if a person's name appears in the credits text.
+   - Only works if the name is a clear substring match.
+   - Not reliable for common names.
+
+### 5.3 Best Practice
+- Always use the explicit `"people"` array for reliable and maintainable linking.
+- Update this array whenever a project's key contributors change.
+
+### 5.4 Language Support
+- Project cards on bio pages inherit language switching from language-switcher.js.
+- All bilingual text (title, description, meta) in the project entry automatically switches when users toggle language.
+- No additional work required.
 
 ## 8) Copy-Paste Project Template
 Use this as a starting point when adding a new project to projects[] in content.json.
