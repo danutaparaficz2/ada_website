@@ -202,6 +202,22 @@
             "<div class='h-80 rounded-xl overflow-hidden border border-slate-200'><img src='bilbao.jpg' alt='EAGLE project presentation in Bilbao' class='w-full h-full object-cover'></div>",
             "</div>",
             "<div class='mt-8 flex justify-center'><a href='30_poster_ai-driven-defect-detection_pvt25.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-6 py-3 rounded hover:bg-blue-50 transition'>Download AI-Driven Defect Detection Poster (PDF)</a></div>"
+          ],
+          "de": [
+            "<p class='text-lg text-slate-700 font-medium italic mb-4'>Ein Deep-Learning-Ansatz für die Zuverlässigkeit von Photovoltaik</p>",
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p>Mit dem globalen Ausbau von Solaranlagen zur Erreichung der Klimaziele wird die langfristige Zuverlässigkeit von Photovoltaik-(PV)-Systemen zu einem entscheidenden wirtschaftlichen und ökologischen Faktor. Projekt EAGLE, eine Zusammenarbeit zwischen FFHS und SUPSI, geht über klassische manuelle Inspektionen hinaus und etabliert einen automatisierten, KI-gestützten Diagnoseansatz.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Die Herausforderung: Versteckte Defekte</h4><p class='text-sm text-slate-600'>Solarmodule sind über Jahrzehnte rauen Umweltbedingungen ausgesetzt. Im Laufe der Zeit entstehen versteckte Defekte wie Mikrorisse, Feuchtigkeitseintritt oder Zell-Hotspots, die mit bloßem Auge nicht sichtbar sind, den Energieertrag jedoch deutlich reduzieren. Die Erkennung solcher Defekte in großen Solarparks ist traditionell langsam, teuer und subjektiv.</p></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Die Innovation: Multispektrale KI-Analytik</h4><p class='text-sm text-slate-600'>Das EAGLE-Projekt entwickelte eine Methodik, die Computer Vision und Deep Learning nutzt, um Modulbilder über drei Spektralbänder hinweg zu analysieren:</p><ul class='text-sm space-y-2 text-slate-600 mt-3'><li>&bull; <strong>Elektrolumineszenz (EL):</strong> &quot;Durchleuchten&quot; der Zellen zur Erkennung interner Risse.</li><li>&bull; <strong>Ultraviolettfluoreszenz (UVf):</strong> Erkennung von Alterung und chemischen Veränderungen in Verkapselungsmaterialien.</li><li>&bull; <strong>Sichtbares Licht (VI):</strong> Erfassung äußerer Schäden wie Verschmutzung oder Glasbruch.</li></ul><p class='text-sm text-slate-600 mt-3'>Für die skalierbare Automatisierung entwickelte das Team spezialisierte Convolutional Neural Networks (CNNs) und Vision Transformers (ViTs) zur hochpräzisen Defektklassifikation.</p></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Technische Highlights</h4><ul class='text-sm space-y-2 text-slate-600'><li>&bull; <strong>Multimodale Fusion:</strong> Verknüpfung von Defektsignaturen aus mehreren Modalitäten mit elektrischem Leistungsverlust.</li><li>&bull; <strong>State-of-the-Art-Architektur:</strong> Einsatz von Modellen wie EfficientNet und Segment Anything (SAM), um einzelne Solarzellen innerhalb von Modulen zu isolieren und zu diagnostizieren.</li><li>&bull; <strong>Predictive Maintenance:</strong> Quantifizierung von Degradation zur Ableitung optimaler Reinigungs-, Reparatur- und Austauschentscheidungen für besseren ROI.</li></ul></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Praxisrelevanter Nutzen</h4><p class='text-sm text-slate-600'>Die Ergebnisse von Projekt EAGLE, präsentiert auf der EU PVSEC in Bilbao, liefern einen skalierbaren Blueprint für Smart O&amp;M. Durch automatisierte Gesundheitschecks von Solarsystemen trägt EAGLE dazu bei, dass die Energiewende auf langlebiger und leistungsfähiger Infrastruktur basiert.</p></div>",
+            "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.aramis.admin.ch/Texte/?ProjectID=51667' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Auf ARAMIS anzeigen</a><a href='https://www.eupvsec.org/images/2025/conference/EUPVSEC2025_ConferenceProgram_web_v6.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>EU PVSEC Programm (PDF)</a></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='ralf.html'>Ralf Jandl</a>, <a href='danka.html'>Danuta Paraficz</a> und <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "</div>",
+            "<div class='h-80 rounded-xl overflow-hidden border border-slate-200'><img src='bilbao.jpg' alt='EAGLE-Projektpräsentation in Bilbao' class='w-full h-full object-cover'></div>",
+            "</div>",
+            "<div class='mt-8 flex justify-center'><a href='30_poster_ai-driven-defect-detection_pvt25.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-6 py-3 rounded hover:bg-blue-50 transition'>Poster zur KI-gestützten Defekterkennung herunterladen (PDF)</a></div>"
           ]
         },
         "credits": "Ralf Jandl, Danuta Paraficz, Natasa Sarafijanovic-Djukic"
@@ -290,6 +306,19 @@
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='potatos.png' alt='Potato storage' class='w-full h-full object-cover'></div>",
             "</div>"
+          ],
+          "de": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p class='text-lg text-slate-700 font-medium italic mb-2'>Vorhersage der Kartoffelkeimung zur Optimierung der Knollenlagerung und Reduktion landwirtschaftlicher Verluste.</p>",
+            "<p>Projekt PRONTO adressiert eine zentrale Herausforderung in landwirtschaftlichen Lieferketten: die Vorhersage und Kontrolle der Keimung gelagerter Kartoffeln. Durch die Analyse <strong>elektrophysiologischer Pflanzensignale</strong> mit Machine Learning kann die Keimung Wochen im Voraus prognostiziert werden.</p>",
+            "<p>Dieser Ansatz reduziert den Einsatz chemischer Keimhemmstoffe und minimiert Lebensmittelverluste. Damit unterstützt er nachhaltigere und kosteneffizientere Lagerpraktiken in der Schweizer Landwirtschaft.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Partner</h4><p class='text-sm text-slate-600'>Agroscope &amp; Vivent SA</p></div>",
+            "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>FFHS-News lesen</a><a href='https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Watson-Artikel lesen</a><a href='https://ieeexplore.ieee.org/abstract/document/11081491' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Publikation lesen</a></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='aris.html'>Aris Marcolongo</a> und <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='potatos.png' alt='Kartoffellagerung' class='w-full h-full object-cover'></div>",
+            "</div>"
           ]
         },
         "credits": "Aris Marcolongo, Natasa Sarafijanovic-Djukic"
@@ -366,6 +395,17 @@
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='murs.png' alt='MuRS project' class='w-full h-full object-contain object-center p-2'></div>",
             "</div>"
+          ],
+          "de": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p class='text-lg text-slate-700 font-medium italic mb-2'>Dieses Projekt untersucht eine besser interpretierbare Alternative zu Transformer-Attention-Mechanismen, dem Kernbaustein vieler moderner KI-Modelle. Inspiriert von Teilcheninteraktionen modelliert das vorgeschlagene Multi-Representation-Scattering-(MuRS)-Framework Beziehungen zwischen Datenelementen einfacher und transparenter. Ziel ist es, besser zu verstehen, was Modelle lernen und wann sie versagen, ohne auf starke Leistung bei Standardaufgaben zu verzichten. Das ist insbesondere für Anwendungsfelder relevant, in denen Vertrauen, Nachvollziehbarkeit und Erklärbarkeit entscheidend sind. Wir suchen Industrie- und Forschungspartner für ein Folgeprojekt beim Schweizerischen Nationalfonds (SNF). Bei Interesse an einer Zusammenarbeit kontaktieren Sie bitte die Projektleitung.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Partner</h4><p class='text-sm text-slate-600'>Data Science Lab (Universität Bern)</p></div>",
+            "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.ffhs.ch/de/ffhs/news/artikel/2026-03-25-warum-ki-oft-schwer-zu-verstehen-ist' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>FFHS-News lesen</a></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Dieses Projekt wurde von <a href='aris.html'>Aris Marcolongo</a> und <a href='danka.html'>Danuta Paraficz</a> durchgeführt und durch die Hasler Stiftung gefördert.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='murs.png' alt='MuRS-Projekt' class='w-full h-full object-contain object-center p-2'></div>",
+            "</div>"
           ]
         },
         "credits": "Aris Marcolongo, Danuta Paraficz"
@@ -416,6 +456,15 @@
             "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>This project is done by <a href='aris.html'>Aris Marcolongo</a> with partners FHNW and AITEXA.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='pid.png' alt='AITEXA project' class='w-full h-full object-contain object-center p-2'></div>",
+            "</div>"
+          ],
+          "de": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p class='text-lg text-slate-700 font-medium italic mb-2'>Unternehmen im Prozessengineering investieren viel Zeit in die manuelle Erstellung von Rohrleitungs- und Instrumentierungsdiagrammen (R&amp;I) für neue Anlagendesigns, während Studierende diese komplexen Schemata oft nur schwer interpretieren können. Dieses Projekt nutzt Large Language Models (LLMs), um intelligente Anwendungen für die Erstellung, das Lernen und die Interpretation von R&amp;I-Fließbildern zu entwickeln.</p>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Dieses Projekt wird von <a href='aris.html'>Aris Marcolongo</a> zusammen mit den Partnern FHNW und AITEXA durchgeführt.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='pid.png' alt='AITEXA-Projekt' class='w-full h-full object-contain object-center p-2'></div>",
             "</div>"
           ]
         },
@@ -472,6 +521,16 @@
             "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='danka.html'>Danuta Paraficz</a> and <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='holzbau.jpg' alt='Timber construction quality control' class='w-full h-full object-cover'></div>",
+            "</div>"
+          ],
+          "de": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p>Dieses Projekt führt ein innovatives <strong>Agentic-RAG-System (Retrieval-Augmented Generation)</strong> ein, das speziell auf die Anforderungen der Holzbau- und Architekturbranche zugeschnitten ist.</p>",
+            "<p>Durch den Fokus auf domänenspezifische Inhalte statt generischer KI fungiert die Plattform als intelligenter Assistent, der große Archive technischer Dokumente, Normen und Projektdaten mit hoher Präzision erschließt.</p>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='danka.html'>Danuta Paraficz</a> und <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='holzbau.jpg' alt='Qualitätskontrolle im Holzbau' class='w-full h-full object-cover'></div>",
             "</div>"
           ]
         },
@@ -530,6 +589,20 @@
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Technical Approach</h4><ul class='text-sm space-y-2 text-slate-600'><li>&bull; <strong>Document Retrieval Layer:</strong> Indexing trusted observatory sources for relevant context selection.</li><li>&bull; <strong>Grounded Generation:</strong> Generating answers conditioned on retrieved evidence, not on model memory alone.</li><li>&bull; <strong>Citation and Verifiability:</strong> Returning source-linked responses to support transparent decision-making.</li></ul></div>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Expected Impact</h4><p class='text-sm text-slate-600'>The platform reduces search friction, accelerates expert workflows, and lowers the risk of unsupported responses by grounding outputs in trusted records. This creates a practical AI assistant tailored to scientific infrastructure environments.</p></div>",
             "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='danka.html'>Danuta Paraficz</a> and <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='not.png' alt='Nordic Optical Telescope' class='w-full h-full object-cover'></div>",
+            "</div>"
+          ],
+          "de": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p class='text-lg text-slate-700 font-medium italic mb-2'>Retrieval-Augmented KI für den Zugriff auf Observatoriumswissen</p>",
+            "<p>In Zusammenarbeit mit dem <strong>Nordic Optical Telescope (NOT)</strong> auf La Palma entwickelt ADA ein domänenspezifisches <strong>Retrieval-Augmented-Generation-(RAG)-System</strong>, das Astronominnen, Astronomen und technische Teams im Arbeitsalltag unterstützt.</p>",
+            "<p>Ziel ist es, komplexe Observatoriumsdokumentation, Betriebsabläufe und wissenschaftliche Logs über natürlichsprachliche Abfragen durchsuchbar zu machen und dabei Nachvollziehbarkeit sowie faktische Verlässlichkeit sicherzustellen.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Kernherausforderung</h4><p class='text-sm text-slate-600'>Kritisches Observatoriumswissen ist auf technische Handbücher, Instrumentennotizen und historische Logs verteilt. Klassische Suchworkflows sind zeitintensiv und erschweren den schnellen Zugriff auf relevanten Kontext im Betrieb.</p></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Technischer Ansatz</h4><ul class='text-sm space-y-2 text-slate-600'><li>&bull; <strong>Dokumenten-Retrieval-Layer:</strong> Indexierung vertrauenswürdiger Observatoriumsquellen zur kontextrelevanten Auswahl.</li><li>&bull; <strong>Grounded Generation:</strong> Generierung von Antworten auf Basis abgerufener Evidenz statt reinem Modellgedächtnis.</li><li>&bull; <strong>Zitierbarkeit und Verifizierbarkeit:</strong> Ausgabe quellenverknüpfter Antworten für transparente Entscheidungen.</li></ul></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Erwarteter Nutzen</h4><p class='text-sm text-slate-600'>Die Plattform reduziert Suchaufwand, beschleunigt Expertenworkflows und senkt das Risiko unbelegter Antworten, indem Ergebnisse in verlässlichen Quellen verankert werden. So entsteht ein praxistauglicher KI-Assistent für wissenschaftliche Infrastrukturen.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='danka.html'>Danuta Paraficz</a> und <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='not.png' alt='Nordic Optical Telescope' class='w-full h-full object-cover'></div>",
             "</div>"
@@ -611,6 +684,25 @@
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='birdss.jpg' alt='Bird in forest' class='w-full h-full object-cover'></div>",
             "</div>",
             "<div class='mt-8 flex justify-center'><a href='CMS journal 2025 electronic copy.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-6 py-3 rounded hover:bg-blue-50 transition'>Download CMS Journal 2025 (PDF)</a></div>"
+          ],
+          "de": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p>Das <strong>Soundscapes-Projekt</strong> (auch bekannt als Cambrian Soundscapes Initiative) wurde im Januar 2024 von der Cambrian Mountains Society gestartet, um Biodiversitätsdaten der Region systematisch zu erfassen und auszuwerten. Anlass war, dass bestehende Biodiversitätsdaten für die Cambrian Mountains lückenhaft und inkonsistent waren, wodurch genaue Populationstrends schwer bestimmbar sind.</p>",
+            "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>Technologie &amp; Methodik</h3>",
+            "<p>Das Projekt nutzt <strong>AudioMoths</strong>, kostengünstige bioakustische Monitoring-Geräte, die bis zu 189 Stunden aufnehmen können und monatelang im Feld verbleiben. Die Society setzte 25 Recorder in unterschiedlichen Habitaten ein, mit einem 24-Stunden-Zeitplan: jede zehnte Minute eine Minute Aufnahme.</p>",
+            "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>Ursprung</h3>",
+            "<p>Die Idee wurde von Mitglied Guy Bennett nach einer erfolgreichen Pilotstudie auf Familienland in Cilycwm vorgeschlagen, bei der unerwartet seltene Vogelarten wie die Schafstelze und der Gelbbrauen-Laubsänger identifiziert wurden.</p>",
+            "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>FFHS-Partnerschaft &amp; Datenverarbeitung</h3>",
+            "<p>Anfangs nutzte die Society BirdNET-Software zur Artenbestimmung aus den Aufnahmen. Das hohe Datenvolumen führte jedoch zu einer strategischen Partnerschaft mit dem <strong>Big-Data-Team der Fernfachhochschule Schweiz (FFHS) in Zürich</strong>, darunter <strong>Professor Joachim Steinwendner</strong> und <strong>Dr. Danuta Paraficz</strong>. Dieses Team liefert die notwendige Rechenleistung zur Verarbeitung großer Datenmengen und zeigt, wie Hochschulen praxisnahe Naturschutzprojekte unterstützen können.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Wissenschaftlicher Impact</h4><p class='text-sm text-slate-600'>Die Zusammenarbeit mit einem hochkarätigen akademischen Team verleiht der Forschung des Projekts hohe wissenschaftliche Glaubwürdigkeit. Das ist besonders wichtig, wenn eine kleine, ehrenamtlich geführte Organisation ihre Erkenntnisse in die Fachcommunity einbringt.</p></div>",
+            "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>Zukünftige Perspektive</h3>",
+            "<p>Aktuell liegt der Fokus auf Vogelpopulationen und Zugmustern. Künftig soll das Projekt auf weitere Fauna wie Fledermäuse und kleine Säugetiere ausgeweitet werden. Zudem besteht Interesse, aus Vogeldaten Rückschlüsse auf Fischpopulationen abzuleiten.</p>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='joachim.html'>Joachim Steinwendner</a> und <a href='danka.html'>Danuta Paraficz</a></p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='birdss.jpg' alt='Vogel im Wald' class='w-full h-full object-cover'></div>",
+            "</div>",
+            "<div class='mt-8 flex justify-center'><a href='CMS journal 2025 electronic copy.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-6 py-3 rounded hover:bg-blue-50 transition'>CMS Journal 2025 herunterladen (PDF)</a></div>"
           ]
         },
         "credits": "Joachim Steinwendner, Danuta Paraficz"
@@ -691,6 +783,18 @@
             "<div class='border-l-4 border-slate-400 pl-6 my-6 py-2 bg-slate-50 rounded-r'><p class='text-sm text-slate-600'><strong>Conference:</strong> Swiss Text Analytics Conference (SwissText) 2022</p><p class='text-sm text-slate-600'><strong>Presentation:</strong> <a href='https://www.youtube.com/watch?v=i7viysHUwcA'>SwissText 2022</a></p></div>",
             "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>View on ARAMIS</a></div>",
             "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a> and <a href='beatrice.html'>Beatrice Paoli</a>.</p></div>",
+            "</div>"
+          ],
+          "de": [
+            "<div class='prose-text'>",
+            "<p class='text-sm text-slate-500 uppercase tracking-widest font-bold mb-4'>Neue Plattform zur automatischen Skills-Extraktion und Profilvalidierung zur Identifikation von Talenten</p>",
+            "<p>Dies ist ein gemeinsames Projekt mit dem Start-up Skills Finder AG, gefördert durch Innosuisse. Ziel ist der Aufbau einer Plattform zur Verarbeitung von Bewerbungsunterlagen, die relevante Informationen aus Lebensläufen automatisch extrahiert und diese mit Referenzen und Zertifikaten validiert. Die Pipeline nutzt aktuelle Fortschritte in Dokumentbildverarbeitung und Natural Language Processing (NLP).</p>",
+            "<p>Der erste Schritt ist die Textextraktion mit korrekter Lesereihenfolge. Da Lebensläufe sehr unterschiedliche Layouts aufweisen, konnten vorhandene Tools dies nicht zuverlässig leisten. Zur Erkennung komplexer Layouts trainieren wir ein CV-Layout-Modell mit Deep Layout Parser, einem einheitlichen Toolkit für Deep-Learning-basierte Dokumentbildanalyse.</p>",
+            "<p>Der nächste Schritt ist eine NLP-Komponente zur Informationsextraktion. Wir verwenden Named Entity Recognition (NER) mit einem vortrainierten mehrsprachigen BERT-Modell, das mit projektspezifischen Labels feinjustiert wird.</p>",
+            "<p>Der letzte Schritt ist die Informationsvalidierung. Dazu berechnen wir semantische Ähnlichkeiten zwischen Begriffen mithilfe von BERT-Feature-Vektoren und Mean Pooling.</p>",
+            "<div class='border-l-4 border-slate-400 pl-6 my-6 py-2 bg-slate-50 rounded-r'><p class='text-sm text-slate-600'><strong>Konferenz:</strong> Swiss Text Analytics Conference (SwissText) 2022</p><p class='text-sm text-slate-600'><strong>Vortrag:</strong> <a href='https://www.youtube.com/watch?v=i7viysHUwcA'>SwissText 2022</a></p></div>",
+            "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Auf ARAMIS anzeigen</a></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a> und <a href='beatrice.html'>Beatrice Paoli</a>.</p></div>",
             "</div>"
           ]
         },
