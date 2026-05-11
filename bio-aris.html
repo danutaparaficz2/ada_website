@@ -18,6 +18,9 @@
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         .prose-text p { margin-bottom: 1.5rem; line-height: 1.6; color: #374151; }
         .placeholder-box { background-color: #f3f4f6; border: 1px dashed #d1d5db; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; }
+        .lang-de { display: none; }
+        body[data-lang='de'] .lang-en { display: none; }
+        body[data-lang='de'] .lang-de { display: block; }
     </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -38,7 +41,7 @@
     <header class="max-w-5xl mx-auto px-6 py-10 border-b border-gray-100">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <a href="ada_better.html" class="hover:opacity-70 transition flex items-center gap-4">
-                <img src="logo.png" alt="ADA Institute logo" class="h-14 w-auto object-contain">
+                <img src="images/logo.png" alt="ADA Institute logo" class="h-14 w-auto object-contain">
                 <div>
                     <h1 class="text-2xl font-bold tracking-tight">DR. ARIS MARCOLONGO</h1>
                     <p class="text-xs text-gray-400 font-medium uppercase tracking-widest">Senior AI Scientist | ADA Institute</p>
@@ -59,13 +62,22 @@
             <section class="grid md:grid-cols-3 gap-12 mb-24 pb-12 border-b">
                 <div class="md:col-span-2 prose-text text-lg">
                     <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>
-                    <p>Dr. Aris Marcolongo is a senior researcher and data scientist currently specializing in Applied Machine Learning at Fernfachhochschule Schweiz (FFHS).</p>
-                   
-</div>
+                    <div class="lang-en">
+                        <p>Dr. Aris Marcolongo is a Senior AI Scientist at Fernfachhochschule Schweiz (FFHS), specializing in applied machine learning and practical AI systems.</p>
+                        <p>His work focuses on designing robust models that connect scientific rigor with real-world deployment. He contributes to interdisciplinary projects where explainability, reliability, and measurable impact are central requirements.</p>
+                        <p>At FFHS, he supports the development of end-to-end solutions, from data preparation and model design to evaluation and operational integration. His profile combines research depth with implementation-oriented thinking in collaborative project environments.</p>
+                    </div>
+                    <div class="lang-de">
+                        <p>Dr. Aris Marcolongo ist Senior AI Scientist an der Fernfachhochschule Schweiz (FFHS) mit Spezialisierung auf angewandtes Machine Learning und praxisnahe KI-Systeme.</p>
+                        <p>Seine Arbeit konzentriert sich auf robuste Modelle, die wissenschaftliche Genauigkeit mit der Umsetzung in realen Anwendungen verbinden. Er wirkt an interdisziplinären Projekten mit, in denen Erklärbarkeit, Verlässlichkeit und messbarer Nutzen zentrale Anforderungen sind.</p>
+                        <p>An der FFHS unterstützt er die Entwicklung ganzheitlicher Lösungen, von der Datenaufbereitung und Modellentwicklung bis zur Evaluation und operativen Integration. Sein Profil verbindet Forschungstiefe mit einer klaren, umsetzungsorientierten Arbeitsweise in kollaborativen Projektkontexten.</p>
+                    </div>
+
+                </div>
                 <div>
                     <!-- Placeholder for Headshot -->
                     <div class="aspect-square rounded-full mb-4 overflow-hidden border border-gray-200">
-                        <img src="aris.jpg" alt="Professional headshot of Dr. Aris Marcolongo" class="w-full h-full object-cover object-[50%_0%]">
+                        <img src="images/aris.jpg" alt="Professional headshot of Dr. Aris Marcolongo" class="w-full h-full object-cover object-[50%_0%]">
                     </div>
                     <div class="text-xs text-gray-600 leading-relaxed space-y-2">
                         <p><span class="font-bold uppercase tracking-widest text-gray-500">Telefon</span><br>+41 44 512 09 48</p>
@@ -88,7 +100,7 @@
                 <!-- Project: PRONTO -->
                 <a href="projects.html#pronto" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-xl transition duration-300 block">
                     <div class="h-56 bg-slate-200 overflow-hidden relative">
-                        <img src="potatos.png" alt="Potatoes in storage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/potatos.png" alt="Potatoes in storage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute top-4 left-4 bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Smart Agrotech</div>
                     </div>
                     <div class="p-8">

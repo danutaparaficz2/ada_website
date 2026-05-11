@@ -18,6 +18,9 @@
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         .prose-text p { margin-bottom: 1.5rem; line-height: 1.6; color: #374151; }
         .placeholder-box { background-color: #f3f4f6; border: 1px dashed #d1d5db; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; }
+        .lang-de { display: none; }
+        body[data-lang='de'] .lang-en { display: none; }
+        body[data-lang='de'] .lang-de { display: block; }
     </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -38,7 +41,7 @@
     <header class="max-w-5xl mx-auto px-6 py-10 border-b border-gray-100">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <a href="ada_better.html" class="hover:opacity-70 transition flex items-center gap-4">
-                <img src="logo.png" alt="ADA Institute logo" class="h-14 w-auto object-contain">
+                <img src="images/logo.png" alt="ADA Institute logo" class="h-14 w-auto object-contain">
                 <div>
                     <h1 class="text-2xl font-bold tracking-tight">DR. DANUTA PARAFICZ</h1>
                     <p class="text-xs text-gray-400 font-medium uppercase tracking-widest">Senior AI Scientist | ADA Institute</p>
@@ -59,20 +62,23 @@
             <section class="grid md:grid-cols-3 gap-12 mb-24 pb-12 border-b">
                 <div class="md:col-span-2 prose-text text-lg">
                     <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>
-                    <p>Dr. Danuta (Danka) Paraficz is a distinguished AI Research Scientist at Fernfachhochschule Schweiz (FFHS), where she applies advanced machine learning and deep learning architectures to solve complex, real-world challenges. With a background rooted in high-level astrophysics and industrial data science, she bridges the gap between theoretical research and scalable, live production environments.</p>
-                    <p>Danuta’s career is defined by a transition from exploring the mysteries of the universe to optimizing green energy through data:
-
-Energy Sector (DXT Commodities): For over seven years, she served as a Data Scientist in the energy trading sector. She developed  forecasting models using satellite and meteorological data to predict wind and solar production across Europe. Her work in probabilistic forecasting and automated pricing systems helped position her team as a leader in energy forecasting.
-<p>
-Astrophysics Research (EPFL & LAM): As a Postdoctoral Researcher at EPFL and the Laboratoire d'Astrophysique de Marseille, Danuta specialized in gravitational lensing and dark matter. She developed scientific software  and led international collaborations using high-performance computing clusters and advanced statistical methods.
-</p>
-Education & Academic Contributions
-PhD in Astronomy and Astrophysics: University of Copenhagen (Niels Bohr Institute). Her thesis on strong gravitational lensing introduced a new theoretical approach to measuring dark matter.</p>
+                    <div class="lang-en">
+                        <p>Dr. Danuta (Danka) Paraficz is a Senior AI Scientist at Fernfachhochschule Schweiz (FFHS), where she develops advanced machine learning and deep learning solutions for real-world challenges.</p>
+                        <p>Her career bridges industrial data science and scientific research. In the energy sector, she developed forecasting models based on satellite and meteorological data to predict wind and solar production across Europe, including probabilistic forecasting workflows for operational decision support.</p>
+                        <p>In astrophysics research, she worked on gravitational lensing and dark matter in international collaborations, combining high-performance computing, advanced statistics, and domain-specific modeling.</p>
+                        <p>Danuta holds a PhD in Astronomy and Astrophysics from the University of Copenhagen (Niels Bohr Institute), with research focused on strong gravitational lensing and dark matter measurement. Her profile combines scientific depth with applied AI implementation.</p>
+                    </div>
+                    <div class="lang-de">
+                        <p>Dr. Danuta (Danka) Paraficz ist Senior AI Scientist an der Fernfachhochschule Schweiz (FFHS), wo sie fortgeschrittene Machine-Learning- und Deep-Learning-Lösungen für reale Herausforderungen entwickelt.</p>
+                        <p>Ihre Laufbahn verbindet industrielle Data Science mit wissenschaftlicher Forschung. Im Energiesektor entwickelte sie Prognosemodelle auf Basis von Satelliten- und Wetterdaten zur Vorhersage von Wind- und Solarproduktion in Europa, einschließlich probabilistischer Forecasting-Workflows für operative Entscheidungen.</p>
+                        <p>In der Astrophysik arbeitete sie in internationalen Kooperationen zu Gravitationslinsen und Dunkler Materie und verband dabei High-Performance-Computing, fortgeschrittene Statistik und domänenspezifische Modellierung.</p>
+                        <p>Danuta promovierte in Astronomie und Astrophysik an der Universität Kopenhagen (Niels-Bohr-Institut) mit einem Forschungsschwerpunkt auf starker Gravitationslinsenwirkung und der Messung Dunkler Materie. Ihr Profil verbindet wissenschaftliche Tiefe mit praxisnaher KI-Umsetzung.</p>
+                    </div>
                 </div>
                 <div>
                     <!-- Placeholder for Headshot -->
                     <div class="aspect-square rounded-full mb-4 overflow-hidden border border-gray-200">
-                        <img src="danka.png" alt="Professional headshot of Dr. Danuta Paraficz" class="w-full h-full object-cover">
+                        <img src="images/danka.png" alt="Professional headshot of Dr. Danuta Paraficz" class="w-full h-full object-cover">
                     </div>
                     <div class="text-xs text-gray-600 leading-relaxed space-y-2">
                         <p><span class="font-bold uppercase tracking-widest text-gray-500">Telefon</span><br>+41 44 512 09 14</p>
@@ -94,7 +100,7 @@ PhD in Astronomy and Astrophysics: University of Copenhagen (Niels Bohr Institut
                 <p class="text-gray-600 mb-6 max-w-3xl">Dr. Paraficz led an elite team of FFHS students to victory in the official Olympic App Challenge. The team developed a groundbreaking AI solution for the 2026 Winter Olympics in Milano. <a href="https://www.ffhs.ch/de/ffhs/events/detail/2026-02-17-ffhs-studierende-praesentieren-app-bei-den-olympischen-winterspielen-in-mailand" target="_blank" class="text-red-600 font-bold underline ml-1 italic">Official Announcement</a></p>
                 <!-- Placeholder for Hackathon Team Photo -->
                 <div class="h-64 w-full rounded-md overflow-hidden border border-gray-200">
-                    <img src="win.jpeg" alt="Hackathon winning team" class="w-full h-full object-cover">
+                    <img src="images/win.jpeg" alt="Hackathon winning team" class="w-full h-full object-cover">
                 </div>
             </section>
 
@@ -108,7 +114,7 @@ PhD in Astronomy and Astrophysics: University of Copenhagen (Niels Bohr Institut
                         <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Renewable Energy Reliability</p>
                         <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Deep learning approach to photovoltaics diagnostics via multi-spectral imaging.</p>
                         <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="bilbao.jpg" alt="Project EAGLE presentation in Bilbao" class="w-full h-full object-cover">
+                            <img src="images/bilbao.jpg" alt="Project EAGLE presentation in Bilbao" class="w-full h-full object-cover">
                         </div>
                     </a>
 
@@ -117,7 +123,7 @@ PhD in Astronomy and Astrophysics: University of Copenhagen (Niels Bohr Institut
                         <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Eco-Acoustics</p>
                         <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Deep sound classification for biodiversity monitoring in alpine regions.</p>
                         <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="birds.png" alt="Bird in forest" class="w-full h-full object-cover">
+                            <img src="images/birds.png" alt="Bird in forest" class="w-full h-full object-cover">
                         </div>                    </a>
 
                     <a href="projects.html#rag" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
@@ -125,7 +131,7 @@ PhD in Astronomy and Astrophysics: University of Copenhagen (Niels Bohr Institut
                         <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">NLP / Space Science</p>
                         <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">AI retrieval systems for technical documentation at the Nordic Optical Telescope.</p>
                         <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="not.png" alt="Nordic Optical Telescope team celebration" class="w-full h-full object-cover">
+                            <img src="images/not.png" alt="Nordic Optical Telescope team celebration" class="w-full h-full object-cover">
                         </div>
                     </a>
 
@@ -134,7 +140,7 @@ PhD in Astronomy and Astrophysics: University of Copenhagen (Niels Bohr Institut
                         <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Industry 4.0 / Vision</p>
                         <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Agentic-RAG assistant for timber construction and architecture knowledge.</p>
                         <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="holzbau.jpg" alt="Holzbau AI project visual" class="w-full h-full object-cover">
+                            <img src="images/holzbau.jpg" alt="Holzbau AI project visual" class="w-full h-full object-cover">
                         </div>
                     </a>
 

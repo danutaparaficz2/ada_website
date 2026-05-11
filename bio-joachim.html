@@ -27,6 +27,9 @@
             text-transform: uppercase;
             letter-spacing: 0.08em;
         }
+        .lang-de { display: none; }
+        body[data-lang='de'] .lang-en { display: none; }
+        body[data-lang='de'] .lang-de { display: block; }
     </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -46,7 +49,7 @@
     <header class="max-w-5xl mx-auto px-6 py-10 border-b border-gray-100">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <a href="ada_better.html" class="hover:opacity-70 transition flex items-center gap-4">
-                <img src="logo.png" alt="ADA Institute logo" class="h-14 w-auto object-contain">
+                <img src="images/logo.png" alt="ADA Institute logo" class="h-14 w-auto object-contain">
                 <div>
                     <h1 class="text-2xl font-bold tracking-tight">PROF. DR. JOACHIM STEINWENDNER</h1>
                     <p class="text-xs text-gray-400 font-medium uppercase tracking-widest">Forschungsfeldleiter GeoHealth Analytics / Research Field Lead GeoHealth Analytics | Senior Lecturer</p>
@@ -65,44 +68,22 @@
             <section class="grid md:grid-cols-3 gap-12 mb-24 pb-12 border-b">
                 <div class="md:col-span-2 prose-text text-lg">
                     <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>
-                    <p>Prof. Dr. Joachim Steinwendner is a distinguished expert in Artificial Intelligence (AI), Machine Learning, and Digitalization, specializing in high-impact applications within the Health and Geosciences. As the Head of the GeoHealth Analytics research field at the Institute of Applied Datascience and AI (ADA), he bridges the gap between advanced data science and complex spatial-medical challenges.</p>
-                    <p>His work focuses on developing robust, practical systems that integrate data-driven intelligence into critical sectors:
-
-Healthcare & Public Health: Implementing applied mobile solutions and AI-driven analytics for medical research.
-
-Insurance & Finance: Advanced fraud detection utilizing high-dimensional data processing.
-
-Digital Education: Innovation in AI-assisted e-assessment and automated proctoring workflows.
-
-Joachim is recognized for his commitment to measurable real-world impact, ensuring that theoretical machine learning models translate into reliable, scalable implementations.</p>
-                    <p>In addition to his research leadership, he serves as a lecturer at Fernfachhochschule Schweiz (FFHS) and ETH Zurich, shaping the next generation of data scientists. He is also the co-author of the acclaimed technical textbook Neuronale Netze programmieren mit Python (Neural Networks Programming with Python), published by Rheinwerk Verlag.</p>
-                    <p>Core Focus Areas
-Geospatial Data Analytics
-
-Neural Network Development
-
-AI Security & Proctoring Systems
-
-Digital Health Transformation</p>
-                    <h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Research Interests</h3>
-                    <ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">
-                        <li><strong>GeoHealth Analytics:</strong> Utilizing spatial data to analyze health trends and environmental impacts.</li>
-                        <li><strong>Artificial Intelligence &amp; Machine Learning:</strong> Developing predictive models and deep learning architectures.</li>
-                        <li><strong>Data Science:</strong> Implementing robust data processing and visualization techniques.</li>
-                        <li><strong>Digitalization in Healthcare:</strong> Modernizing health systems through intelligent technology.</li>
-                    </ul>
-                    <h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Academic Degrees</h3>
-                    <p>Dr. nat. techn. (Doctor of Natural Resources and Life Sciences)<br>MSc in Computer Science (Informatik)</p>
-                    <h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Teaching Areas</h3>
-                    <ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">
-                        <li>Data Science &amp; Machine Learning (FFHS &amp; ETH Zurich)</li>
-                        <li>Neural Network Development</li>
-                        <li>Python for Scientific Computing</li>
-                    </ul>
+                    <div class="lang-en">
+                        <p>Prof. Dr. Joachim Steinwendner is an expert in Artificial Intelligence, Machine Learning, and digital transformation, with a focus on high-impact applications in health and geosciences.</p>
+                        <p>As Head of the GeoHealth Analytics research field at FFHS, he develops practical systems for healthcare analytics, fraud detection, and AI-supported educational workflows. His work emphasizes robust implementation and measurable outcomes in complex operational settings.</p>
+                        <p>He is committed to turning theoretical machine learning approaches into reliable, scalable solutions that can be used in practice by institutions, professionals, and research partners.</p>
+                        <p>In addition to his research leadership, he teaches at FFHS and ETH Zurich and co-authored the technical book <em>Neuronale Netze programmieren mit Python</em> (Rheinwerk Verlag).</p>
+                    </div>
+                    <div class="lang-de">
+                        <p>Prof. Dr. Joachim Steinwendner ist Experte für Artificial Intelligence, Machine Learning und digitale Transformation mit Schwerpunkt auf wirkungsstarken Anwendungen in Gesundheit und Geowissenschaften.</p>
+                        <p>Als Leiter des Forschungsfelds GeoHealth Analytics an der FFHS entwickelt er praxisnahe Systeme für Gesundheitsanalytik, Betrugserkennung und KI-gestützte Bildungsprozesse. Seine Arbeit legt besonderen Wert auf robuste Umsetzung und messbare Resultate in komplexen Anwendungskontexten.</p>
+                        <p>Er setzt sich dafür ein, theoretische Ansätze des Machine Learning in verlässliche und skalierbare Lösungen zu überführen, die von Institutionen, Fachpersonen und Forschungspartnern produktiv genutzt werden können.</p>
+                        <p>Neben seiner Forschungsleitung unterrichtet er an der FFHS und an der ETH Zürich und ist Mitautor des Fachbuchs <em>Neuronale Netze programmieren mit Python</em> (Rheinwerk Verlag).</p>
+                    </div>
                 </div>
                 <div>
                     <div class="aspect-square rounded-full mb-4 overflow-hidden border border-gray-200">
-                        <img src="joachim.jpg" alt="Portrait of Prof. Dr. Joachim Steinwendner" class="w-full h-full object-cover">
+                        <img src="images/joachim.jpg" alt="Portrait of Prof. Dr. Joachim Steinwendner" class="w-full h-full object-cover">
                     </div>
                     <div class="text-xs text-gray-600 leading-relaxed space-y-2">
                         <p><span class="font-bold uppercase tracking-widest text-gray-500">Telefon</span><br>+41 44 512 09 31</p>
@@ -136,7 +117,7 @@ Digital Health Transformation</p>
                         <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Insurance / Fraud Detection</p>
                         <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Deep Learning methods for detecting rare fraud patterns in high-dimensional insurance datasets.</p>
                         <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="SUVA2.png" alt="SUVA 2 project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <img src="images/SUVA2.png" alt="SUVA 2 project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
                     </a>
 
@@ -145,7 +126,7 @@ Digital Health Transformation</p>
                         <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">EdTech / AI Proctoring</p>
                         <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Home-based examination with AI-assisted proctoring and video-based anomaly monitoring.</p>
                         <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="e-asses.png" alt="E-Assessment project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <img src="images/e-asses.png" alt="E-Assessment project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
                     </a>
 
@@ -154,7 +135,7 @@ Digital Health Transformation</p>
                         <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">HealthTech / SNF</p>
                         <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">App-supported monitoring of side effects in oral iron supplementation during pregnancy.</p>
                         <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="Eisensupplementierung.png" alt="Iron supplementation project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <img src="images/Eisensupplementierung.png" alt="Iron supplementation project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
                     </a>
 
@@ -163,7 +144,7 @@ Digital Health Transformation</p>
                         <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Public Health / Decision Support</p>
                         <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Algorithms for management and risk-oriented support of chronically ill home-care patients.</p>
                         <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="homecare.png" alt="Trigger tools in home care project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <img src="images/homecare.png" alt="Trigger tools in home care project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
                     </a>
 

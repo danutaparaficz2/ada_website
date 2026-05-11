@@ -477,5 +477,5 @@ class DataRenderer {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-  window.contentRenderer = new DataRenderer('content.json');
+  window.contentRenderer = new DataRenderer('content.json?v=20260511b');
 });

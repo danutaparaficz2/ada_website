@@ -345,7 +345,7 @@
                 + '<a href="https://www.aramis.admin.ch/Texte/?ProjectID=51667" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Auf ARAMIS ansehen</a>'
                 + '<a href="https://www.eupvsec.org/images/2025/conference/EUPVSEC2025_ConferenceProgram_web_v6.pdf" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">EU PVSEC Programm (PDF)</a>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="ralf.html">Ralf Jandl</a>, <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="bio-ralf.html">Ralf Jandl</a>, <a href="bio-danka.html">Danuta Paraficz</a> und <a href="bio-natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
         setSectionProse('pronto', {
@@ -361,7 +361,7 @@
                 + '<a href="https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Read Watson Article</a>'
                 + '<a href="https://ieeexplore.ieee.org/abstract/document/11081491" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Read Publication</a>'
                 + '</div>'
-                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="aris.html">Aris Marcolongo</a> and <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>',
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="bio-aris.html">Aris Marcolongo</a> and <a href="bio-natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>',
             de: '<p class="text-lg text-slate-700 font-medium italic mb-2">Vorhersage der Kartoffelkeimung zur Optimierung der Lagerung und Reduktion von Lebensmittelverschwendung.</p>'
                 + '<p>Projekt PRONTO befasst sich mit einer zentralen Herausforderung in landwirtschaftlichen Lieferketten: der Vorhersage und Kontrolle der Keimung gelagerter Kartoffeln. Durch die Analyse <strong>elektrophysiologischer Pflanzensignale</strong> mit maschinellem Lernen kann das Projekt das Keimen Wochen im Voraus prognostizieren.</p>'
                 + '<p>Dieser Ansatz reduziert die Abhängigkeit von chemischen Keimhemmern und minimiert Lebensmittelverschwendung – ein Beitrag zu nachhaltigeren und kosteneffizienteren Lagerprozessen in der Schweizer Landwirtschaft.</p>'
@@ -374,7 +374,7 @@
                 + '<a href="https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Watson-Artikel lesen</a>'
                 + '<a href="https://ieeexplore.ieee.org/abstract/document/11081491" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Publikation lesen</a>'
                 + '</div>'
-                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="aris.html">Aris Marcolongo</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="bio-aris.html">Aris Marcolongo</a> und <a href="bio-natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
         setSectionProse('rag', {
@@ -397,7 +397,7 @@
                 + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Erwartete Wirkung</h4>'
                 + '<p class="text-sm text-slate-600">Die Plattform reduziert Suchaufwand, beschleunigt Expertenworkflows und verringert das Risiko unbegründeter Antworten, indem Ausgaben in vertrauenswürdigen Quellen verankert werden. So entsteht ein praxistauglicher KI-Assistent, der auf wissenschaftliche Infrastrukturumgebungen zugeschnitten ist.</p>'
                 + '</div>'
-                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="bio-danka.html">Danuta Paraficz</a> und <a href="bio-natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
         setSectionProse('birdnet', {
@@ -414,13 +414,13 @@
                 + '</div>'
                 + '<h3 class="text-xl font-bold mt-8 mb-3 text-slate-900">Zukunftsvision</h3>'
                 + '<p>Derzeit liegt der Fokus auf Vogelpopulationen und Zugmustern. Die Society möchte das Projekt künftig auf weitere Tiergruppen wie Fledermäuse und Kleinsäuger ausweiten. Auch die Nutzung von Vogeldaten zur Ableitung von Aussagen über Fischpopulationen wird erwogen.</p>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="joachim.html">Joachim Steinwendner</a> und <a href="danka.html">Danuta Paraficz</a></p></div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="bio-joachim.html">Joachim Steinwendner</a> und <a href="bio-danka.html">Danuta Paraficz</a></p></div>'
         }, lang);
 
         setSectionProse('holzbau', {
             de: '<p>Dieses Projekt führt ein hochmodernes <strong>Agentic-RAG-System (Retrieval-Augmented Generation)</strong> ein, das speziell für die einzigartigen Anforderungen der Holzbau- und Architekturbranche entwickelt wurde.</p>'
                 + '<p>Indem die Plattform über generische KI hinausgeht, agiert sie als intelligenter Assistent, der umfangreiche Archive technischer Dokumente, Normen und Projektdaten mit beispielloser Präzision durchsuchen kann.</p>'
-                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="danka.html">Danuta Paraficz</a> und <a href="natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="bio-danka.html">Danuta Paraficz</a> und <a href="bio-natasa.html">Natasa Sarafijanovic-Djukic</a>.</p></div>'
         }, lang);
 
         setSectionProse('murs', {
@@ -432,7 +432,7 @@
                 + '<div class="flex flex-wrap gap-3 mt-4">'
                 + '<a href="https://www.ffhs.ch/de/ffhs/news/artikel/2026-03-25-warum-ki-oft-schwer-zu-verstehen-ist" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Read FFHS News Article</a>'
                 + '</div>'
-                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">This project was made by <a href="aris.html">Aris Marcolongo</a> and <a href="danka.html">Danuta Paraficz</a> and funded by the Hasler Foundation.</p></div>',
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">This project was made by <a href="bio-aris.html">Aris Marcolongo</a> and <a href="bio-danka.html">Danuta Paraficz</a> and funded by the Hasler Foundation.</p></div>',
             de: '<p class="text-lg text-slate-700 font-medium italic mb-2">Dieses Projekt erforscht eine besser interpretierbare Alternative zu Transformer-Aufmerksamkeitsmechanismen, der Kernkomponente der Neuronalen-Netzwerk-Architektur in vielen modernen KI-Modellen. Inspiriert von Partikelwechselwirkungen modelliert das vorgeschlagene Multi-Representation Scattering (MuRS) Framework Beziehungen zwischen Datenelementen auf einfachere und transparentere Weise. Ziel ist es, besser zu verstehen, was Modelle lernen und wann sie fehlschlagen können, während gleichzeitig starke Leistungen bei Standard-Machine-Learning-Aufgaben erzielt werden. Diese Arbeit ist besonders für Anwendungen relevant, in denen Vertrauen, Rechenschaftspflicht und Erklärbarkeit wichtig sind. Wir suchen nach Industrie- und akademischen Partnern, die an einer Zusammenarbeit bei einem Folgeprojekt des Schweizer Nationalfonds (SNF) interessiert sind. Falls Sie sich für potenzielle Zusammenarbeitsmöglichkeiten zu diesem Thema interessieren, wenden Sie sich bitte an die Projektleiter.</p>'
                 + '<div class="border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r">'
                 + '<h4 class="font-bold mb-2 text-xs uppercase tracking-widest text-blue-700">Partner</h4>'
@@ -441,14 +441,14 @@
                 + '<div class="flex flex-wrap gap-3 mt-4">'
                 + '<a href="https://www.ffhs.ch/de/ffhs/news/artikel/2026-03-25-warum-ki-oft-schwer-zu-verstehen-ist" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">FFHS-Newsartikel lesen</a>'
                 + '</div>'
-                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="aris.html">Aris Marcolongo</a> und <a href="danka.html">Danuta Paraficz</a> erstellt und von der Hasler-Stiftung finanziert.</p></div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="bio-aris.html">Aris Marcolongo</a> und <a href="bio-danka.html">Danuta Paraficz</a> erstellt und von der Hasler-Stiftung finanziert.</p></div>'
         }, lang);
 
         setSectionProse('aitexa', {
             en: '<p class="text-lg text-slate-700 font-medium italic mb-2">Process engineering firms spend significant time manually creating Piping and Instrumentation Diagrams (P&amp;IDs) for new plant designs, while engineering students often struggle to interpret these complex schematics. This project leverages Large Language Models (LLMs) to develop intelligent applications that help P&amp;ID generation and enhance P&amp;ID learning and interpretation.</p>'
-                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">This project is done by <a href="aris.html">Aris Marcolongo</a> with partners FHNW and AITEXA.</p></div>',
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">This project is done by <a href="bio-aris.html">Aris Marcolongo</a> with partners FHNW and AITEXA.</p></div>',
             de: '<p class="text-lg text-slate-700 font-medium italic mb-2">Verfahrenstechnik-Unternehmen investieren viel Zeit in die manuelle Erstellung von Rohrleitungs- und Instrumentierungsdiagrammen (P&amp;IDs) für neue Anlagenentwürfe, während Studierende häufig Schwierigkeiten haben, diese komplexen Schemata zu interpretieren. Dieses Projekt nutzt Large Language Models (LLMs), um intelligente Anwendungen zu entwickeln, die die P&amp;ID-Erstellung unterstützen und das Lernen sowie die Interpretation von P&amp;IDs verbessern.</p>'
-                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wird von <a href="aris.html">Aris Marcolongo</a> mit den Partnern FHNW und AITEXA durchgeführt.</p></div>'
+                + '<div class="project-credit mt-4"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wird von <a href="bio-aris.html">Aris Marcolongo</a> mit den Partnern FHNW und AITEXA durchgeführt.</p></div>'
         }, lang);
 
         setSectionProse('skillsfinder', {
@@ -464,7 +464,7 @@
                 + '<div class="flex flex-wrap gap-3 mt-4">'
                 + '<a href="https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">View on ARAMIS</a>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="natasa.html">Natasa Sarafijanovic-Djukic</a> and <a href="beatrice.html">Beatrice Paoli</a>.</p></div>',
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="bio-natasa.html">Natasa Sarafijanovic-Djukic</a> and <a href="bio-beatrice.html">Beatrice Paoli</a>.</p></div>',
             de: '<p class="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">Neue Plattform zur automatischen Kompetenzextraktion &amp; Profilvalidierung zur Talentidentifikation</p>'
                 + '<p>Dieses Gemeinschaftsprojekt mit dem Start-up Skills Finder AG wird von Innosuisse gefördert. Ziel ist der Aufbau einer Plattform zur Verarbeitung von Bewerbungsunterlagen, die relevante Informationen aus Lebensläufen automatisch extrahiert und gegen Referenzen und Zeugnisse der Kandidatinnen und Kandidaten validiert. Die Verarbeitungspipeline nutzt aktuelle Fortschritte in der Dokumentenbildverarbeitung und im Natural Language Processing (NLP).</p>'
                 + '<p>Der erste Schritt besteht darin, den Text unter Berücksichtigung der korrekten Lesereihenfolge zu extrahieren. Da Lebensläufe sehr unterschiedliche Layouts aufweisen, konnte kein bestehendes Tool den Text zuverlässig extrahieren. Zur Erkennung dieser komplexen Layouts wird ein CV-Layout-Modell mit Deep Layout Parser trainiert – einem Framework für Deep-Learning-basierte Dokumentenbildanalyse.</p>'
@@ -477,7 +477,7 @@
                 + '<div class="flex flex-wrap gap-3 mt-4">'
                 + '<a href="https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">Auf ARAMIS ansehen</a>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="natasa.html">Natasa Sarafijanovic-Djukic</a> und <a href="beatrice.html">Beatrice Paoli</a>.</p></div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Mitwirkende: <a href="bio-natasa.html">Natasa Sarafijanovic-Djukic</a> und <a href="bio-beatrice.html">Beatrice Paoli</a>.</p></div>'
         }, lang);
 
         setSectionProse('stack4ffhs', {
@@ -524,7 +524,7 @@
                 + '<p class="text-sm text-slate-600"><strong>Contact:</strong> Joachim Steinwendner</p>'
                 + '<p class="text-sm text-slate-600"><strong>Project duration:</strong> 3 months</p>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="joachim.html">Joachim Steinwendner</a>.</p></div>',
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="bio-joachim.html">Joachim Steinwendner</a>.</p></div>',
             de: '<p class="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">Deep Learning zur Betrugserkennung</p>'
                 + '<p>Die Schweizerische Unfallversicherungsanstalt (SUVA) setzt vermehrt Methoden des Machine Learning zur Optimierung von Aufgaben in den Versicherungsabteilungen ein. Im Zentrum dieses Projekts steht die <strong>Betrugserkennung im Personenversicherungswesen mit Deep Learning</strong>.</p>'
                 + '<p>Es handelt sich um eine Form der Erkennung statistischer Ausreißer. Die Daten sind hochdimensional (bis zu 1.500 Merkmale) und stark klassenasymmetrisch (Betrugsfälle im Promillebereich). Aufbauend auf statistischen und klassischen ML-Vorarbeiten analysiert das Projekt überwachte Verfahren (Deep Neural Nets, Generative Adversarial Networks) und unüberwachte Verfahren (Autoencoder-Varianten und Boltzmann-Maschinen).</p>'
@@ -532,7 +532,7 @@
                 + '<p class="text-sm text-slate-600"><strong>Kontakt:</strong> Joachim Steinwendner</p>'
                 + '<p class="text-sm text-slate-600"><strong>Projektdauer:</strong> 3 Monate</p>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="joachim.html">Joachim Steinwendner</a> durchgeführt.</p></div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="bio-joachim.html">Joachim Steinwendner</a> durchgeführt.</p></div>'
         }, lang);
 
         setSectionProse('ded-in718', {
@@ -544,7 +544,7 @@
                 + '<p class="text-sm text-slate-600"><strong>Project duration:</strong> 1 year</p>'
                 + '<p class="text-sm text-slate-600"><strong>Contact:</strong> Martina Perani</p>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="beatrice.html">Beatrice Paoli</a> and <a href="ralf.html">Ralf Jandl</a>.</p></div>',
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="bio-beatrice.html">Beatrice Paoli</a> and <a href="bio-ralf.html">Ralf Jandl</a>.</p></div>',
             de: '<p class="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">Simulation additiver Fertigung</p>'
                 + '<p>DED-In718 zielt auf die Realisierung einer Simulations- und Steuerungsplattform für die <strong>Additive-Manufacturing-Technologie</strong> <strong>Direct Energy Deposition (DED)</strong> mit der Legierung Inconel 718.</p>'
                 + '<p>Die Plattform verbessert die Robustheit von DED, reduziert Kosten und Time-to-Market und unterstützt Prozessplanung und -steuerung durch die Vorhersage der Bauteilgeometrie auf Basis integrierter experimenteller Daten.</p>'
@@ -553,7 +553,7 @@
                 + '<p class="text-sm text-slate-600"><strong>Projektdauer:</strong> 1 Jahr</p>'
                 + '<p class="text-sm text-slate-600"><strong>Kontakt:</strong> Martina Perani</p>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="beatrice.html">Beatrice Paoli</a> und <a href="ralf.html">Ralf Jandl</a> durchgeführt.</p></div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="bio-beatrice.html">Beatrice Paoli</a> und <a href="bio-ralf.html">Ralf Jandl</a> durchgeführt.</p></div>'
         }, lang);
 
         setSectionProse('trigger-homecare', {
@@ -571,7 +571,7 @@
                 + '<p class="text-sm text-slate-600"><strong>Contact:</strong> Joachim Steinwendner, Diego Moretti</p>'
                 + '<p class="text-sm text-slate-600"><strong>Duration:</strong> April 2019 - March 2022</p>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="joachim.html">Joachim Steinwendner</a>.</p></div>',
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="bio-joachim.html">Joachim Steinwendner</a>.</p></div>',
             de: '<p class="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">SNF-Projekt - Schwangerschaftsmedizin</p>'
                 + '<p>Im Projekt geht es um die Definition eines Dosierungsschemas mit maximaler Absorption und minimalen gastrointestinalen Nebenwirkungen.</p>'
                 + '<p>Ziel ist das Studium von Nebenwirkungen bei der oralen Eisen-Supplementierung in der Schwangerschaft. Das LWS trägt mit einer <strong>Projekt-App</strong> bei, mit der Teilnehmende Nebenwirkungen erfassen können.</p>'
@@ -579,7 +579,7 @@
                 + '<p class="text-sm text-slate-600"><strong>Kontakt:</strong> Joachim Steinwendner, Diego Moretti</p>'
                 + '<p class="text-sm text-slate-600"><strong>Dauer:</strong> April 2019 - März 2022</p>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="joachim.html">Joachim Steinwendner</a> durchgeführt.</p></div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="bio-joachim.html">Joachim Steinwendner</a> durchgeführt.</p></div>'
         }, lang);
 
         setSectionProse('rasplan', {
@@ -591,7 +591,7 @@
                 + '<p class="text-sm text-slate-600"><strong>Project duration:</strong> 24 months</p>'
                 + '<p class="text-sm text-slate-600"><strong>Contact:</strong> Martina Perani</p>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="beatrice.html">Beatrice Paoli</a> and <a href="ralf.html">Ralf Jandl</a>.</p></div>',
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Contributors: <a href="bio-beatrice.html">Beatrice Paoli</a> and <a href="bio-ralf.html">Ralf Jandl</a>.</p></div>',
             de: '<p class="text-sm text-slate-500 uppercase tracking-widest font-bold mb-4">Bewertung des Erdrutschrisikos</p>'
                 + '<p>Ziel des Projekts ist die Entwicklung einer Technologie, die das <strong>Risiko flacher Erdrutsche</strong> auf Basis numerischer Bodenmodelle und Wassersättigungskarten abschätzen kann.</p>'
                 + '<p>Letztere werden aus einem spärlichen Netz automatisierter Sensoren für Bodenfeuchtigkeitsprofile und durch Datenverräumlichung mit <strong>Techniken des maschinellen Lernens</strong> gewonnen.</p>'
@@ -600,7 +600,7 @@
                 + '<p class="text-sm text-slate-600"><strong>Projektdauer:</strong> 24 Monate</p>'
                 + '<p class="text-sm text-slate-600"><strong>Ansprechperson:</strong> Martina Perani</p>'
                 + '</div>'
-                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="beatrice.html">Beatrice Paoli</a> und <a href="ralf.html">Ralf Jandl</a> durchgeführt.</p></div>'
+                + '<div class="project-credit"><p class="text-sm text-slate-700 mb-0">Dieses Projekt wurde von <a href="bio-beatrice.html">Beatrice Paoli</a> und <a href="bio-ralf.html">Ralf Jandl</a> durchgeführt.</p></div>'
         }, lang);
 
         setSectionProse('customs-engine', {
@@ -751,7 +751,7 @@
 
     function applyProfileTranslations(page, lang) {
         var configs = {
-            'danka.html': {
+            'bio-danka.html': {
                 title: { en: 'Dr. Danuta Paraficz | Senior AI Scientist', de: 'Dr. Danuta Paraficz | Senior KI-Wissenschaftlerin' },
                 subtitle: { en: 'Senior AI Scientist | ADA Institute', de: 'Senior KI-Wissenschaftlerin | ADA Institut' },
                 sections: [
@@ -762,32 +762,32 @@
                     { selector: 'main section:last-of-type h2.text-xs', text: { en: 'Research Portfolio', de: 'Forschungsportfolio' } }
                 ]
             },
-            'ann-karin.html': {
+            'bio-ann-karin.html': {
                 title: { en: 'Dr. Ann-Karin Sanchez | Expert Researcher', de: 'Dr. Ann-Karin Sanchez | Expert Researcher' },
-                subtitle: { en: 'Expert Researcher | ADA Institute', de: 'Expert Researcher | ADA Institut' },
+                subtitle: { en: 'Expert Researcher | Laboratory for Web Science', de: 'Expert Researcher | Laboratory for Web Science' },
                 sections: [
                     { selector: '#home-view h2.text-xs', text: { en: 'Professional Bio', de: 'Berufliches Profil' } }
                 ]
             },
-            'aris.html': {
-                title: { en: 'Dr. Aris Marcolongo | Associate Researcher', de: 'Dr. Aris Marcolongo | Associate Researcher' },
-                subtitle: { en: 'Associate Researcher | ADA Institute', de: 'Associate Researcher | ADA Institut' },
+            'bio-aris.html': {
+                title: { en: 'Dr. Aris Marcolongo | Senior AI Scientist', de: 'Dr. Aris Marcolongo | Senior KI-Wissenschaftler' },
+                subtitle: { en: 'Senior AI Scientist | ADA Institute', de: 'Senior KI-Wissenschaftler | ADA Institut' },
                 sections: [
                     { selector: '#home-view h2.text-xs', text: { en: 'Professional Bio', de: 'Berufliches Profil' } },
                     { selector: 'main section:last-of-type h2.text-xs', text: { en: 'Research Portfolio', de: 'Forschungsportfolio' } }
                 ]
             },
-            'beatrice.html': {
-                title: { en: 'Prof. Dr. Beatrice Paoli | Institutsleiterin LWS / LWS Director', de: 'Prof. Dr. Beatrice Paoli | Institutsleiterin LWS / LWS Director' },
-                subtitle: { en: 'Institutsleiterin LWS / LWS Director | Fachbereichsleiterin Data Science / Head of Data Science', de: 'Institutsleiterin LWS / LWS Director | Fachbereichsleiterin Data Science / Head of Data Science' },
+            'bio-beatrice.html': {
+                title: { en: 'Prof. Dr. Beatrice Paoli | Director, Laboratory for Web Science', de: 'Prof. Dr. Beatrice Paoli | Direktorin Laboratory for Web Science' },
+                subtitle: { en: 'Director, Laboratory for Web Science (LWS) | Head of Data Science', de: 'Direktorin Laboratory for Web Science (LWS) | Leiterin Data Science' },
                 sections: [
                     { selector: '#home-view h2.text-xs', text: { en: 'Professional Bio', de: 'Berufliches Profil' } },
                     { selector: 'main section.mt-16 h2.text-xs', text: { en: 'Archive Project Icons', de: 'Projekt-Icons aus dem Archiv' } }
                 ]
             },
-            'joachim.html': {
-                title: { en: 'Prof. Dr. Joachim Steinwendner | Forschungsfeldleiter GeoHealth Analytics / Research Field Lead GeoHealth Analytics', de: 'Prof. Dr. Joachim Steinwendner | Forschungsfeldleiter GeoHealth Analytics / Research Field Lead GeoHealth Analytics' },
-                subtitle: { en: 'Forschungsfeldleiter GeoHealth Analytics / Research Field Lead GeoHealth Analytics | ADA Institute', de: 'Forschungsfeldleiter GeoHealth Analytics / Research Field Lead GeoHealth Analytics | ADA Institut' },
+            'bio-joachim.html': {
+                title: { en: 'Prof. Dr. Joachim Steinwendner | Research Field Lead GeoHealth Analytics', de: 'Prof. Dr. Joachim Steinwendner | Forschungsfeldleiter GeoHealth Analytics' },
+                subtitle: { en: 'Research Field Lead GeoHealth Analytics | Senior Lecturer', de: 'Forschungsfeldleiter GeoHealth Analytics | Senior Lecturer' },
                 sections: [
                     { selector: '#home-view h2.text-xs', text: { en: 'Professional Bio', de: 'Berufliches Profil' } },
                     { selector: 'main h2.text-xs:nth-of-type(2)', text: { en: 'Research Interests', de: 'Forschungsinteressen' } },
@@ -798,17 +798,17 @@
                     { selector: 'main h2.text-xs:nth-of-type(7)', text: { en: 'Project Portfolio', de: 'Projektportfolio' } }
                 ]
             },
-            'natasa.html': {
-                title: { en: 'Dr. Natasa Sarafijanovic-Djukic | Associate Researcher', de: 'Dr. Natasa Sarafijanovic-Djukic | Associate Researcher' },
-                subtitle: { en: 'Associate Researcher | ADA Institute', de: 'Associate Researcher | ADA Institut' },
+            'bio-natasa.html': {
+                title: { en: 'Dr. Natasa Sarafijanovic-Djukic | Senior AI Scientist', de: 'Dr. Natasa Sarafijanovic-Djukic | Senior KI-Wissenschaftlerin' },
+                subtitle: { en: 'Senior AI Scientist | ADA Institute', de: 'Senior KI-Wissenschaftlerin | ADA Institut' },
                 sections: [
                     { selector: '#home-view h2.text-xs', text: { en: 'Professional Bio', de: 'Berufliches Profil' } },
                     { selector: 'main section:last-of-type h2.text-xs', text: { en: 'Research Portfolio', de: 'Forschungsportfolio' } }
                 ]
             },
-            'ralf.html': {
-                title: { en: 'Ralf Jandl | Forschungsfeldleiter Energie, Umwelt, Materialien / Research Field Lead Energy, Environment, Materials', de: 'Ralf Jandl | Forschungsfeldleiter Energie, Umwelt, Materialien / Research Field Lead Energy, Environment, Materials' },
-                subtitle: { en: 'Forschungsfeldleiter Energie, Umwelt, Materialien / Research Field Lead Energy, Environment, Materials | Laboratory for Web Science', de: 'Forschungsfeldleiter Energie, Umwelt, Materialien / Research Field Lead Energy, Environment, Materials | Laboratory for Web Science' },
+            'bio-ralf.html': {
+                title: { en: 'Ralf Jandl | Research Field Lead Energy, Environment, Materials', de: 'Ralf Jandl | Forschungsfeldleiter Energie, Umwelt, Materialien' },
+                subtitle: { en: 'Research Field Lead Energy, Environment, Materials | Laboratory for Web Science', de: 'Forschungsfeldleiter Energie, Umwelt, Materialien | Laboratory for Web Science' },
                 sections: [
                     { selector: '#home-view h2.text-xs', text: { en: 'Professional Bio', de: 'Berufliches Profil' } },
                     { selector: 'main section.mt-16 h2.text-xs', text: { en: 'Archive Project Icons', de: 'Projekt-Icons aus dem Archiv' } }
@@ -850,119 +850,9 @@
     }
 
     function applyProfileLongForm(page, lang) {
-        if (page === 'ann-karin.html') {
-            var annKarinBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (annKarinBio && !annKarinBio.dataset.originalHtml) {
-                annKarinBio.dataset.originalHtml = annKarinBio.innerHTML;
-            }
-            if (annKarinBio && lang === 'de') {
-                annKarinBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                    + '<p>Dr. Ann-Karin Sanchez ist Expert Researcher am Laboratory for Web Science (LWS) der Fernfachhochschule Schweiz (FFHS) in Zurich.</p>';
-            } else if (annKarinBio && annKarinBio.dataset.originalHtml) {
-                annKarinBio.innerHTML = annKarinBio.dataset.originalHtml;
-            }
-        }
-
-        if (page === 'aris.html') {
-            var arisBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (arisBio && !arisBio.dataset.originalHtml) {
-                arisBio.dataset.originalHtml = arisBio.innerHTML;
-            }
-            if (arisBio && lang === 'de') {
-                arisBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                    + '<p>Dr. Aris Marcolongo ist Senior Researcher und Data Scientist mit Spezialisierung auf angewandtes Machine Learning an der Fernfachhochschule Schweiz (FFHS).</p>';
-            } else if (arisBio && arisBio.dataset.originalHtml) {
-                arisBio.innerHTML = arisBio.dataset.originalHtml;
-            }
-        }
-
-        if (page === 'beatrice.html') {
-            var beatriceBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (beatriceBio && !beatriceBio.dataset.originalHtml) {
-                beatriceBio.dataset.originalHtml = beatriceBio.innerHTML;
-            }
-            if (beatriceBio && lang === 'de') {
-                beatriceBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                    + '<p>Prof. Dr. Beatrice Paoli ist Institutsleiterin LWS / LWS Director und Fachbereichsleiterin Data Science / Head of Data Science an der Fernfachhochschule Schweiz (FFHS).</p>'
-                    + '<p>Sie prägt die strategische und wissenschaftliche Weiterentwicklung der Data Science in Forschung, Lehre und angewandter Innovation.</p>';
-            } else if (beatriceBio && beatriceBio.dataset.originalHtml) {
-                beatriceBio.innerHTML = beatriceBio.dataset.originalHtml;
-            }
-        }
-
-        if (page === 'danka.html') {
-            var dankaBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (dankaBio && !dankaBio.dataset.originalHtml) {
-                dankaBio.dataset.originalHtml = dankaBio.innerHTML;
-            }
-            if (dankaBio && lang === 'de') {
-                dankaBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                    + '<p>Dr. Danuta (Danka) Paraficz ist KI-Forschungswissenschaftlerin an der Fernfachhochschule Schweiz (FFHS) und arbeitet an praxisnahen Machine-Learning- und Deep-Learning-Lösungen.</p>'
-                    + '<p>Ihr beruflicher Weg verbindet akademische Forschung mit produktionsreifen KI-Systemen. Im Energiesektor entwickelte sie Prognosemodelle auf Basis von Satelliten- und Wetterdaten für Wind- und Solarproduktion in Europa. In der Astrophysikforschung (EPFL und LAM Marseille) arbeitete sie zu Gravitationslinsen und Dunkler Materie, entwickelte wissenschaftliche Software und leitete internationale datenintensive Kooperationen.</p>'
-                    + '<p>Sie promovierte in Astronomie und Astrophysik an der Universität Kopenhagen (Niels-Bohr-Institut). Ihre Dissertation führte einen theoretischen Ansatz zur Messung Dunkler Materie über starke Gravitationslinsen ein.</p>';
-            } else if (dankaBio && dankaBio.dataset.originalHtml) {
-                dankaBio.innerHTML = dankaBio.dataset.originalHtml;
-            }
-        }
-
-        if (page === 'joachim.html') {
-            var joachimBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (joachimBio && !joachimBio.dataset.originalHtml) {
-                joachimBio.dataset.originalHtml = joachimBio.innerHTML;
-            }
-            if (joachimBio && lang === 'de') {
-                joachimBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                    + '<p>Prof. Dr. Joachim Steinwendner ist Experte für Artificial Intelligence, Machine Learning und digitale Transformation mit Schwerpunkt auf Anwendungen in Gesundheit und Geowissenschaften. Als Leiter des Forschungsfelds GeoHealth Analytics am ADA verbindet er fortgeschrittene Analytik mit praxisnaher Umsetzung.</p>'
-                    + '<p>Seine Arbeit umfasst mobile und KI-gestützte Lösungen im Gesundheitswesen, Betrugserkennung in Versicherung und Finanzwesen sowie KI-unterstütztes E-Assessment/Proctoring in der digitalen Lehre. Er ist dafür bekannt, Forschungskonzepte in skalierbare und verlässliche Produktivsysteme zu überführen.</p>'
-                    + '<p>Neben seiner Forschungsleitung unterrichtet er an FFHS und ETH Zürich und ist Mitautor des Fachbuchs <em>Neuronale Netze programmieren mit Python</em> (Rheinwerk Verlag).</p>'
-                    + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Forschungsinteressen</h3>'
-                    + '<ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">'
-                    + '<li><strong>GeoHealth Analytics:</strong> Räumliche Datenanalyse für Gesundheitstrends und Umwelteinflüsse.</li>'
-                    + '<li><strong>KI &amp; Machine Learning:</strong> Prädiktive Modelle und Deep-Learning-Architekturen.</li>'
-                    + '<li><strong>Data Science:</strong> Robuste Verarbeitungspipelines und Visualisierung.</li>'
-                    + '<li><strong>Digitale Gesundheit:</strong> Modernisierung von Gesundheitssystemen durch intelligente Technologien.</li>'
-                    + '</ul>'
-                    + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Akademische Abschlüsse</h3>'
-                    + '<p>Dr. nat. techn.<br>MSc in Informatik</p>'
-                    + '<h3 class="text-lg font-bold uppercase tracking-wider mt-8 mb-4 text-gray-900">Lehrgebiete</h3>'
-                    + '<ul class="text-sm text-gray-700 space-y-2 list-disc pl-5">'
-                    + '<li>Data Science &amp; Machine Learning (FFHS &amp; ETH Zürich)</li>'
-                    + '<li>Entwicklung neuronaler Netze</li>'
-                    + '<li>Python für wissenschaftliches Rechnen</li>'
-                    + '</ul>';
-            } else if (joachimBio && joachimBio.dataset.originalHtml) {
-                joachimBio.innerHTML = joachimBio.dataset.originalHtml;
-            }
-        }
-
-        if (page === 'natasa.html') {
-            var natasaBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (natasaBio && !natasaBio.dataset.originalHtml) {
-                natasaBio.dataset.originalHtml = natasaBio.innerHTML;
-            }
-            if (natasaBio && lang === 'de') {
-                natasaBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                    + '<p>Dr. Natasa Sarafijanovic-Djukic ist Forscherin für angewandtes Machine Learning an der Fernfachhochschule Schweiz (FFHS) und verfügt über mehr als ein Jahrzehnt Erfahrung in Wissenschaft und Industrie.</p>'
-                    + '<p>Seit ihrem Einstieg an der FFHS im Jahr 2021 konzentriert sie sich auf praxisnahe KI-Systeme. Zuvor war sie Marie-Skłodowska-Curie-Fellow bei Iris Technology Solutions (industrielle Data Science) sowie Postdoktorandin bei Inria in Frankreich (Web-Privacy und User-Tracking).</p>'
-                    + '<p>Ihre Schwerpunkte umfassen Computer Vision, Natural Language Processing, RAG-Systeme, Zeitreihenmodellierung und interpretierbares Machine Learning. Sie promovierte in Computer and Communication Science an der EPFL.</p>';
-            } else if (natasaBio && natasaBio.dataset.originalHtml) {
-                natasaBio.innerHTML = natasaBio.dataset.originalHtml;
-            }
-        }
-
-        if (page === 'ralf.html') {
-            var ralfBio = document.querySelector('#home-view .prose-text.text-lg');
-            if (ralfBio && !ralfBio.dataset.originalHtml) {
-                ralfBio.dataset.originalHtml = ralfBio.innerHTML;
-            }
-            if (ralfBio && lang === 'de') {
-                ralfBio.innerHTML = '<h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Berufliches Profil</h2>'
-                    + '<p>Ralf Jandl ist Forschungsfeldleiter Energie, Umwelt, Materialien / Research Field Lead Energy, Environment, Materials am Laboratory for Web Science (LWS), Fernfachhochschule Schweiz (FFHS).</p>'
-                    + '<p>Sein Hintergrund verbindet Softwareentwicklung, Teamleitung und Projektberatung mit akademischer Ausbildung in Wirtschaftsinformatik und Künstlicher Intelligenz.</p>';
-            } else if (ralfBio && ralfBio.dataset.originalHtml) {
-                ralfBio.innerHTML = ralfBio.dataset.originalHtml;
-            }
-        }
+        // Bios are maintained statically in each profile page (lang-en/lang-de blocks).
+        // Intentionally no dynamic HTML replacement here.
+        return;
     }
 
     function applyLanguage(lang) {

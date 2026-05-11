@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof. Dr. Beatrice Paoli | Institutsleiterin LWS / LWS Director</title>
+    <title>Prof. Dr. Beatrice Paoli | Director, Laboratory for Web Science</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="language-switcher.js"></script>
@@ -15,6 +15,9 @@
 
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         .prose-text p { margin-bottom: 1.5rem; line-height: 1.6; color: #374151; }
+        .lang-de { display: none; }
+        body[data-lang='de'] .lang-en { display: none; }
+        body[data-lang='de'] .lang-de { display: block; }
     </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -34,10 +37,10 @@
     <header class="max-w-5xl mx-auto px-6 py-10 border-b border-gray-100">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <a href="ada_better.html" class="hover:opacity-70 transition flex items-center gap-4">
-                <img src="logo.png" alt="ADA Institute logo" class="h-14 w-auto object-contain">
+                <img src="images/logo.png" alt="ADA Institute logo" class="h-14 w-auto object-contain">
                 <div>
                     <h1 class="text-2xl font-bold tracking-tight">PROF. DR. BEATRICE PAOLI</h1>
-                    <p class="text-xs text-gray-400 font-medium uppercase tracking-widest">Institutsleiterin LWS / LWS Director | Fachbereichsleiterin Data Science / Head of Data Science</p>
+                    <p class="text-xs text-gray-400 font-medium uppercase tracking-widest">Director, Laboratory for Web Science (LWS) | Head of Data Science</p>
                 </div>
             </a>
             <nav class="flex gap-6 text-[11px] font-bold uppercase tracking-widest text-gray-500">
@@ -53,12 +56,20 @@
             <section class="grid md:grid-cols-3 gap-12 mb-24 pb-12 border-b">
                 <div class="md:col-span-2 prose-text text-lg">
                     <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Professional Bio</h2>
-                    <p>Prof. Dr. Beatrice Paoli is Institutsleiterin of the Laboratory for Web Science (LWS) and Fachbereichsleiterin Data Science at Fernfachhochschule Schweiz (FFHS).</p>
-                    <p>She contributes to the strategic and scientific development of data science activities across research, teaching, and applied innovation at FFHS.</p>
+                    <div class="lang-en">
+                        <p>Prof. Dr. Beatrice Paoli is Director of the Laboratory for Web Science (LWS) and Head of Data Science at Fernfachhochschule Schweiz (FFHS).</p>
+                        <p>She leads the strategic and scientific development of data science activities across research, teaching, and applied innovation. Her work emphasizes the connection between methodological quality, institutional development, and practical impact.</p>
+                        <p>In her leadership role, she supports interdisciplinary collaboration, promotes structured project execution, and helps translate complex analytical approaches into value for education and partner organizations.</p>
+                    </div>
+                    <div class="lang-de">
+                        <p>Prof. Dr. Beatrice Paoli ist Direktorin des Laboratory for Web Science (LWS) und Leiterin Data Science an der Fernfachhochschule Schweiz (FFHS).</p>
+                        <p>Sie verantwortet die strategische und wissenschaftliche Weiterentwicklung der Data Science in Forschung, Lehre und angewandter Innovation. Ihre Arbeit verbindet methodische Qualität mit institutioneller Entwicklung und praktischem Nutzen.</p>
+                        <p>In ihrer Führungsrolle stärkt sie die interdisziplinäre Zusammenarbeit, fördert eine strukturierte Projektumsetzung und unterstützt die Überführung komplexer analytischer Ansätze in konkrete Mehrwerte für Bildung und Partnerorganisationen.</p>
+                    </div>
                 </div>
                 <div>
                     <div class="aspect-square rounded-full mb-4 overflow-hidden border border-gray-200">
-                        <img src="bea.jpg" alt="Portrait of Prof. Dr. Beatrice Paoli" class="w-full h-full object-cover">
+                        <img src="images/bea.jpg" alt="Portrait of Prof. Dr. Beatrice Paoli" class="w-full h-full object-cover">
                     </div>
                     <div class="text-xs text-gray-600 leading-relaxed space-y-2">
                         <p><span class="font-bold uppercase tracking-widest text-gray-500">Telefon</span><br>+41 44 512 09 28</p>
@@ -74,19 +85,19 @@
                 <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Archive Project Icons</h2>
                 <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                     <a href="ada_better.html#stack4ffhs" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="STACK4FFHS.png" alt="STACK4FFHS project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/STACK4FFHS.png" alt="STACK4FFHS project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
                     </a>
                     <a href="ada_better.html#graph-measure" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="automorph.png" alt="Graph Automorphism project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/automorph.png" alt="Graph Automorphism project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
                     </a>
                     <a href="ada_better.html#suva2" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="SUVA2.png" alt="SUVA 2 project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/SUVA2.png" alt="SUVA 2 project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
                     </a>
                     <a href="ada_better.html#ded-in718" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="ded.png" alt="DED project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/ded.png" alt="DED project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
                     </a>
                     <a href="ada_better.html#eisen-snf" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="Eisensupplementierung.png" alt="Eisen supplementation project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/Eisensupplementierung.png" alt="Eisen supplementation project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
                     </a>
                 </div>
             </section>
@@ -99,7 +110,7 @@
             <div>
                 <p class="text-black mb-2">ADA Institute (FFHS)</p>
                 <p>Zollstrasse 17, 8005 Zurich, Switzerland</p>
-                <p>Institutsleiterin LWS | Fachbereichsleiterin Data Science</p>
+                <p>Director, Laboratory for Web Science | Head of Data Science</p>
             </div>
             <div class="md:text-right">
                 <p class="text-black mb-2">Contact</p>
