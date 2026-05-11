@@ -6,8 +6,8 @@ Use this checklist before publishing any content change.
 - Update content in _content.json_ first.
 - The homepage and projects views are rendered automatically from content.json by data-renderer.js.
 - If content is changed in content.json, the following pages update automatically after reload:
-_	- ada_better.html
-	- projects.html_
+	- _ada_better.html_
+	- _projects.html_
 - Language labels and some UI text are also adjusted by language-switcher.js.
 
 ## 2) Required JSON Structure
