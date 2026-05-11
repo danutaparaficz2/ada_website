@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="language-switcher.js"></script>
+    <script defer src="bio-projects.js"></script>
     <style>
         .page-section { display: none; }
         .page-section:target { display: block; }
@@ -108,47 +109,12 @@
                 </div>
             </section>
 
-            <section id="projects">
-                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10 italic">Project Portfolio</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                    <a href="projects.html#suva2" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
-                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">SUVA 2</h4>
-                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Insurance / Fraud Detection</p>
-                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Deep Learning methods for detecting rare fraud patterns in high-dimensional insurance datasets.</p>
-                        <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="images/SUVA2.png" alt="SUVA 2 project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                    </a>
-
-                    <a href="projects.html#e-assessment" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
-                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">E-Assessment AI</h4>
-                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">EdTech / AI Proctoring</p>
-                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Home-based examination with AI-assisted proctoring and video-based anomaly monitoring.</p>
-                        <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="images/e-asses.png" alt="E-Assessment project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                    </a>
-
-                    <a href="projects.html#eisen-snf" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
-                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">Iron Supplementation Study</h4>
-                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">HealthTech / SNF</p>
-                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">App-supported monitoring of side effects in oral iron supplementation during pregnancy.</p>
-                        <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="images/Eisensupplementierung.png" alt="Iron supplementation project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                    </a>
-
-                    <a href="projects.html#trigger-homecare" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
-                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">Trigger Tools in Home Care</h4>
-                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Public Health / Decision Support</p>
-                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Algorithms for management and risk-oriented support of chronically ill home-care patients.</p>
-                        <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="images/homecare.png" alt="Trigger tools in home care project" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                    </a>
-
-                </div>
+            <section class="mt-16">
+                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10 italic">
+                    <span class="lang-en">Related Projects</span>
+                    <span class="lang-de">Verknuepfte Projekte</span>
+                </h2>
+                <div data-bio-projects></div>
             </section>
         </div>
 

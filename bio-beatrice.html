@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="language-switcher.js"></script>
+    <script defer src="bio-projects.js"></script>
     <style>
         .page-section { display: none; }
         .page-section:target { display: block; }
@@ -82,24 +83,11 @@
             </section>
 
             <section class="mt-16">
-                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-6 italic">Archive Project Icons</h2>
-                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-                    <a href="ada_better.html#stack4ffhs" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="images/STACK4FFHS.png" alt="STACK4FFHS project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
-                    </a>
-                    <a href="ada_better.html#graph-measure" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="images/automorph.png" alt="Graph Automorphism project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
-                    </a>
-                    <a href="ada_better.html#suva2" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="images/SUVA2.png" alt="SUVA 2 project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
-                    </a>
-                    <a href="ada_better.html#ded-in718" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="images/ded.png" alt="DED project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
-                    </a>
-                    <a href="ada_better.html#eisen-snf" class="group border border-gray-200 rounded-lg overflow-hidden hover:border-red-600 transition">
-                        <img src="images/Eisensupplementierung.png" alt="Eisen supplementation project" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
-                    </a>
-                </div>
+                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10 italic">
+                    <span class="lang-en">Related Projects</span>
+                    <span class="lang-de">Verknuepfte Projekte</span>
+                </h2>
+                <div data-bio-projects></div>
             </section>
         </div>
 

@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="language-switcher.js"></script>
+    <script defer src="bio-projects.js"></script>
     <style>
         /* Essential Navigation Logic */
         .page-section { display: none; }
@@ -89,58 +90,12 @@
                     </div>
                 </div>
             </section>
-
-
-
-            <!-- RESEARCH PORTFOLIO GRID -->
-            <section>
-                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10 italic">Research Portfolio</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    
-                    <a href="projects.html#eagle" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
-                        <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">Project EAGLE</h4>
-                        <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Renewable Energy Reliability</p>
-                        <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Deep learning approach to photovoltaics diagnostics via multi-spectral imaging.</p>
-                        <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                            <img src="images/eagle_photo.png" alt="Project EAGLE presentation in Bilbao" class="w-full h-full object-cover">
-                        </div>
-                    </a>
-                <!-- Project: PRONTO -->
-                <a href="projects.html#pronto" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-xl transition duration-300 block">
-                    <div class="h-56 bg-slate-200 overflow-hidden relative">
-                        <img src="images/potatos.png" alt="Potatoes in storage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute top-4 left-4 bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Smart Agrotech</div>
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-xl font-bold mb-3">Project PRONTO</h4>
-                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                            Predicting potato sprouting to optimize tuber storage. Analyzing electrophysiological plant signals with ML to reduce chemical use and food waste.
-                        </p>
-                        <div class="text-xs text-slate-400 font-mono">Partner: Agroscope / Vivent</div>
-                    </div>
-                </a>
-
-                <a href="projects.html#holzbau" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
-                    <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">Holzbau AI</h4>
-                    <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Industry 4.0 / Vision</p>
-                    <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Agentic-RAG assistant for timber construction and architecture knowledge.</p>
-                    <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                        <img src="images/holzbau.jpg" alt="Holzbau AI project visual" class="w-full h-full object-cover">
-                    </div>
-                </a>
-
-                <a href="projects.html#skillsfinder" class="group border border-gray-200 p-8 rounded hover:border-red-600 transition">
-                    <h4 class="font-bold text-xl mb-1 uppercase tracking-tighter">SkillsFinder</h4>
-                    <p class="text-[10px] text-red-600 font-bold uppercase tracking-widest mb-4">Industry 4.0 / Vision</p>
-                    <p class="text-sm text-gray-500 mb-6 italic leading-relaxed">Automatic skills extraction and profile validation platform.</p>
-                    <div class="w-full h-32 rounded overflow-hidden border border-gray-200">
-                        <img src="images/skillsfinder.png" alt="SkillsFinder project" class="w-full h-full object-cover">
-                    </div>
-                </a>
-
-
-
-                </div>
+            <section class="mt-16">
+                <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10 italic">
+                    <span class="lang-en">Related Projects</span>
+                    <span class="lang-de">Verknuepfte Projekte</span>
+                </h2>
+                <div data-bio-projects></div>
             </section>
         </div>
 
