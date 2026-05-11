@@ -102,7 +102,7 @@ Projects appear on a bio page when the project entry in content.json matches the
 - All bilingual text (title, description, meta) in the project entry automatically switches when users toggle language.
 - No additional work required.
 
-## 8) Copy-Paste Project Template
+## 6) Copy-Paste Project Template
 Use this as a starting point when adding a new project to projects[] in content.json.
 
 ```json
