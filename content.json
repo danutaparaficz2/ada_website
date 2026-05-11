@@ -1,0 +1,1072 @@
+{
+  "site": {
+    "title": {
+      "en": "ADA Institute | Applied Data Science and AI",
+      "de": "ADA Institut | Angewandte Datenwissenschaft und KI"
+    },
+    "description": {
+      "en": "Institute of Applied Datascience and AI",
+      "de": "Institut für Angewandte Datenwissenschaft und KI"
+    },
+    "address": "Zollstrasse 17, CH-8005 Zurich, Switzerland",
+    "email": "danuta.paraficz@ffhs.ch",
+    "phone": "+41 (0) 44 842 15 00"
+  },
+  "hero": {
+    "tagline": {
+      "en": "Formerly LWS",
+      "de": "Ehemals LWS"
+    },
+    "title": {
+      "en": "Institute of <span class=\"gradient-text\">Applied Data Science & AI</span>",
+      "de": "Institut für <span class=\"gradient-text\">Angewandte Datenwissenschaft & KI</span>"
+    },
+    "description": {
+      "en": "Bridging the gap between academic research and industry application. We transform complex data into actionable intelligence.",
+      "de": "Wir überbrücken die Lücke zwischen akademischer Forschung und industrieller Anwendung. Wir verwandeln komplexe Daten in umsetzbare Erkenntnisse."
+    },
+    "buttons": [
+      {
+        "label": {
+          "en": "Our Research",
+          "de": "Unsere Forschung"
+        },
+        "href": "#projects"
+      },
+      {
+        "label": {
+          "en": "News",
+          "de": "Aktuelles"
+        },
+        "href": "#news"
+      },
+      {
+        "label": {
+          "en": "Our Team",
+          "de": "Unser Team"
+        },
+        "href": "team.html"
+      }
+    ]
+  },
+  "researchFields": [
+    {
+      "id": "geohealth",
+      "title": "GeoHealth Analytics",
+      "subtitle": {
+        "en": "Research Field",
+        "de": "Forschungsfeld"
+      },
+      "icon": "🗺️",
+      "color": "green",
+      "description": {
+        "en": "Focus on geospatial analysis and health data integration, combining geographic information systems with advanced data science methods to address health-related challenges.",
+        "de": "Fokus auf Geodatenanalyse und die Integration von Gesundheitsdaten, wobei geografische Informationssysteme mit fortgeschrittenen Data-Science-Methoden kombiniert werden, um gesundheitsbezogene Herausforderungen zu bearbeiten."
+      },
+      "lead": "Prof. Dr. Joachim Steinwendner",
+      "leadHref": "joachim.html",
+      "leadLabel": {
+        "en": "Field Lead",
+        "de": "Leitung"
+      }
+    },
+    {
+      "id": "energy",
+      "title": {
+        "en": "Energy, Environment & Materials",
+        "de": "Energie, Umwelt & Materialien"
+      },
+      "subtitle": {
+        "en": "Research Field",
+        "de": "Forschungsfeld"
+      },
+      "icon": "⚡",
+      "color": "orange",
+      "description": {
+        "en": "Dedicated to research on energy systems, environmental sustainability, and material science. Applications of AI and data science support resource optimization and technical innovation.",
+        "de": "Fokussiert auf Forschung zu Energiesystemen, ökologischer Nachhaltigkeit und Materialwissenschaft. Anwendungen von KI und Datenwissenschaft unterstützen Ressourcenoptimierung und technische Innovation."
+      },
+      "lead": "Ralf Jandl",
+      "leadHref": "ralf.html",
+      "leadLabel": {
+        "en": "Field Lead",
+        "de": "Leitung"
+      }
+    },
+    {
+      "id": "exploratory",
+      "title": {
+        "en": "Others",
+        "de": "Weitere"
+      },
+      "subtitle": {
+        "en": "Exploratory Research",
+        "de": "Explorative Forschung"
+      },
+      "icon": "🔬",
+      "color": "violet",
+      "description": {
+        "en": "AI and data science increasingly shape work far beyond our core research fields. We explore applications in scientific discovery, environmental monitoring, robotics, RAG systems, and other emerging technologies wherever innovative solutions are needed.",
+        "de": "KI und Datenwissenschaft prägen zunehmend Arbeitsfelder weit über unsere Kernforschungsbereiche hinaus. Wir untersuchen Anwendungen in wissenschaftlicher Entdeckung, Umweltmonitoring, Robotik, RAG-Systemen und weiteren aufkommenden Technologien, überall dort, wo innovative Lösungen gefragt sind."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "eagle",
+      "status": "active",
+      "title": {
+        "en": "Project EAGLE",
+        "de": "Projekt EAGLE"
+      },
+      "shortTitle": "Project EAGLE",
+      "badge": {
+        "en": "Renewable Energy",
+        "de": "Erneuerbare Energien"
+      },
+      "image": "eagle_photo.png",
+      "altText": "Project EAGLE presentation in Bilbao",
+      "description": {
+        "en": "Deep Learning approach to photovoltaics reliability. Utilizing multispectral imaging (UV, IR, Visible) and Vision Transformers to detect cell-level failures automatically.",
+        "de": "Deep-Learning-Ansatz für die Zuverlässigkeit von Photovoltaik. Multispektrale Bildgebung (UV, IR, sichtbar) und Vision Transformer erkennen Zellfehler automatisch."
+      },
+      "meta": {
+        "en": "Partner: SUPSI / SFOE",
+        "de": "Partner: SUPSI / SFOE"
+      },
+      "details": {
+        "subtitle": {
+          "en": "A Deep Learning Approach to Photovoltaic Reliability",
+          "de": "Ein Deep-Learning-Ansatz für die Zuverlässigkeit von Photovoltaik"
+        },
+        "paragraphs": [
+          {
+            "en": "Project EAGLE addresses long-term photovoltaic reliability with an AI-powered diagnostic framework.",
+            "de": "Projekt EAGLE adressiert die langfristige Zuverlässigkeit von Photovoltaik mit einem KI-gestützten Diagnose-Framework."
+          },
+          {
+            "en": "The approach combines multispectral imaging and modern deep learning to identify hidden defects and support scalable maintenance decisions.",
+            "de": "Der Ansatz kombiniert multispektrale Bildgebung und modernes Deep Learning, um versteckte Defekte zu erkennen und skalierbare Wartungsentscheidungen zu unterstützen."
+          }
+        ],
+        "meta": {
+          "contact": {
+            "en": "SUPSI / SFOE",
+            "de": "SUPSI / SFOE"
+          }
+        },
+        "links": [
+          {
+            "href": "https://www.aramis.admin.ch/Texte/?ProjectID=51667",
+            "label": {
+              "en": "View on ARAMIS",
+              "de": "Auf ARAMIS anzeigen"
+            }
+          },
+          {
+            "href": "https://www.eupvsec.org/images/2025/conference/EUPVSEC2025_ConferenceProgram_web_v6.pdf",
+            "label": {
+              "en": "EU PVSEC Program (PDF)",
+              "de": "EU PVSEC Programm (PDF)"
+            }
+          }
+        ],
+        "credits": "Ralf Jandl, Danuta Paraficz, Natasa Sarafijanovic-Djukic"
+      }
+    },
+    {
+      "id": "pronto",
+      "status": "active",
+      "title": {
+        "en": "Project PRONTO",
+        "de": "Projekt PRONTO"
+      },
+      "shortTitle": "Project PRONTO",
+      "badge": {
+        "en": "Smart Agrotech",
+        "de": "Smarte Agrartechnik"
+      },
+      "image": "potatos.png",
+      "altText": "Potatoes in storage",
+      "description": {
+        "en": "Predicting potato sprouting to optimize tuber storage. Analyzing electrophysiological plant signals with ML to reduce chemical use and food waste.",
+        "de": "Vorhersage der Kartoffelkeimung zur Optimierung der Lagerung. Analyse elektrophysiologischer Pflanzensignale mit ML zur Reduktion von Chemikalieneinsatz und Food Waste."
+      },
+      "meta": {
+        "en": "Partner: Agroscope / Vivent",
+        "de": "Partner: Agroscope / Vivent"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Predicting potato sprouting for sustainable storage",
+          "de": "Vorhersage von Kartoffelkeimung für nachhaltige Lagerung"
+        },
+        "paragraphs": [
+          {
+            "en": "Project PRONTO predicts sprouting in stored potatoes by analyzing electrophysiological plant signals with machine learning.",
+            "de": "Projekt PRONTO sagt die Keimung gelagerter Kartoffeln voraus, indem elektrophysiologische Pflanzensignale mit Machine Learning analysiert werden."
+          },
+          {
+            "en": "The goal is to reduce chemical suppressants and food waste while improving storage quality.",
+            "de": "Das Ziel ist die Reduktion von chemischen Hemmstoffen und Lebensmittelverschwendung bei gleichzeitig besserer Lagerqualität."
+          }
+        ],
+        "links": [
+          {
+            "href": "https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern",
+            "label": {
+              "en": "Read FFHS News Article",
+              "de": "FFHS-News lesen"
+            }
+          },
+          {
+            "href": "https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern",
+            "label": {
+              "en": "Read Watson Article",
+              "de": "Watson-Artikel lesen"
+            }
+          }
+        ],
+        "credits": "Aris Marcolongo, Natasa Sarafijanovic-Djukic"
+      }
+    },
+    {
+      "id": "holzbau",
+      "status": "active",
+      "title": {
+        "en": "Holzbau AI",
+        "de": "Holzbau KI"
+      },
+      "shortTitle": "Holzbau AI",
+      "badge": {
+        "en": "Civil Engineering",
+        "de": "Bauingenieurwesen"
+      },
+      "image": "holzbau.jpg",
+      "altText": "Timber construction",
+      "description": {
+        "en": "Implementing computer vision for quality control and structural health monitoring in timber construction, ensuring the sustainability of modern wood-based architecture.",
+        "de": "Einsatz von Computer Vision zur Qualitätskontrolle und Überwachung der strukturellen Gesundheit im Holzbau, um die Nachhaltigkeit moderner holzbasierter Architektur zu gewährleisten."
+      },
+      "meta": {
+        "en": "Domain: Industrial Vision",
+        "de": "Bereich: Industrielle Bildverarbeitung"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Agentic-RAG for timber construction knowledge",
+          "de": "Agentic-RAG für Wissen im Holzbau"
+        },
+        "paragraphs": [
+          {
+            "en": "Holzbau AI introduces an assistant tailored to timber construction and architecture workflows.",
+            "de": "Holzbau AI führt einen Assistenten ein, der auf Arbeitsabläufe im Holzbau und in der Architektur zugeschnitten ist."
+          },
+          {
+            "en": "The system helps navigate technical documents, standards, and project data with retrieval-augmented reasoning.",
+            "de": "Das System hilft dabei, technische Dokumente, Normen und Projektdaten mit retrieval-gestützter Argumentation zu durchsuchen."
+          }
+        ],
+        "credits": "Danuta Paraficz, Natasa Sarafijanovic-Djukic"
+      }
+    },
+    {
+      "id": "rag",
+      "status": "active",
+      "title": {
+        "en": "RAG for Nordic Optical Telescope",
+        "de": "RAG für das Nordic Optical Telescope"
+      },
+      "shortTitle": "RAG for NOT",
+      "badge": {
+        "en": "Astronomy AI",
+        "de": "KI für wissenschaftliche Systeme"
+      },
+      "image": "not.png",
+      "altText": "Nordic Optical Telescope",
+      "description": {
+        "en": "Implementing a Retrieval-Augmented Generation (RAG) system to allow astronomers to query complex observatory documentation and scientific logs using natural language.",
+        "de": "Implementierung eines Retrieval-Augmented-Generation-Systems (RAG), damit Astronomen komplexe Observatoriumsdokumentationen und technische Protokolle in natürlicher Sprache abfragen können."
+      },
+      "meta": {
+        "en": "Lead: Dr. Danuta Paraficz",
+        "de": "Leitung: Dr. Danuta Paraficz"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Retrieval-Augmented AI for observatory knowledge",
+          "de": "Retrieval-Augmented KI für Observatoriumswissen"
+        },
+        "paragraphs": [
+          {
+            "en": "In collaboration with the Nordic Optical Telescope, ADA is building a domain-specific RAG system for scientists and technical teams.",
+            "de": "In Zusammenarbeit mit dem Nordic Optical Telescope entwickelt ADA ein domänenspezifisches RAG-System für Wissenschafts- und Technikteams."
+          },
+          {
+            "en": "The platform improves access to manuals and logs through natural-language queries with evidence-grounded responses.",
+            "de": "Die Plattform verbessert den Zugriff auf Handbücher und Logs über natürliche Sprachabfragen mit evidenzbasierten Antworten."
+          }
+        ],
+        "credits": "Danuta Paraficz, Natasa Sarafijanovic-Djukic"
+      }
+    },
+    {
+      "id": "birdnet",
+      "status": "active",
+      "title": {
+        "en": "BirdNet Classification",
+        "de": "BirdNet-Klassifikation"
+      },
+      "shortTitle": "Soundscapes / BirdNET",
+      "badge": {
+        "en": "Bio-Acoustics",
+        "de": "Bioakustik"
+      },
+      "image": "birdss.jpg",
+      "altText": "Bird in forest",
+      "description": {
+        "en": "Advanced acoustic monitoring system using CNNs to identify bird species in Swiss alpine regions, supporting biodiversity conservation through automated data analysis.",
+        "de": "Fortgeschrittenes akustisches Monitoringsystem mit CNNs zur Identifikation von Vogelarten in Schweizer Alpenregionen und zur Unterstützung des Biodiversitätsschutzes."
+      },
+      "meta": {
+        "en": "Domain: Environmental Data Science",
+        "de": "Bereich: Umwelt-Datenwissenschaft"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Bioacoustic biodiversity analytics",
+          "de": "Bioakustische Biodiversitätsanalyse"
+        },
+        "paragraphs": [
+          {
+            "en": "The Soundscapes initiative uses long-duration audio monitoring to analyze biodiversity trends in complex habitats.",
+            "de": "Die Soundscapes-Initiative nutzt Langzeit-Audiomonitoring, um Biodiversitätstrends in komplexen Lebensräumen zu analysieren."
+          },
+          {
+            "en": "The project combines field recordings and scalable AI processing in collaboration with FFHS researchers.",
+            "de": "Das Projekt kombiniert Feldaufnahmen und skalierbare KI-Auswertung in Zusammenarbeit mit FFHS-Forschenden."
+          }
+        ],
+        "links": [
+          {
+            "href": "CMS journal 2025 electronic copy.pdf",
+            "label": {
+              "en": "Download CMS Journal 2025 (PDF)",
+              "de": "CMS Journal 2025 herunterladen (PDF)"
+            }
+          }
+        ],
+        "credits": "Joachim Steinwendner, Danuta Paraficz"
+      }
+    },
+    {
+      "id": "skillsfinder",
+      "status": "active",
+      "title": "SkillsFinder",
+      "shortTitle": "SkillsFinder",
+      "badge": {
+        "en": "Talent AI",
+        "de": "KI für Talente"
+      },
+      "image": "skillsfinder.png",
+      "altText": "SkillsFinder project",
+      "description": {
+        "en": "New platform for automatic skills extraction and profile validation to identify talents and support recruitment workflows.",
+        "de": "Neue Plattform zur automatischen Extraktion von Kompetenzen und zur Profilvalidierung, um Talente zu identifizieren und Recruiting-Prozesse zu unterstützen."
+      },
+      "meta": {
+        "en": "Domain: Talent Intelligence",
+        "de": "Bereich: Talent Intelligence"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Automatic skills extraction and profile validation",
+          "de": "Automatische Skills-Extraktion und Profilvalidierung"
+        },
+        "paragraphs": [
+          {
+            "en": "SkillsFinder processes job application documents and extracts structured candidate information.",
+            "de": "SkillsFinder verarbeitet Bewerbungsunterlagen und extrahiert strukturierte Kandidateninformationen."
+          },
+          {
+            "en": "The pipeline combines document layout analysis, multilingual NLP, and semantic validation against references and certificates.",
+            "de": "Die Pipeline kombiniert Dokumentlayout-Analyse, mehrsprachige NLP-Verfahren und semantische Validierung gegen Referenzen und Zertifikate."
+          }
+        ],
+        "meta": {
+          "method": {
+            "en": "Conference: Swiss Text Analytics Conference (SwissText) 2022",
+            "de": "Konferenz: Swiss Text Analytics Conference (SwissText) 2022"
+          }
+        },
+        "links": [
+          {
+            "href": "https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079",
+            "label": {
+              "en": "View on ARAMIS",
+              "de": "Auf ARAMIS anzeigen"
+            }
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=i7viysHUwcA",
+            "label": {
+              "en": "SwissText 2022 Presentation",
+              "de": "SwissText 2022 Vortrag"
+            }
+          }
+        ],
+        "credits": "Natasa Sarafijanovic-Djukic, Beatrice Paoli"
+      }
+    },
+    {
+      "id": "stack4ffhs",
+      "status": "archive",
+      "title": "STACK4FFHS",
+      "shortTitle": "STACK4FFHS",
+      "image": "STACK4FFHS.png",
+      "description": {
+        "en": "Moodle math expression assessment with Maxima parsing and feedback.",
+        "de": "Moodle-System zur Bewertung mathematischer Ausdrücke mit Maxima-Parsing und Feedback."
+      },
+      "subtitle": {
+        "en": "LWS Archive Project",
+        "de": "LWS-Archivprojekt"
+      },
+      "details": {
+        "subtitle": {
+          "en": "LWS Archive Project",
+          "de": "LWS Archive Project"
+        },
+        "paragraphs": [
+          {
+            "en": "Stack4FFHS is an internal teaching development project. Stack is a Moodle plugin that allows posing tasks in which students can enter mathematical expressions and formulas as answers.",
+            "de": "Stack4FFHS ist ein internes Lehrentwicklungsprojekt. Stack ist ein Moodle-Plugin, das es erlaubt, Aufgaben zu stellen, in denen die Studierenden als Antwort mathematische Ausdrücke und Formeln eingeben können."
+          },
+          {
+            "en": "Since the representation of a formula is usually not unique, the input cannot be simply checked as text; rather, it is parsed and checked using the Maxima computer algebra system and then feedback is provided to students depending on the solution.",
+            "de": "Da die Darstellung einer Formel in der Regel nicht eindeutig ist, kann die Eingabe nicht einfach als Text überprüft werden; vielmehr wird sie mit Hilfe des Computeralgebrasystems Maxima geparst und überprüft und dann den Studierenden abhängig von der Lösung ein Feedback gegeben."
+          },
+          {
+            "en": "As part of the project, question collections are created in Moodle covering topics such as mathematical fundamentals, analysis, discrete mathematics and linear algebra.",
+            "de": "Im Rahmen des Projekts werden in Moodle Fragesammlungen erstellt mit Fragen zu den Themen Mathematikgrundlagen, Analysis, diskrete Mathematik und Lineare Algebra."
+          }
+        ],
+        "meta": {
+          "duration": {
+            "en": "Modular design, multiple semesters (resources dependent)",
+            "de": "Modular aufgebaut, mehrere Semester (Ressourcen abhängig)"
+          },
+          "contact": {
+            "en": "Urs-Martin Künzi",
+            "de": "Urs-Martin Künzi"
+          }
+        }
+      }
+    },
+    {
+      "id": "graph-measure",
+      "status": "archive",
+      "title": {
+        "en": "Measure Based on Graph Automorphism",
+        "de": "Maß auf Basis von Graphautomorphismen"
+      },
+      "shortTitle": "Graph Automorphism",
+      "image": "automorph.png",
+      "description": {
+        "en": "Graph invariants and classification across graph classes.",
+        "de": "Graphinvarianten und Klassifikation über Graphklassen hinweg."
+      },
+      "subtitle": {
+        "en": "LWS Archive Project",
+        "de": "LWS-Archivprojekt"
+      },
+      "details": {
+        "subtitle": {
+          "en": "LWS Archive Project",
+          "de": "LWS Archive Project"
+        },
+        "paragraphs": [
+          {
+            "en": "The LWS is a project partner in the project 'Measure Based on Graph Automorphism' by Matthias Dehmer of FH Steyr.",
+            "de": "Das LWS ist Projektpartner im Projekt «Measure Based on Graph Automorphism» von Matthias Dehmer von der FH Steyr."
+          },
+          {
+            "en": "The goal of the project is to investigate invariants on graphs, particularly those defined by automorphisms. We examine what relationships exist between different invariants and the extent to which these invariants can uniquely classify graphs within certain graph classes.",
+            "de": "Ziel des Projektes ist die Untersuchung von Invarianten auf Graphen, insbesondere von solchen, die durch Automorphismen definiert werden. Es wird untersucht, welche Beziehungen es zwischen verschiedenen Invarianten gibt und inwiefern diese Invarianten innerhalb gewisser Graphklassen Graphen eindeutig klassifizieren können."
+          }
+        ],
+        "meta": {
+          "contact": {
+            "en": "Urs-Martin Künzi",
+            "de": "Urs-Martin Künzi"
+          },
+          "duration": {
+            "en": "1.2.19 - 30.9.2020",
+            "de": "1.2.19 - 30.9.2020"
+          }
+        }
+      }
+    },
+    {
+      "id": "suva2",
+      "status": "archive",
+      "title": {
+        "en": "SUVA 2 (Service Project)",
+        "de": "SUVA 2 (Dienstleistungsprojekt)"
+      },
+      "shortTitle": "SUVA 2",
+      "image": "SUVA2.png",
+      "description": {
+        "en": "Deep learning methods for fraud detection in insurance data.",
+        "de": "Deep-Learning-Methoden zur Betrugserkennung in Versicherungsdaten."
+      },
+      "subtitle": {
+        "en": "Deep Learning for Fraud Detection",
+        "de": "Deep Learning zur Betrugserkennung"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Deep Learning for Fraud Detection",
+          "de": "Deep Learning for Fraud Detection"
+        },
+        "paragraphs": [
+          {
+            "en": "The Swiss Accident Insurance Institution (SUVA) is increasingly using machine learning methods to optimize tasks in different insurance departments. Specifically, this project focuses on fraud detection in personal insurance using deep learning.",
+            "de": "Die Schweizerische Unfallversicherungsanstalt (SUVA) versucht vermehrt Methoden des Machine Learning zur Optimierung von Aufgaben in den unterschiedlichen Versicherungsabteilungen einzusetzen. Im Speziellen geht es in diesem Projekt um Betrugserkennung im Personenversicherungswesen mit Mitteln des Deep Learning."
+          },
+          {
+            "en": "This is a form of detecting statistical outliers. The data is characterized by high dimensionality (up to 1500 features) and a high degree of class asymmetry (fraud data in the per mille range). After preliminary work with traditional statistical and machine learning methods, the focus of this project is on feasibility analysis of supervised (Deep Neural Nets, Generative Adversarial Networks) and unsupervised (Autoencoder variants and Boltzmann machines) deep learning methods.",
+            "de": "Es handelt sich hier um eine Form der Erkennung von statistischen Ausreissern. Die Daten kennzeichnen sich durch eine hohe Dimensionalität (bis zu 1500 Merkmale) und einem hohen Grad an Klassenassymetrie (Betrugsdaten im Promillebereich). Nach Vorarbeiten mit traditionellen Methoden der Statistik und Machine Learning liegt der Schwerpunkt in diesem Projekt auf der Tauglichkeitsanalyse von überwachten (Deep Neural Nets, Generative Adversarial Networks) und unüberwachten (Autoencodervarianten und Boltzmann Maschinen) Methoden des Deep Learning."
+          }
+        ],
+        "meta": {
+          "contact": {
+            "en": "Joachim Steinwendner",
+            "de": "Joachim Steinwendner"
+          },
+          "duration": {
+            "en": "3 months",
+            "de": "3 Monate"
+          }
+        },
+        "credits": "Joachim Steinwendner"
+      }
+    },
+    {
+      "id": "ded-in718",
+      "status": "archive",
+      "title": {
+        "en": "Multi-physics Platform for DED",
+        "de": "Multiphysik-Plattform für DED"
+      },
+      "shortTitle": "Multi-physics DED",
+      "image": "ded.png",
+      "description": {
+        "en": "Simulation and control platform for Direct Energy Deposition.",
+        "de": "Simulations- und Steuerungsplattform für Direct Energy Deposition."
+      },
+      "subtitle": {
+        "en": "Additive Manufacturing Simulation",
+        "de": "Simulation additiver Fertigung"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Additive Manufacturing Simulation",
+          "de": "Additive Manufacturing Simulation"
+        },
+        "paragraphs": [
+          {
+            "en": "DED-In718 aims at realizing a simulation and control platform for the Additive Manufacturing (AM) technology called Direct Energy Deposition (DED), optimized for applications with the Inconel 718 alloy.",
+            "de": "DED-In718 zielt auf die Realisierung einer Simulations- und Steuerungsplattform für die Additive Manufacturing (AM)-Technologie namens Direct Energy Deposition (DED) ab, die für Anwendungen mit der Legierung Inconel 718 optimiert ist."
+          },
+          {
+            "en": "It will improve the robustness of DED, reduce production costs and time to market by providing accurate prediction of the geometry of Inconel 718 parts to support process planning and control through integration of experimental data.",
+            "de": "Sie wird die Robustheit von DED verbessern, die Produktionskosten und die Zeit bis zur Markteinführung reduzieren, indem sie eine genaue Vorhersage der Geometrie von Inconel 718-Teilen zur Unterstützung der Prozessplanung und -steuerung durch die Integration von experimentellen Daten durchführt."
+          }
+        ],
+        "meta": {
+          "methods": {
+            "en": "Artificial Intelligence, CNNs, End-to-End Learning",
+            "de": "Künstliche Intelligenz, CNNs, End-to-End Learning"
+          },
+          "duration": {
+            "en": "1 year",
+            "de": "1 Jahr"
+          },
+          "contact": {
+            "en": "Martina Perani",
+            "de": "Martina Perani"
+          }
+        },
+        "credits": "Beatrice Paoli and Ralf Jandl"
+      }
+    },
+    {
+      "id": "trigger-homecare",
+      "status": "archive",
+      "title": {
+        "en": "Trigger Tools & Algorithms in Homecare",
+        "de": "Trigger-Tools & Algorithmen in der ambulanten Pflege"
+      },
+      "shortTitle": "Trigger Homecare",
+      "image": "homecare.png",
+      "description": {
+        "en": "Algorithms for chronically ill home care patient management.",
+        "de": "Algorithmen für das Management chronisch kranker Patienten im Heimbereich."
+      },
+      "subtitle": {
+        "en": "Chronically Ill Patient Management",
+        "de": "Management chronisch kranker Patientinnen und Patienten"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Chronically Ill Patient Management",
+          "de": "Chronically Ill Patient Management"
+        },
+        "paragraphs": [
+          {
+            "en": "The internal project is conducted in collaboration with Axis 6 (Social systems and public health) and aims to optimize care for chronically ill patients in the home care sector.",
+            "de": "Das interne Projekt wird in Zusammenarbeit mit der Achse 6 (Social systems and public health) durchgeführt und zielt auf die Optimierung der Versorgung von chronisch kranken Patienten im Heimbereich ab."
+          }
+        ],
+        "meta": {}
+      }
+    },
+    {
+      "id": "eisen-snf",
+      "status": "archive",
+      "title": {
+        "en": "Optimization of Oral Iron Supplementation",
+        "de": "Optimierung der oralen Eisen-Supplementierung"
+      },
+      "shortTitle": "Eisen-SNF",
+      "image": "Eisensupplementierung.png",
+      "description": {
+        "en": "Optimization of oral iron supplementation in pregnancy.",
+        "de": "Optimierung der oralen Eisen-Supplementierung in der Schwangerschaft."
+      },
+      "subtitle": {
+        "en": "SNF Project - Pregnancy Medicine",
+        "de": "SNF-Projekt - Schwangerschaftsmedizin"
+      },
+      "details": {
+        "subtitle": {
+          "en": "SNF Project - Pregnancy Medicine",
+          "de": "SNF Project - Pregnancy Medicine"
+        },
+        "paragraphs": [
+          {
+            "en": "The project focuses on defining a dosing schedule with maximum absorption and minimal gastrointestinal side effects.",
+            "de": "Im Projekt geht es um die Definition eines Dosierungsschemas mit maximaler Absorption und minimalen gastrointestinalen Nebenwirkungen."
+          },
+          {
+            "en": "The goal is to study side effects of oral iron supplementation in pregnant women. The LWS contributes to the project with an app through which women can record side effects.",
+            "de": "Ziel ist das Studium von Nebenwirkungen bei der oralen Eisen-Supplementierung bei schwangeren Frauen. Das LWS trägt mit einer App zum Projekt bei, mithilfe derer die Frauen die Nebenwirkungen eintragen können."
+          }
+        ],
+        "meta": {
+          "contact": {
+            "en": "Joachim Steinwendner, Diego Moretti",
+            "de": "Joachim Steinwendner, Diego Moretti"
+          },
+          "duration": {
+            "en": "April 2019 - March 2022",
+            "de": "April 2019 – März 2022"
+          }
+        },
+        "credits": "Joachim Steinwendner"
+      }
+    },
+    {
+      "id": "ip-sbm",
+      "status": "archive",
+      "title": {
+        "en": "IP-SBM: Skills Extraction & Validation",
+        "de": "IP-SBM: Skills-Extraktion & Validierung"
+      },
+      "shortTitle": "IP-SBM",
+      "image": null,
+      "description": {
+        "en": "Platform for candidate profile registration, references, and automatic skills certification validation.",
+        "de": "Plattform zur Profilregistrierung, Referenzanfrage und automatischen Validierung von Fähigkeiten und Fachkenntnissen."
+      },
+      "subtitle": {
+        "en": "Talent Identification & Recruitment",
+        "de": "Talent Identification & Recruitment"
+      },
+      "isArchive": true,
+      "details": {
+        "subtitle": {
+          "en": "Talent Identification & Recruitment",
+          "de": "Talent Identification & Recruitment"
+        },
+        "paragraphs": [
+          {
+            "en": "Provision of a platform that enables candidates to:",
+            "de": "Bereitstellung einer Plattform, die es den Kandidaten ermöglicht:"
+          },
+          {
+            "en": "• Register their profile\n• Request references\n• Automatically validate certification of their skills and expertise\n• Use the results in application and recruitment processes",
+            "de": "• Ihr Profil zu registrieren\n• Referenzen anzufordern\n• Die Zertifizierung ihrer Fähigkeiten und Fachkenntnisse automatisch zu validieren\n• Die Ergebnisse im Bewerbungs- und Rekrutierungsprozess zu verwenden"
+          }
+        ],
+        "meta": {
+          "duration": {
+            "en": "18 months",
+            "de": "18 Monate"
+          },
+          "contact": {
+            "en": "Beatrice Paoli",
+            "de": "Beatrice Paoli"
+          }
+        }
+      }
+    },
+    {
+      "id": "rasplan",
+      "status": "archive",
+      "title": {
+        "en": "IP-EE: RASPLAN",
+        "de": "IP-EE: RASPLAN"
+      },
+      "shortTitle": "RASPLAN",
+      "image": "rasplan.png",
+      "description": {
+        "en": "Machine learning for shallow landslide risk prediction.",
+        "de": "Maschinelles Lernen zur Vorhersage von Erdrutschrisiken."
+      },
+      "subtitle": {
+        "en": "Landslide Risk Assessment",
+        "de": "Bewertung des Erdrutschrisikos"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Landslide Risk Assessment",
+          "de": "Landslide Risk Assessment"
+        },
+        "paragraphs": [
+          {
+            "en": "The goal of the project is to develop technology that can estimate the risk of shallow landslides based on numerical soil models and water saturation maps.",
+            "de": "Ziel des Projekts ist die Entwicklung einer Technologie, die das Risiko von flachen Erdrutschen auf der Grundlage von numerischen Bodenmodellen und Wassersättigungskarten abschätzen kann."
+          },
+          {
+            "en": "The latter are obtained from a sparse network of automated soil moisture profile sensors and data spatialization using machine learning techniques.",
+            "de": "Letztere werden aus einem spärlichen Netz automatisierter Sensoren für Bodenfeuchtigkeitsprofile und Datenverräumlichung durch Techniken des maschinellen Lernens gewonnen."
+          }
+        ],
+        "meta": {
+          "method": {
+            "en": "Machine Learning, Artificial Intelligence, Neural Networks",
+            "de": "Machine Learning, Künstliche Intelligenz, Neuronale Netze"
+          },
+          "duration": {
+            "en": "24 months",
+            "de": "24 Monate"
+          },
+          "contact": {
+            "en": "Martina Perani",
+            "de": "Martina Perani"
+          }
+        },
+        "credits": "Beatrice Paoli and Ralf Jandl"
+      }
+    },
+    {
+      "id": "customs-engine",
+      "status": "archive",
+      "title": {
+        "en": "INNO-SBM: Customs Clearance Engine",
+        "de": "INNO-SBM: Zollabfertigungs-Engine"
+      },
+      "shortTitle": "Customs Engine",
+      "image": null,
+      "description": {
+        "en": "ML support for Swiss customs clearance plausibility checks.",
+        "de": "ML-Unterstützung für Plausibilitätsprüfungen der Schweizer Zollabfertigung."
+      },
+      "subtitle": {
+        "en": "Innocheque 2020 - Customs Automation",
+        "de": "Innocheque 2020 - Zollautomatisierung"
+      },
+      "isArchive": true,
+      "details": {
+        "subtitle": {
+          "en": "Innocheque 2020 - Customs Automation",
+          "de": "Innocheque 2020 - Customs Automation"
+        },
+        "paragraphs": [
+          {
+            "en": "A machine learning solution capable of:",
+            "de": "Eine maschinelles Lernen Lösung, die in der Lage ist:"
+          },
+          {
+            "en": "• Predicting and assessing the plausibility of Swiss customs clearance numbers\n• Providing all necessary information associated with these customs clearance numbers\n• Using good descriptions for classification",
+            "de": "• Die Plausibilität der Schweizer Zollabfertigungsnummern vorherzusagen und zu bewerten\n• Alle notwendigen Informationen im Zusammenhang mit diesen Zollabfertigungsnummern bereitzustellen\n• Gute Beschreibungen zur Klassifizierung zu nutzen"
+          }
+        ],
+        "meta": {
+          "duration": {
+            "en": "6 months",
+            "de": "6 Monate"
+          },
+          "contact": {
+            "en": "Beatrice Paoli",
+            "de": "Beatrice Paoli"
+          }
+        }
+      }
+    },
+    {
+      "id": "trends",
+      "status": "archive",
+      "title": {
+        "en": "TrEndS: Trend Discovery & Students@Risk",
+        "de": "TrEndS: Trendsentdecker & Students@Risk"
+      },
+      "shortTitle": "TrEndS",
+      "image": "trends.png",
+      "description": {
+        "en": "Trends discovery and Students@Risk learning analytics tools.",
+        "de": "Trendsentdecker und Students@Risk Learning-Analytics-Tools."
+      },
+      "subtitle": {
+        "en": "Learning Analytics & Student Success",
+        "de": "Learning Analytics & Studienerfolg"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Learning Analytics & Student Success",
+          "de": "Learning Analytics & Student Success"
+        },
+        "paragraphs": [
+          {
+            "en": "The TrEndS project is a collaboration between the Laboratory for Web Science (LWS) and the MSc program management.",
+            "de": "Das TrEndS-Projekt ist eine Kooperation zwischen dem Laboratory for Web Science (LWS) und der MSc-Studiengangsleitung."
+          },
+          {
+            "en": "It enables systematic data collection and analysis to better identify the potential of the study program and derive appropriate measures. This project is based on existing databases CAS Campus and Evento.",
+            "de": "Es bietet die Möglichkeit einer systematischen Datenerfassung sowie -analyse, um die Potenziale des Studiengangs noch besser zu erkennen und entsprechende Massnahmen daraus abzuleiten. Dieses Projekt basiert auf den vorhandenen Datenbanken CAS Campus und Evento."
+          },
+          {
+            "en": "Machine Learning and Deep Learning algorithms will enable automatic generation of information from data. The data analysis tool consists of:\n• Trendsentdecker - Analyzing study program trends\n• Students@Risk - Early identification of at-risk students",
+            "de": "Machine Learning und Deep Learning-Algorithmen ermöglichen es künftig, automatisch Informationen aus Daten zu generieren. Das Daten-Analyse-Tool besteht aus:\n• Trendsentdecker - Analysieren von Studiengangtrends\n• Students@Risk - Früherkennung gefährdeter Studierender"
+          }
+        ],
+        "meta": {
+          "contact": {
+            "en": "Martina Perani",
+            "de": "Martina Perani"
+          },
+          "duration": {
+            "en": "1.12.2018 - 29.2.2020",
+            "de": "1.12.2018 - 29.2.2020"
+          }
+        }
+      }
+    },
+    {
+      "id": "nn-pdes",
+      "status": "archive",
+      "title": {
+        "en": "Neural Networks as FEA Alternative",
+        "de": "Neuronale Netze als FEA-Alternative"
+      },
+      "shortTitle": "NN-based PDE Solver",
+      "image": null,
+      "description": {
+        "en": "Neural approaches as alternatives to finite element analysis.",
+        "de": "Neuronale Ansätze als Alternativen zur Finite-Elemente-Analyse."
+      },
+      "subtitle": {
+        "en": "Hasler Foundation - Scientific Computing",
+        "de": "Hasler Stiftung - Scientific Computing"
+      },
+      "isArchive": true,
+      "details": {
+        "subtitle": {
+          "en": "Hasler Foundation - Scientific Computing",
+          "de": "Hasler Foundation - Scientific Computing"
+        },
+        "paragraphs": [
+          {
+            "en": "This proposal aims to enable simulations for industrial applications using a novel technique for solving partial differential equations (PDEs) based on neural networks.",
+            "de": "Dieser Vorschlag zielt darauf ab, mit Hilfe einer neuartigen Technik zur Lösung partieller Differentialgleichungen (PDEs) auf der Basis neuronaler Netze Simulationen für industrielle Anwendungen zu ermöglichen."
+          },
+          {
+            "en": "The recent revival of this method in the scientific literature has led to several publications on the topic, i.e. the technique is ready for transfer to applied research as an alternative to classical Finite Elements Analysis (FEA).",
+            "de": "Die jüngste Wiederbelebung dieser Methode in der wissenschaftlichen Literatur führte zu mehreren Veröffentlichungen zu diesem Thema, d.h. die Technik ist reif für einen Transfer in die angewandte Forschung als Alternative zur klassischen Finite Elements Analysis (FEA)."
+          }
+        ],
+        "meta": {
+          "duration": {
+            "en": "9 months",
+            "de": "9 Monate"
+          },
+          "contact": {
+            "en": "Urs-Martin Künzi",
+            "de": "Urs-Martin Künzi"
+          }
+        }
+      }
+    },
+    {
+      "id": "e-assessment",
+      "status": "archive",
+      "title": {
+        "en": "E-Assessment: AI-Proctored Exams",
+        "de": "E-Assessment: KI-gestützte Prüfungen"
+      },
+      "shortTitle": "E-Assessment",
+      "image": "e-asses.png",
+      "description": {
+        "en": "Home-based AI-supported proctoring and exam monitoring.",
+        "de": "KI-gestützte Prüfungsüberwachung im Homeoffice."
+      },
+      "subtitle": {
+        "en": "Intel Research - Home-Based Examination",
+        "de": "Intel Research - Home-Based Examination"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Intel Research - Home-Based Examination",
+          "de": "Intel Research - Home-Based Examination"
+        },
+        "paragraphs": [
+          {
+            "en": "Due to the coronavirus, FFHS was forced to conduct all teaching online and ensure testing for the current semester.",
+            "de": "Aufgrund des Coronavirus war die FFHS gezwungen, alle Lehrveranstaltungen online abzuhalten und die Prüfung des aktuellen Semesters sicherzustellen."
+          },
+          {
+            "en": "Therefore, a home-based examination system was tested to conduct all exams without live proctoring online. After successful pilot testing, it was decided to conduct all exams with students at home and test the integration of artificial intelligence in the examination system.",
+            "de": "Deshalb wurde ein home-based Prüfungssystem getestet, um alle Prüfungen ohne Live-Proctoring online zu realisieren. Nach erfolgreichem Pilottest wurde beschlossen, alle Prüfungen mit Studierenden zu Hause durchzuführen und die Integration künstlicher Intelligenz in das Prüfungssystem zu testen."
+          },
+          {
+            "en": "The examination system is based on screen and test candidate videos that are monitored for fraud prevention. Cooperation with the scientific community of DACH distance universities.",
+            "de": "Das Prüfungssystem basiert auf Videos vom Bildschirm und von den Testkandidaten, die zur Betrugsprävention kontrolliert werden. Kooperation mit der wissenschaftlichen Gemeinschaft der DACH-Fernuniversitäten."
+          }
+        ],
+        "meta": {
+          "contact": {
+            "en": "Joachim Steinwendner",
+            "de": "Joachim Steinwendner"
+          },
+          "duration": {
+            "en": "1 year",
+            "de": "1 Jahr"
+          }
+        }
+      }
+    },
+    {
+      "id": "smar-ti",
+      "status": "archive",
+      "title": {
+        "en": "SMAR-TI: Smart City Platform",
+        "de": "SMAR-TI: Smart-City-Plattform"
+      },
+      "shortTitle": "SMAR-TI",
+      "image": null,
+      "description": {
+        "en": "Integrated smart city platform development for Ticino.",
+        "de": "Entwicklung einer integrierten Smart-City-Plattform für Tessin."
+      },
+      "subtitle": {
+        "en": "Ticino Smart Region Development",
+        "de": "Ticino Smart Region Development"
+      },
+      "isArchive": true,
+      "details": {
+        "subtitle": {
+          "en": "Ticino Smart Region Development",
+          "de": "Ticino Smart Region Development"
+        },
+        "paragraphs": [
+          {
+            "en": "SMAR-TI: Development of an integrated Smart City platform for Ticino aims to create and test an integrated platform for the coordinated development of all activities related to Smart City and/or Smart Region within SUPSI and its affiliated schools.",
+            "de": "SMAR-TI: Sviluppo di una piattaforma integrata Smart City per il Ticino zielt darauf ab, eine integrierte Plattform für die koordinierte Entwicklung aller Aktivitäten im Zusammenhang mit der Smart City und/oder Smart Region innerhalb der SUPSI und ihrer affiliierten Schulen zu schaffen und zu testen."
+          },
+          {
+            "en": "This instrument enables presenting itself as a single contact point to the various stakeholders and coordinating internal competencies within the university to address this topic in an integrated, efficient and effective manner.",
+            "de": "Dieses Instrument ermöglicht es, sich gegenüber den verschiedenen Akteuren als ein einziger Gesprächspartner zu präsentieren und die internen Kompetenzen innerhalb der Universität zu koordinieren, um dieses Thema auf integrierte, effiziente und wirksame Weise zu behandeln."
+          }
+        ],
+        "meta": {
+          "duration": {
+            "en": "1 year",
+            "de": "1 Jahr"
+          },
+          "contact": {
+            "en": "Martina Perani / Beatrice Paoli",
+            "de": "Martina Perani / Beatrice Paoli"
+          }
+        }
+      }
+    }
+  ],
+  "news": [
+    {
+      "badge": {
+        "en": "Winner: Hackathon 2024",
+        "de": "Gewinner: Hackathon 2024"
+      },
+      "title": {
+        "en": "ADA Team Wins Big for Milano-Cortina 2026",
+        "de": "ADA-Team gewinnt beim Milano-Cortina-2026-Hackathon"
+      },
+      "description": {
+        "en": "Under the leadership of Dr. Danuta Paraficz, our team of students developed a strong application concept presented for the Olympic Winter Games. The project highlights our commitment to real-world AI impact on an international stage.",
+        "de": "Unter der Leitung von Dr. Danuta Paraficz entwickelte unser Studierendenteam ein starkes Anwendungskonzept für die Olympischen Winterspiele. Das Projekt zeigt unser Engagement für reale KI-Wirkung auf internationaler Bühne."
+      },
+      "link": "https://www.ffhs.ch/de/ffhs/events/detail/2026-02-17-ffhs-studierende-praesentieren-app-bei-den-olympischen-winterspielen-in-mailand",
+      "linkText": {
+        "en": "Read the full story →",
+        "de": "Zur ganzen Meldung →"
+      },
+      "image": "win.jpeg"
+    }
+  ],
+  "navigation": [
+    {
+      "label": {
+        "en": "About",
+        "de": "Über uns"
+      },
+      "href": "ada_better.html#home-view"
+    },
+    {
+      "label": {
+        "en": "Projects",
+        "de": "Projekte"
+      },
+      "href": "projects.html"
+    },
+    {
+      "label": {
+        "en": "Team",
+        "de": "Team"
+      },
+      "href": "team.html"
+    },
+    {
+      "label": {
+        "en": "Publications",
+        "de": "Publikationen"
+      },
+      "href": "publications.html"
+    },
+    {
+      "label": {
+        "en": "News",
+        "de": "Aktuelles"
+      },
+      "href": "ada_better.html#news"
+    },
+    {
+      "label": {
+        "en": "Contact",
+        "de": "Kontakt"
+      },
+      "href": "ada_better.html#contact"
+    }
+  ]
+}
