@@ -1064,18 +1064,18 @@
       "id": "ip-sbm",
       "status": "archive",
       "title": {
-        "en": "IP-SBM: Skills Extraction & Validation",
-        "de": "IP-SBM: Skills-Extraktion & Validierung"
+        "en": "IP-SBM: SkillsFinder",
+        "de": "IP-SBM: SkillsFinder"
       },
-      "shortTitle": "IP-SBM",
-      "image": null,
+      "shortTitle": "SkillsFinder",
+      "image": "images/skillsfinder.png",
       "description": {
-        "en": "Platform for candidate profile registration, references, and automatic skills certification validation.",
-        "de": "Plattform zur Profilregistrierung, Referenzanfrage und automatischen Validierung von Fähigkeiten und Fachkenntnissen."
+        "en": "SkillsFinder platform for automatic skills extraction and profile validation to identify talents and support recruitment workflows.",
+        "de": "SkillsFinder-Plattform zur automatischen Extraktion von Kompetenzen und Profilvalidierung, um Talente zu identifizieren und Recruiting-Prozesse zu unterstützen."
       },
       "subtitle": {
-        "en": "Talent Identification & Recruitment",
-        "de": "Talent Identification & Recruitment"
+        "en": "Talent Intelligence & Recruitment",
+        "de": "Talent Intelligence & Recruiting"
       },
       "isArchive": true,
       "details": {
