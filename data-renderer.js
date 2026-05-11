@@ -161,6 +161,24 @@ class DataRenderer {
     return this.escapeHtml(value).replace(/\n/g, '<br>');
   }
 
+  getRichContent(value, allowEnglishFallback = false) {
+    if (!value) return '';
+    if (typeof value === 'string') return value;
+    if (Array.isArray(value)) return value.join('');
+
+    const localized = value[this.currentLang];
+    if (typeof localized === 'string') return localized;
+    if (Array.isArray(localized)) return localized.join('');
+
+    if (!allowEnglishFallback) return '';
+
+    const english = value.en;
+    if (typeof english === 'string') return english;
+    if (Array.isArray(english)) return english.join('');
+
+    return '';
+  }
+
   getMetaLabel(key) {
     const labels = {
       contact: { en: 'Contact', de: 'Ansprechperson' },
@@ -185,6 +203,7 @@ class DataRenderer {
 
     container.innerHTML = archiveProjects.map((project) => {
       const details = project.details || {};
+      const detailsHtml = this.getRichContent(details.html, false);
       const paragraphs = Array.isArray(details.paragraphs) ? details.paragraphs : [];
       const meta = details.meta && typeof details.meta === 'object' ? details.meta : {};
       const metaRows = Object.entries(meta)
@@ -205,16 +224,20 @@ class DataRenderer {
         ? `<div class="project-credit"><p class="text-sm text-slate-700 mb-0">${this.escapeHtml(contributorLabel)}: ${this.escapeHtml(details.credits)}.</p></div>`
         : '';
 
-      return `
-        <section id="${this.escapeHtml(project.id)}" class="page-section scroll-mt-10 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
-          <a href="projects.html" class="inline-block text-xs font-bold text-blue-600 uppercase border border-blue-600 px-4 py-2 rounded mb-6 hover:bg-blue-50 transition">&larr; ${this.escapeHtml(backLabel)}</a>
-          <h2 class="text-4xl font-bold mb-4 uppercase tracking-tight">${this.escapeHtml(this.t(project.title))}</h2>
+      const bodyHtml = detailsHtml || `
           <div class="prose-text">
             ${subtitleHtml}
             ${paragraphs.map((paragraph) => `<p>${this.formatMultilineText(this.t(paragraph))}</p>`).join('')}
             ${metaHtml}
             ${creditsHtml}
           </div>
+      `;
+
+      return `
+        <section id="${this.escapeHtml(project.id)}" class="page-section scroll-mt-10 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+          <a href="projects.html" class="inline-block text-xs font-bold text-blue-600 uppercase border border-blue-600 px-4 py-2 rounded mb-6 hover:bg-blue-50 transition">&larr; ${this.escapeHtml(backLabel)}</a>
+          <h2 class="text-4xl font-bold mb-4 uppercase tracking-tight">${this.escapeHtml(this.t(project.title))}</h2>
+          ${bodyHtml}
         </section>
       `;
     }).join('');
@@ -230,6 +253,7 @@ class DataRenderer {
 
     container.innerHTML = activeProjects.map((project) => {
       const details = project.details || {};
+      const detailsHtml = this.getRichContent(details.html, false);
       const paragraphs = Array.isArray(details.paragraphs) ? details.paragraphs : [];
       const meta = details.meta && typeof details.meta === 'object' ? details.meta : {};
       const links = Array.isArray(details.links) ? details.links : [];
@@ -253,10 +277,7 @@ class DataRenderer {
         ? `<div class="project-credit"><p class="text-sm text-slate-700 mb-0">${this.escapeHtml(contributorLabel)}: ${this.escapeHtml(details.credits)}.</p></div>`
         : '';
 
-      return `
-        <section id="${this.escapeHtml(project.id)}" class="page-section scroll-mt-10 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
-          <a href="projects.html" class="inline-block text-xs font-bold text-blue-600 uppercase border border-blue-600 px-4 py-2 rounded mb-6 hover:bg-blue-50 transition">&larr; ${this.escapeHtml(backLabel)}</a>
-          <h2 class="text-3xl font-bold mb-3 uppercase tracking-tight">${this.escapeHtml(this.t(project.title))}</h2>
+      const bodyHtml = detailsHtml || `
           <div class="prose-text">
             ${subtitleHtml}
             ${paragraphs.map((paragraph) => `<p>${this.formatMultilineText(this.t(paragraph))}</p>`).join('')}
@@ -264,6 +285,13 @@ class DataRenderer {
             ${linksHtml}
             ${creditsHtml}
           </div>
+      `;
+
+      return `
+        <section id="${this.escapeHtml(project.id)}" class="page-section scroll-mt-10 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+          <a href="projects.html" class="inline-block text-xs font-bold text-blue-600 uppercase border border-blue-600 px-4 py-2 rounded mb-6 hover:bg-blue-50 transition">&larr; ${this.escapeHtml(backLabel)}</a>
+          <h2 class="text-3xl font-bold mb-3 uppercase tracking-tight">${this.escapeHtml(this.t(project.title))}</h2>
+          ${bodyHtml}
         </section>
       `;
     }).join('');

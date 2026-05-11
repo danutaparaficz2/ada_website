@@ -141,12 +141,20 @@
         },
         "paragraphs": [
           {
-            "en": "Project EAGLE addresses long-term photovoltaic reliability with an AI-powered diagnostic framework.",
-            "de": "Projekt EAGLE adressiert die langfristige Zuverlässigkeit von Photovoltaik mit einem KI-gestützten Diagnose-Framework."
+            "en": "Project EAGLE addresses long-term photovoltaic reliability with an AI-powered diagnostic framework developed in collaboration between FFHS and SUPSI.",
+            "de": "Projekt EAGLE adressiert die langfristige Zuverlässigkeit von Photovoltaik mit einem KI-gestützten Diagnose-Framework, das in Zusammenarbeit von FFHS und SUPSI entwickelt wurde."
           },
           {
-            "en": "The approach combines multispectral imaging and modern deep learning to identify hidden defects and support scalable maintenance decisions.",
-            "de": "Der Ansatz kombiniert multispektrale Bildgebung und modernes Deep Learning, um versteckte Defekte zu erkennen und skalierbare Wartungsentscheidungen zu unterstützen."
+            "en": "The approach combines multispectral imaging and modern deep learning to identify hidden defects such as micro-cracks, moisture ingress, and hotspots that reduce energy yield over time.",
+            "de": "Der Ansatz kombiniert multispektrale Bildgebung und modernes Deep Learning, um versteckte Defekte wie Mikrorisse, Feuchtigkeitseintritt und Hotspots zu erkennen, die den Energieertrag im Laufe der Zeit verringern."
+          },
+          {
+            "en": "The project analyzes electroluminescence, ultraviolet fluorescence, and visible-spectrum images, then applies convolutional neural networks and vision transformers for scalable, automated diagnosis.",
+            "de": "Das Projekt analysiert Elektrolumineszenz-, Ultraviolettfluoreszenz- und Sichtspektrum-Bilder und setzt anschließend Convolutional Neural Networks und Vision Transformer für eine skalierbare, automatisierte Diagnose ein."
+          },
+          {
+            "en": "Its results support predictive maintenance and smart O&M decisions for solar infrastructure by linking defect signatures to electrical performance loss.",
+            "de": "Die Ergebnisse unterstützen prädiktive Wartung und Smart-O&M-Entscheidungen für Solarinfrastruktur, indem Fehlersignaturen mit Leistungsverlusten verknüpft werden."
           }
         ],
         "meta": {
@@ -169,8 +177,33 @@
               "en": "EU PVSEC Program (PDF)",
               "de": "EU PVSEC Programm (PDF)"
             }
+          },
+          {
+            "href": "30_poster_ai-driven-defect-detection_pvt25.pdf",
+            "label": {
+              "en": "Download Defect Detection Poster (PDF)",
+              "de": "Poster zur Defekterkennung herunterladen (PDF)"
+            }
           }
         ],
+        "html": {
+          "en": [
+            "<p class='text-lg text-slate-700 font-medium italic mb-4'>A Deep Learning Approach to Photovoltaic Reliability</p>",
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p>As the world scales up solar installations to meet carbon reduction goals, the long-term reliability of photovoltaic (PV) systems becomes a critical economic and environmental factor. Project EAGLE, a collaboration between FFHS and SUPSI, addresses this by moving beyond traditional manual inspections toward an automated, AI-powered diagnostic framework.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>The Challenge: Hidden Defects</h4><p class='text-sm text-slate-600'>Solar panels are exposed to harsh environments for decades. Over time, they develop hidden defects such as micro-cracks, moisture ingress, or cell hotspots that are invisible to the naked eye but significantly reduce energy yield. Detecting these defects across large solar farms is traditionally slow, expensive, and subjective.</p></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>The Innovation: Multi-Spectral AI Analytics</h4><p class='text-sm text-slate-600'>The EAGLE project pioneered a methodology using Computer Vision and Deep Learning to analyze panel images across three spectral bands:</p><ul class='text-sm space-y-2 text-slate-600 mt-3'><li>&bull; <strong>Electroluminescence (EL):</strong> &quot;X-raying&quot; cells to identify internal cracks.</li><li>&bull; <strong>Ultraviolet Fluorescence (UVf):</strong> Detecting aging and chemical changes in encapsulant materials.</li><li>&bull; <strong>Visible (VI):</strong> Capturing external damage such as soiling or glass breakage.</li></ul><p class='text-sm text-slate-600 mt-3'>To automate diagnosis at scale, the team developed specialized Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) for high-precision defect classification.</p></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Key Technical Highlights</h4><ul class='text-sm space-y-2 text-slate-600'><li>&bull; <strong>Multimodal Fusion:</strong> Correlating defect signatures across modalities with electrical performance loss.</li><li>&bull; <strong>State-of-the-Art Architecture:</strong> Leveraging models such as EfficientNet and Segment Anything (SAM) to isolate and diagnose individual solar cells within modules.</li><li>&bull; <strong>Predictive Maintenance:</strong> Quantifying degradation to guide optimal cleaning, repair, and replacement decisions for improved ROI.</li></ul></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Real-World Impact</h4><p class='text-sm text-slate-600'>Findings from Project EAGLE, presented at the EU PVSEC conference in Bilbao, provide a scalable blueprint for smart operations and maintenance (Smart O&amp;M). By automating solar health checks, EAGLE helps ensure that the green transition is built on durable, high-performing infrastructure.</p></div>",
+            "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.aramis.admin.ch/Texte/?ProjectID=51667' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>View on ARAMIS</a><a href='https://www.eupvsec.org/images/2025/conference/EUPVSEC2025_ConferenceProgram_web_v6.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>EU PVSEC Program (PDF)</a></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='ralf.html'>Ralf Jandl</a> and <a href='danka.html'>Danuta Paraficz</a> and <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "</div>",
+            "<div class='h-80 rounded-xl overflow-hidden border border-slate-200'><img src='bilbao.jpg' alt='EAGLE project presentation in Bilbao' class='w-full h-full object-cover'></div>",
+            "</div>",
+            "<div class='mt-8 flex justify-center'><a href='30_poster_ai-driven-defect-detection_pvt25.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-6 py-3 rounded hover:bg-blue-50 transition'>Download AI-Driven Defect Detection Poster (PDF)</a></div>"
+          ]
+        },
         "credits": "Ralf Jandl, Danuta Paraficz, Natasa Sarafijanovic-Djukic"
       }
     },
@@ -203,14 +236,24 @@
         },
         "paragraphs": [
           {
-            "en": "Project PRONTO predicts sprouting in stored potatoes by analyzing electrophysiological plant signals with machine learning.",
-            "de": "Projekt PRONTO sagt die Keimung gelagerter Kartoffeln voraus, indem elektrophysiologische Pflanzensignale mit Machine Learning analysiert werden."
+            "en": "Project PRONTO addresses a major challenge in agricultural supply chains: predicting and controlling the sprouting of stored potatoes.",
+            "de": "Projekt PRONTO adressiert eine zentrale Herausforderung in landwirtschaftlichen Lieferketten: die Vorhersage und Kontrolle der Keimung gelagerter Kartoffeln."
           },
           {
-            "en": "The goal is to reduce chemical suppressants and food waste while improving storage quality.",
-            "de": "Das Ziel ist die Reduktion von chemischen Hemmstoffen und Lebensmittelverschwendung bei gleichzeitig besserer Lagerqualität."
+            "en": "By analyzing electrophysiological plant signals with machine learning, the project can forecast sprouting weeks in advance and improve storage decisions.",
+            "de": "Durch die Analyse elektrophysiologischer Pflanzensignale mit Machine Learning kann das Projekt die Keimung Wochen im Voraus vorhersagen und Lagerentscheidungen verbessern."
+          },
+          {
+            "en": "The goal is to reduce chemical suppressants and food waste while improving storage quality for more sustainable agricultural practice.",
+            "de": "Das Ziel ist die Reduktion chemischer Hemmstoffe und von Lebensmittelverschwendung bei gleichzeitig besserer Lagerqualität für eine nachhaltigere Landwirtschaft."
           }
         ],
+        "meta": {
+          "contact": {
+            "en": "Agroscope / Vivent SA",
+            "de": "Agroscope / Vivent SA"
+          }
+        },
         "links": [
           {
             "href": "https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern",
@@ -225,9 +268,158 @@
               "en": "Read Watson Article",
               "de": "Watson-Artikel lesen"
             }
+          },
+          {
+            "href": "https://ieeexplore.ieee.org/abstract/document/11081491",
+            "label": {
+              "en": "Read Publication",
+              "de": "Publikation lesen"
+            }
           }
         ],
+        "html": {
+          "en": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p class='text-lg text-slate-700 font-medium italic mb-2'>Predicting potato sprouting to optimize tuber storage and reduce agricultural waste.</p>",
+            "<p>Project PRONTO addresses a major challenge in agricultural supply chains: predicting and controlling the sprouting of stored potatoes. By analyzing <strong>electrophysiological plant signals</strong> with machine learning, the project can forecast sprouting weeks in advance.</p>",
+            "<p>This approach reduces reliance on chemical sprout suppressants and minimizes food waste, contributing to more sustainable and cost-effective storage practices for Swiss agriculture.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Partners</h4><p class='text-sm text-slate-600'>Agroscope &amp; Vivent SA</p></div>",
+            "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Read FFHS News Article</a><a href='https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Read Watson Article</a><a href='https://ieeexplore.ieee.org/abstract/document/11081491' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Read Publication</a></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='aris.html'>Aris Marcolongo</a> and <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='potatos.png' alt='Potato storage' class='w-full h-full object-cover'></div>",
+            "</div>"
+          ]
+        },
         "credits": "Aris Marcolongo, Natasa Sarafijanovic-Djukic"
+      }
+    },
+    {
+      "id": "murs",
+      "status": "active",
+      "title": {
+        "en": "Project MuRS",
+        "de": "Projekt MuRS"
+      },
+      "shortTitle": "Project MuRS",
+      "badge": {
+        "en": "Interpretable Machine Learning",
+        "de": "Interpretierbares Machine Learning"
+      },
+      "image": "murs.png",
+      "altText": "MuRS project",
+      "description": {
+        "en": "Interpretable machine learning research exploring Multi-Representation Scattering as an alternative to transformer attention.",
+        "de": "Forschung zu interpretierbarem Machine Learning, die Multi-Representation Scattering als Alternative zu Transformer-Attention untersucht."
+      },
+      "meta": {
+        "en": "Partner: Data Science Lab, University of Bern",
+        "de": "Partner: Data Science Lab, Universität Bern"
+      },
+      "details": {
+        "subtitle": {
+          "en": "Interpretable alternatives to transformer attention",
+          "de": "Interpretierbare Alternativen zur Transformer-Attention"
+        },
+        "paragraphs": [
+          {
+            "en": "This project explores Multi-Representation Scattering (MuRS), a more interpretable alternative to the attention mechanisms used in many modern AI models.",
+            "de": "Dieses Projekt untersucht Multi-Representation Scattering (MuRS), eine besser interpretierbare Alternative zu den Aufmerksamkeitsmechanismen vieler moderner KI-Modelle."
+          },
+          {
+            "en": "Inspired by particle interactions, the framework models relationships between data elements in a simpler and more transparent way while still aiming for strong performance on standard machine learning tasks.",
+            "de": "Inspiriert von Teilcheninteraktionen modelliert das Framework Beziehungen zwischen Datenelementen auf einfachere und transparentere Weise und strebt dennoch eine starke Leistung bei Standardaufgaben des Machine Learning an."
+          },
+          {
+            "en": "The work is especially relevant for applications where trust, accountability, and explainability matter, and it is positioned as a basis for follow-up collaboration with industrial and academic partners.",
+            "de": "Die Arbeit ist besonders relevant für Anwendungen, in denen Vertrauen, Nachvollziehbarkeit und Erklärbarkeit wichtig sind, und dient als Grundlage für Folgekooperationen mit Industrie- und Forschungspartnern."
+          }
+        ],
+        "meta": {
+          "partners": {
+            "en": "Data Science Lab (University of Bern)",
+            "de": "Data Science Lab (Universität Bern)"
+          },
+          "funding": {
+            "en": "Funded by the Hasler Foundation",
+            "de": "Gefördert durch die Hasler Stiftung"
+          }
+        },
+        "links": [
+          {
+            "href": "https://www.ffhs.ch/de/ffhs/news/artikel/2026-03-25-warum-ki-oft-schwer-zu-verstehen-ist",
+            "label": {
+              "en": "Read FFHS News Article",
+              "de": "FFHS-News lesen"
+            }
+          }
+        ],
+        "html": {
+          "en": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p class='text-lg text-slate-700 font-medium italic mb-2'>This project explores a more interpretable alternative to transformer attention mechanisms, the core component of the neural network architecture used in many modern AI models. Inspired by particle interactions, the proposed Multi-Representation Scattering (MuRS) framework models relationships between data elements in a simpler and more transparent way. The goal is to better understand what models learn and when they may fail, while still achieving strong performance on standard machine learning tasks. This work is especially relevant for applications where trust, accountability, and explainability are important. We are seeking industrial and academic partners interested in collaborating on a follow-up Swiss National Science Foundation (SNF) project. If you are interested in potential collaboration opportunities on this topic, please contact the project leaders.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Partners</h4><p class='text-sm text-slate-600'>Data Science Lab (University of Bern)</p></div>",
+            "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.ffhs.ch/de/ffhs/news/artikel/2026-03-25-warum-ki-oft-schwer-zu-verstehen-ist' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Read FFHS News Article</a></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>This project was made by <a href='aris.html'>Aris Marcolongo</a> and <a href='danka.html'>Danuta Paraficz</a> and funded by the Hasler Foundation.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='murs.png' alt='MuRS project' class='w-full h-full object-contain object-center p-2'></div>",
+            "</div>"
+          ]
+        },
+        "credits": "Aris Marcolongo, Danuta Paraficz"
+      }
+    },
+    {
+      "id": "aitexa",
+      "status": "active",
+      "title": {
+        "en": "Project AITEXA",
+        "de": "Projekt AITEXA"
+      },
+      "shortTitle": "Project AITEXA",
+      "badge": {
+        "en": "Process Engineering AI",
+        "de": "KI im Prozessengineering"
+      },
+      "image": "pid.png",
+      "altText": "AITEXA project",
+      "description": {
+        "en": "LLM-powered support for generating, learning, and interpreting piping and instrumentation diagrams.",
+        "de": "LLM-gestützte Unterstützung für die Erstellung, das Lernen und die Interpretation von R&I-Fließbildern."
+      },
+      "meta": {
+        "en": "Partners: FHNW / AITEXA",
+        "de": "Partner: FHNW / AITEXA"
+      },
+      "details": {
+        "subtitle": {
+          "en": "LLM applications for P&ID generation and interpretation",
+          "de": "LLM-Anwendungen für die Erstellung und Interpretation von R&I-Fließbildern"
+        },
+        "paragraphs": [
+          {
+            "en": "Process engineering firms spend significant time manually creating piping and instrumentation diagrams for new plant designs, while students often struggle to interpret these complex schematics.",
+            "de": "Unternehmen im Prozessengineering verbringen viel Zeit mit der manuellen Erstellung von Rohrleitungs- und Instrumentierungsdiagrammen für neue Anlagen, während Studierende diese komplexen Schemata oft nur schwer interpretieren können."
+          },
+          {
+            "en": "This project uses large language models to develop intelligent applications that support P&ID generation and improve learning and interpretation workflows.",
+            "de": "Dieses Projekt nutzt Large Language Models, um intelligente Anwendungen zu entwickeln, die die Erstellung von R&I-Fließbildern unterstützen und Lern- sowie Interpretationsprozesse verbessern."
+          }
+        ],
+        "html": {
+          "en": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p class='text-lg text-slate-700 font-medium italic mb-2'>Process engineering firms spend significant time manually creating Piping and Instrumentation Diagrams (P&amp;IDs) for new plant designs, while engineering students often struggle to interpret these complex schematics. This project leverages Large Language Models (LLMs) to develop intelligent applications that help P&amp;ID generation and enhance P&amp;ID learning and interpretation.</p>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>This project is done by <a href='aris.html'>Aris Marcolongo</a> with partners FHNW and AITEXA.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='pid.png' alt='AITEXA project' class='w-full h-full object-contain object-center p-2'></div>",
+            "</div>"
+          ]
+        },
+        "credits": "Aris Marcolongo"
       }
     },
     {
@@ -259,14 +451,30 @@
         },
         "paragraphs": [
           {
-            "en": "Holzbau AI introduces an assistant tailored to timber construction and architecture workflows.",
-            "de": "Holzbau AI führt einen Assistenten ein, der auf Arbeitsabläufe im Holzbau und in der Architektur zugeschnitten ist."
+            "en": "This project introduces an Agentic-RAG assistant tailored to timber construction and architecture workflows.",
+            "de": "Dieses Projekt führt einen Agentic-RAG-Assistenten ein, der auf Arbeitsabläufe im Holzbau und in der Architektur zugeschnitten ist."
           },
           {
-            "en": "The system helps navigate technical documents, standards, and project data with retrieval-augmented reasoning.",
-            "de": "Das System hilft dabei, technische Dokumente, Normen und Projektdaten mit retrieval-gestützter Argumentation zu durchsuchen."
+            "en": "It is designed to move beyond generic AI by navigating technical documents, norms, and project data with retrieval-augmented reasoning.",
+            "de": "Es ist darauf ausgelegt, über generische KI hinauszugehen, indem es technische Dokumente, Normen und Projektdaten mit retrieval-gestützter Argumentation erschließt."
+          },
+          {
+            "en": "The goal is precise access to construction knowledge for design, planning, and decision support in modern timber architecture.",
+            "de": "Das Ziel ist ein präziser Zugang zu Bauwissen für Entwurf, Planung und Entscheidungsunterstützung in der modernen Holzarchitektur."
           }
         ],
+        "html": {
+          "en": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p>This project introduces a cutting-edge <strong>Agentic-RAG (Retrieval-Augmented Generation)</strong> system specifically engineered for the unique demands of the timber construction and architecture industry.</p>",
+            "<p>By moving beyond generic AI, the platform acts as an intelligent assistant capable of navigating vast archives of technical documents, norms, and project data with unprecedented precision.</p>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='danka.html'>Danuta Paraficz</a> and <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='holzbau.jpg' alt='Timber construction quality control' class='w-full h-full object-cover'></div>",
+            "</div>"
+          ]
+        },
         "credits": "Danuta Paraficz, Natasa Sarafijanovic-Djukic"
       }
     },
@@ -299,14 +507,34 @@
         },
         "paragraphs": [
           {
-            "en": "In collaboration with the Nordic Optical Telescope, ADA is building a domain-specific RAG system for scientists and technical teams.",
-            "de": "In Zusammenarbeit mit dem Nordic Optical Telescope entwickelt ADA ein domänenspezifisches RAG-System für Wissenschafts- und Technikteams."
+            "en": "In collaboration with the Nordic Optical Telescope on La Palma, ADA is building a domain-specific retrieval-augmented generation system for scientists and technical teams.",
+            "de": "In Zusammenarbeit mit dem Nordic Optical Telescope auf La Palma entwickelt ADA ein domänenspezifisches Retrieval-Augmented-Generation-System für Wissenschafts- und Technikteams."
           },
           {
-            "en": "The platform improves access to manuals and logs through natural-language queries with evidence-grounded responses.",
-            "de": "Die Plattform verbessert den Zugriff auf Handbücher und Logs über natürliche Sprachabfragen mit evidenzbasierten Antworten."
+            "en": "The objective is to make complex observatory documentation, operational procedures, and historical logs searchable through natural-language queries while preserving traceability and factual reliability.",
+            "de": "Ziel ist es, komplexe Observatoriumsdokumentation, Betriebsabläufe und historische Logs über natürlichsprachliche Abfragen durchsuchbar zu machen und dabei Nachvollziehbarkeit und faktische Verlässlichkeit zu bewahren."
+          },
+          {
+            "en": "By grounding responses in retrieved evidence, the platform reduces search friction and supports transparent decision-making in scientific infrastructure environments.",
+            "de": "Durch die Verankerung der Antworten in abgerufenen Evidenzen reduziert die Plattform Suchaufwand und unterstützt transparente Entscheidungsprozesse in wissenschaftlichen Infrastrukturen."
           }
         ],
+        "html": {
+          "en": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p class='text-lg text-slate-700 font-medium italic mb-2'>Retrieval-Augmented AI for Observatory Knowledge Access</p>",
+            "<p>In collaboration with the <strong>Nordic Optical Telescope (NOT)</strong> on La Palma, ADA is developing a domain-specific <strong>Retrieval-Augmented Generation (RAG)</strong> system to support astronomers and technical teams in their daily work.</p>",
+            "<p>The objective is to make complex observatory documentation, operational procedures, and scientific logs searchable through natural-language queries while preserving traceability and factual reliability.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Core Challenge</h4><p class='text-sm text-slate-600'>Critical observatory knowledge is distributed across technical manuals, instrument notes, and historical logs. Traditional search workflows are time-consuming and can make it difficult to retrieve context quickly during operations.</p></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Technical Approach</h4><ul class='text-sm space-y-2 text-slate-600'><li>&bull; <strong>Document Retrieval Layer:</strong> Indexing trusted observatory sources for relevant context selection.</li><li>&bull; <strong>Grounded Generation:</strong> Generating answers conditioned on retrieved evidence, not on model memory alone.</li><li>&bull; <strong>Citation and Verifiability:</strong> Returning source-linked responses to support transparent decision-making.</li></ul></div>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Expected Impact</h4><p class='text-sm text-slate-600'>The platform reduces search friction, accelerates expert workflows, and lowers the risk of unsupported responses by grounding outputs in trusted records. This creates a practical AI assistant tailored to scientific infrastructure environments.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='danka.html'>Danuta Paraficz</a> and <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='not.png' alt='Nordic Optical Telescope' class='w-full h-full object-cover'></div>",
+            "</div>"
+          ]
+        },
         "credits": "Danuta Paraficz, Natasa Sarafijanovic-Djukic"
       }
     },
@@ -334,17 +562,25 @@
       },
       "details": {
         "subtitle": {
-          "en": "Bioacoustic biodiversity analytics",
-          "de": "Bioakustische Biodiversitätsanalyse"
+          "en": "The Soundscapes Project",
+          "de": "Das Soundscapes-Projekt"
         },
         "paragraphs": [
           {
-            "en": "The Soundscapes initiative uses long-duration audio monitoring to analyze biodiversity trends in complex habitats.",
-            "de": "Die Soundscapes-Initiative nutzt Langzeit-Audiomonitoring, um Biodiversitätstrends in komplexen Lebensräumen zu analysieren."
+            "en": "The Soundscapes initiative was launched to systematically collect and analyze biodiversity data in habitats where existing records were patchy and inconsistent.",
+            "de": "Die Soundscapes-Initiative wurde gestartet, um Biodiversitätsdaten in Lebensräumen systematisch zu sammeln und auszuwerten, in denen bestehende Aufzeichnungen lückenhaft und uneinheitlich waren."
           },
           {
-            "en": "The project combines field recordings and scalable AI processing in collaboration with FFHS researchers.",
-            "de": "Das Projekt kombiniert Feldaufnahmen und skalierbare KI-Auswertung in Zusammenarbeit mit FFHS-Forschenden."
+            "en": "The project uses long-duration audio monitoring with AudioMoth devices and combines large field recording datasets with scalable AI-based species analysis.",
+            "de": "Das Projekt nutzt Langzeit-Audiomonitoring mit AudioMoth-Geräten und kombiniert große Feldaufnahmedatensätze mit skalierbarer KI-gestützter Artenanalyse."
+          },
+          {
+            "en": "FFHS researchers provide the computing support needed to process the recordings at scale, strengthening biodiversity research with academic data science expertise.",
+            "de": "FFHS-Forschende stellen die notwendige Rechenunterstützung bereit, um die Aufnahmen im großen Maßstab zu verarbeiten, und stärken so die Biodiversitätsforschung mit akademischer Data-Science-Expertise."
+          },
+          {
+            "en": "The long-term vision is to extend this work beyond birds to broader ecosystem monitoring, including bats and small mammals.",
+            "de": "Die langfristige Vision ist es, diese Arbeit über Vögel hinaus auf ein breiteres Ökosystem-Monitoring auszuweiten, einschließlich Fledermäusen und kleinen Säugetieren."
           }
         ],
         "links": [
@@ -356,6 +592,27 @@
             }
           }
         ],
+        "html": {
+          "en": [
+            "<div class='grid lg:grid-cols-3 gap-10'>",
+            "<div class='lg:col-span-2 prose-text'>",
+            "<p>The <strong>Soundscapes project</strong> (also known as the Cambrian Soundscapes initiative) was launched in January 2024 by the Cambrian Mountains Society to systematically collate and analyze data on the region's biodiversity. The project was initiated because existing biodiversity records for the Cambrian Mountains were found to be patchy and inconsistent, making it difficult to determine exact population trends.</p>",
+            "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>Technology &amp; Methodology</h3>",
+            "<p>The project utilizes <strong>AudioMoths</strong>, which are low-cost bioacoustic monitoring devices that can record for up to 189 hours and be left in the field for months. The Society deployed 25 of these recorders across various habitats, set to a 24-hour schedule where they record sound for one minute out of every ten.</p>",
+            "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>Origins</h3>",
+            "<p>The idea was proposed by member Guy Bennett following a successful pilot survey on his family's land in Cilycwm, which identified unexpected rare birds like the yellow wagtail and yellow-browed warbler.</p>",
+            "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>FFHS Partnership &amp; Data Processing</h3>",
+            "<p>Initially, the Society used BirdNET software to identify bird species from the recordings. However, the sheer volume of data led to a strategic partnership with the <strong>Big Data team from Fernfachhochschule Schweiz (FFHS) in Zurich</strong>, including <strong>Professor Joachim Steinwendner</strong> and <strong>Dr. Danuta Paraficz</strong>. This team provides the computing power necessary to process massive datasets, demonstrating how academic institutions can support real-world conservation efforts.</p>",
+            "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Scientific Impact</h4><p class='text-sm text-slate-600'>Partnering with a world-class academic team provides the project's research with substantial scientific credibility, which is essential when a small volunteer-led organization presents its findings to the broader scientific community.</p></div>",
+            "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>Future Vision</h3>",
+            "<p>While currently focused on bird populations and migratory patterns, the Society hopes to expand the project to identify other fauna, such as bats and small mammals. There is also interest in potentially using bird data to draw inferences about fish populations.</p>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='joachim.html'>Joachim Steinwendner</a> and <a href='danka.html'>Danuta Paraficz</a></p></div>",
+            "</div>",
+            "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='birdss.jpg' alt='Bird in forest' class='w-full h-full object-cover'></div>",
+            "</div>",
+            "<div class='mt-8 flex justify-center'><a href='CMS journal 2025 electronic copy.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-6 py-3 rounded hover:bg-blue-50 transition'>Download CMS Journal 2025 (PDF)</a></div>"
+          ]
+        },
         "credits": "Joachim Steinwendner, Danuta Paraficz"
       }
     },
@@ -385,12 +642,20 @@
         },
         "paragraphs": [
           {
-            "en": "SkillsFinder processes job application documents and extracts structured candidate information.",
-            "de": "SkillsFinder verarbeitet Bewerbungsunterlagen und extrahiert strukturierte Kandidateninformationen."
+            "en": "SkillsFinder is a joint project with the start-up company Skills Finder AG, funded by Innosuisse, to automate the extraction and validation of candidate information from job application documents.",
+            "de": "SkillsFinder ist ein gemeinsames Projekt mit dem Start-up Skills Finder AG, gefördert von Innosuisse, zur Automatisierung der Extraktion und Validierung von Kandidateninformationen aus Bewerbungsunterlagen."
           },
           {
-            "en": "The pipeline combines document layout analysis, multilingual NLP, and semantic validation against references and certificates.",
-            "de": "Die Pipeline kombiniert Dokumentlayout-Analyse, mehrsprachige NLP-Verfahren und semantische Validierung gegen Referenzen und Zertifikate."
+            "en": "The processing pipeline combines document layout analysis, multilingual natural language processing, named entity recognition, and semantic validation against references and certificates.",
+            "de": "Die Verarbeitungspipeline kombiniert Dokumentlayout-Analyse, mehrsprachige Verarbeitung natürlicher Sprache, Named Entity Recognition und semantische Validierung anhand von Referenzen und Zertifikaten."
+          },
+          {
+            "en": "A key technical challenge is robust text extraction from highly diverse CV layouts, which the project addresses with deep learning-based document image analysis.",
+            "de": "Eine zentrale technische Herausforderung ist die robuste Textextraktion aus sehr unterschiedlichen CV-Layouts, die das Projekt mit Deep-Learning-basierter Dokumentbildanalyse adressiert."
+          },
+          {
+            "en": "The result is a platform that supports recruitment workflows by structuring applicant data and validating claims with modern language models.",
+            "de": "Das Ergebnis ist eine Plattform, die Recruiting-Prozesse unterstützt, indem sie Bewerberdaten strukturiert und Angaben mit modernen Sprachmodellen validiert."
           }
         ],
         "meta": {
@@ -415,6 +680,20 @@
             }
           }
         ],
+        "html": {
+          "en": [
+            "<div class='prose-text'>",
+            "<p class='text-sm text-slate-500 uppercase tracking-widest font-bold mb-4'>New platform for automatic skills extraction &amp; profiles validation to identify talents</p>",
+            "<p>This is a joint project with the start-up company Skills Finder AG, funded by Innosuisse. The goal of the project is to build a platform for processing job application documents that automates the extraction of relevant information from candidates’ CVs and validates this information against candidates’ references and certificates. Our processing pipeline uses the latest advances in both document image processing and Natural Language Processing (NLP).</p>",
+            "<p>The first step in processing any document is to extract the text while taking the correct reading order into account. Since CVs have highly diverse layouts, none of the existing tools were able to extract the text correctly. To detect these complex layouts, we train a CV layout model using Deep Layout Parser, a unified toolkit for deep learning-based document image analysis.</p>",
+            "<p>The next step is an NLP component for information extraction. We use Named Entity Recognition (NER) with a pretrained multilingual BERT model, which we fine-tune on our dataset using custom labels.</p>",
+            "<p>The final step in our processing pipeline is information validation. We calculate semantic similarity between word phrases using output feature vectors from the BERT model and mean pooling.</p>",
+            "<div class='border-l-4 border-slate-400 pl-6 my-6 py-2 bg-slate-50 rounded-r'><p class='text-sm text-slate-600'><strong>Conference:</strong> Swiss Text Analytics Conference (SwissText) 2022</p><p class='text-sm text-slate-600'><strong>Presentation:</strong> <a href='https://www.youtube.com/watch?v=i7viysHUwcA'>SwissText 2022</a></p></div>",
+            "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>View on ARAMIS</a></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='natasa.html'>Natasa Sarafijanovic-Djukic</a> and <a href='beatrice.html'>Beatrice Paoli</a>.</p></div>",
+            "</div>"
+          ]
+        },
         "credits": "Natasa Sarafijanovic-Djukic, Beatrice Paoli"
       }
     },
