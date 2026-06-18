@@ -15,6 +15,10 @@
   }
 
   function getCurrentBioFile() {
+    var params = new URLSearchParams(window.location.search || "");
+    var requested = params.get("bio");
+    if (requested) return requested;
+
     var path = window.location.pathname || "";
     return path.split("/").pop() || "";
   }
@@ -38,7 +42,20 @@
     var details = project.details || {};
     var creditHtmlEn = collectHtmlByLang(details, "en");
     var creditHtmlDe = collectHtmlByLang(details, "de");
-    if (creditHtmlEn.indexOf("href='" + bioFile + "'") !== -1 || creditHtmlDe.indexOf("href='" + bioFile + "'") !== -1) {
+    var legacyHrefSingle = "href='" + bioFile + "'";
+    var legacyHrefDouble = 'href="' + bioFile + '"';
+    var templateHrefSingle = "href='bio_template.html?bio=" + bioFile + "'";
+    var templateHrefDouble = 'href="bio_template.html?bio=' + bioFile + '"';
+    if (
+      creditHtmlEn.indexOf(legacyHrefSingle) !== -1 ||
+      creditHtmlEn.indexOf(legacyHrefDouble) !== -1 ||
+      creditHtmlEn.indexOf(templateHrefSingle) !== -1 ||
+      creditHtmlEn.indexOf(templateHrefDouble) !== -1 ||
+      creditHtmlDe.indexOf(legacyHrefSingle) !== -1 ||
+      creditHtmlDe.indexOf(legacyHrefDouble) !== -1 ||
+      creditHtmlDe.indexOf(templateHrefSingle) !== -1 ||
+      creditHtmlDe.indexOf(templateHrefDouble) !== -1
+    ) {
       return true;
     }
 
