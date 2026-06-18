@@ -135,6 +135,16 @@
     host.innerHTML = '<div class="grid grid-cols-1 md:grid-cols-2 gap-8">' + cards.join("") + "</div>";
   }
 
+  var cachedProjects = null;
+  var bioReady = !!window.__bioPageReady;
+
+  function maybeRenderProjects() {
+    var host = document.querySelector("[data-bio-projects]");
+    if (!host || !cachedProjects || !bioReady) return;
+
+    renderProjects(cachedProjects, getCurrentBioFile());
+  }
+
   function initBioProjects() {
     var host = document.querySelector("[data-bio-projects]");
     if (!host) return;
@@ -142,14 +152,20 @@
     var bioFile = getCurrentBioFile();
     host.innerHTML = '<div class="text-sm text-slate-500">Loading related projects...</div>';
 
+    window.addEventListener("bio:loaded", function () {
+      bioReady = true;
+      maybeRenderProjects();
+    });
+
     fetch("content.json?v=20260511c")
       .then(function (response) {
         if (!response.ok) throw new Error("Failed to load content.json");
         return response.json();
       })
       .then(function (content) {
-        var projects = Array.isArray(content.projects) ? content.projects : [];
-        renderProjects(projects, bioFile);
+        cachedProjects = Array.isArray(content.projects) ? content.projects : [];
+        bioReady = !!window.__bioPageReady;
+        maybeRenderProjects();
       })
       .catch(function () {
         host.innerHTML =

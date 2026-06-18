@@ -125,20 +125,20 @@ Projects appear on a bio page when the project entry in content.json matches the
 
 1. **Explicit "people" array** (strongest, recommended):
    - Add a `"people"` array to the project object in content.json.
-   - List the bio page filenames (e.g., `["bio-aris.html", "bio-natasa.html"]`).
+	- List the bio identifiers used by the shared bio template (e.g., `["bio-aris.html", "bio-natasa.html"]`, which map to `bio_template.html?bio=...`).
    - Example:
      ```json
      {
        "id": "my-project",
        "title": { "en": "Project Name", "de": "Projektname" },
-       "people": ["bio-aris.html", "bio-natasa.html"],
+	"people": ["bio-aris.html", "bio-natasa.html"],
        ...
      }
      ```
 
 2. **HTML credits link** (medium strength):
    - In the project's `details.credits` field, include a link to the bio page.
-   - Example: `"credits": "Led by <a href='bio-aris.html'>Aris Marcolongo</a>"`
+	- Example: `"credits": "Led by <a href='bio_template.html?bio=bio-aris.html'>Aris Marcolongo</a>"`
    - The script detects the href and matches the project to that bio page.
 
 3. **Credits text match** (weakest):

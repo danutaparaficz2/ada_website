@@ -64,7 +64,7 @@
         "de": "Fokus auf Geodatenanalyse und die Integration von Gesundheitsdaten, wobei geografische Informationssysteme mit fortgeschrittenen Data-Science-Methoden kombiniert werden, um gesundheitsbezogene Herausforderungen zu bearbeiten."
       },
       "lead": "Prof. Dr. Joachim Steinwendner",
-      "leadHref": "bio-joachim.html",
+      "leadHref": "bio_template.html?bio=bio-joachim.html",
       "leadLabel": {
         "en": "Field Lead",
         "de": "Leitung"
@@ -87,7 +87,7 @@
         "de": "Fokussiert auf Forschung zu Energiesystemen, ökologischer Nachhaltigkeit und Materialwissenschaft. Anwendungen von KI und Datenwissenschaft unterstützen Ressourcenoptimierung und technische Innovation."
       },
       "lead": "Ralf Jandl",
-      "leadHref": "bio-ralf.html",
+      "leadHref": "bio_template.html?bio=bio-ralf.html",
       "leadLabel": {
         "en": "Field Lead",
         "de": "Leitung"
@@ -197,7 +197,7 @@
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Key Technical Highlights</h4><ul class='text-sm space-y-2 text-slate-600'><li>&bull; <strong>Multimodal Fusion:</strong> Correlating defect signatures across modalities with electrical performance loss.</li><li>&bull; <strong>State-of-the-Art Architecture:</strong> Leveraging models such as EfficientNet and Segment Anything (SAM) to isolate and diagnose individual solar cells within modules.</li><li>&bull; <strong>Predictive Maintenance:</strong> Quantifying degradation to guide optimal cleaning, repair, and replacement decisions for improved ROI.</li></ul></div>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Real-World Impact</h4><p class='text-sm text-slate-600'>Findings from Project EAGLE, presented at the EU PVSEC conference in Bilbao, provide a scalable blueprint for smart operations and maintenance (Smart O&amp;M). By automating solar health checks, EAGLE helps ensure that the green transition is built on durable, high-performing infrastructure.</p></div>",
             "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.aramis.admin.ch/Texte/?ProjectID=51667' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>View on ARAMIS</a><a href='https://www.eupvsec.org/images/2025/conference/EUPVSEC2025_ConferenceProgram_web_v6.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>EU PVSEC Program (PDF)</a></div>",
-            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio-ralf.html'>Ralf Jandl</a> and <a href='bio-danka.html'>Danuta Paraficz</a> and <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio_template.html?bio=bio-ralf.html'>Ralf Jandl</a> and <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a> and <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-80 rounded-xl overflow-hidden border border-slate-200'><img src='images/bilbao.jpg' alt='EAGLE project presentation in Bilbao' class='w-full h-full object-cover'></div>",
             "</div>",
@@ -213,7 +213,7 @@
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Technische Highlights</h4><ul class='text-sm space-y-2 text-slate-600'><li>&bull; <strong>Multimodale Fusion:</strong> Verknüpfung von Defektsignaturen aus mehreren Modalitäten mit elektrischem Leistungsverlust.</li><li>&bull; <strong>State-of-the-Art-Architektur:</strong> Einsatz von Modellen wie EfficientNet und Segment Anything (SAM), um einzelne Solarzellen innerhalb von Modulen zu isolieren und zu diagnostizieren.</li><li>&bull; <strong>Predictive Maintenance:</strong> Quantifizierung von Degradation zur Ableitung optimaler Reinigungs-, Reparatur- und Austauschentscheidungen für besseren ROI.</li></ul></div>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Praxisrelevanter Nutzen</h4><p class='text-sm text-slate-600'>Die Ergebnisse von Projekt EAGLE, präsentiert auf der EU PVSEC in Bilbao, liefern einen skalierbaren Blueprint für Smart O&amp;M. Durch automatisierte Gesundheitschecks von Solarsystemen trägt EAGLE dazu bei, dass die Energiewende auf langlebiger und leistungsfähiger Infrastruktur basiert.</p></div>",
             "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.aramis.admin.ch/Texte/?ProjectID=51667' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Auf ARAMIS anzeigen</a><a href='https://www.eupvsec.org/images/2025/conference/EUPVSEC2025_ConferenceProgram_web_v6.pdf' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>EU PVSEC Programm (PDF)</a></div>",
-            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio-ralf.html'>Ralf Jandl</a>, <a href='bio-danka.html'>Danuta Paraficz</a> und <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio_template.html?bio=bio-ralf.html'>Ralf Jandl</a>, <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a> und <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-80 rounded-xl overflow-hidden border border-slate-200'><img src='images/bilbao.jpg' alt='EAGLE-Projektpräsentation in Bilbao' class='w-full h-full object-cover'></div>",
             "</div>",
@@ -302,7 +302,7 @@
             "<p>This approach reduces reliance on chemical sprout suppressants and minimizes food waste, contributing to more sustainable and cost-effective storage practices for Swiss agriculture.</p>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Partners</h4><p class='text-sm text-slate-600'>Agroscope &amp; Vivent SA</p></div>",
             "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Read FFHS News Article</a><a href='https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Read Watson Article</a><a href='https://ieeexplore.ieee.org/abstract/document/11081491' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Read Publication</a></div>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio-aris.html'>Aris Marcolongo</a> and <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio_template.html?bio=bio-aris.html'>Aris Marcolongo</a> and <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/potatos.png' alt='Potato storage' class='w-full h-full object-cover'></div>",
             "</div>"
@@ -315,7 +315,7 @@
             "<p>Dieser Ansatz reduziert den Einsatz chemischer Keimhemmstoffe und minimiert Lebensmittelverluste. Damit unterstützt er nachhaltigere und kosteneffizientere Lagerpraktiken in der Schweizer Landwirtschaft.</p>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Partner</h4><p class='text-sm text-slate-600'>Agroscope &amp; Vivent SA</p></div>",
             "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.ffhs.ch/de/ffhs/news/artikel/2024-02-12-kuenstliche-intelligenz-hilft-kartoffeln-nachhaltiger-zu-lagern' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>FFHS-News lesen</a><a href='https://www.watson.ch/blogs/work-in-progress/647696168-wie-ki-bauern-hilft-kartoffeln-nachhaltiger-zu-lagern' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Watson-Artikel lesen</a><a href='https://ieeexplore.ieee.org/abstract/document/11081491' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Publikation lesen</a></div>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio-aris.html'>Aris Marcolongo</a> und <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio_template.html?bio=bio-aris.html'>Aris Marcolongo</a> und <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/potatos.png' alt='Kartoffellagerung' class='w-full h-full object-cover'></div>",
             "</div>"
@@ -391,7 +391,7 @@
             "<p class='text-lg text-slate-700 font-medium italic mb-2'>This project explores a more interpretable alternative to transformer attention mechanisms, the core component of the neural network architecture used in many modern AI models. Inspired by particle interactions, the proposed Multi-Representation Scattering (MuRS) framework models relationships between data elements in a simpler and more transparent way. The goal is to better understand what models learn and when they may fail, while still achieving strong performance on standard machine learning tasks. This work is especially relevant for applications where trust, accountability, and explainability are important. We are seeking industrial and academic partners interested in collaborating on a follow-up Swiss National Science Foundation (SNF) project. If you are interested in potential collaboration opportunities on this topic, please contact the project leaders.</p>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Partners</h4><p class='text-sm text-slate-600'>Data Science Lab (University of Bern)</p></div>",
             "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.ffhs.ch/de/ffhs/news/artikel/2026-03-25-warum-ki-oft-schwer-zu-verstehen-ist' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Read FFHS News Article</a></div>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>This project was made by <a href='bio-aris.html'>Aris Marcolongo</a> and <a href='bio-danka.html'>Danuta Paraficz</a> and funded by the Hasler Foundation.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>This project was made by <a href='bio_template.html?bio=bio-aris.html'>Aris Marcolongo</a> and <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a> and funded by the Hasler Foundation.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/murs.png' alt='MuRS project' class='w-full h-full object-contain object-center p-2'></div>",
             "</div>"
@@ -402,7 +402,7 @@
             "<p class='text-lg text-slate-700 font-medium italic mb-2'>Dieses Projekt untersucht eine besser interpretierbare Alternative zu Transformer-Attention-Mechanismen, dem Kernbaustein vieler moderner KI-Modelle. Inspiriert von Teilcheninteraktionen modelliert das vorgeschlagene Multi-Representation-Scattering-(MuRS)-Framework Beziehungen zwischen Datenelementen einfacher und transparenter. Ziel ist es, besser zu verstehen, was Modelle lernen und wann sie versagen, ohne auf starke Leistung bei Standardaufgaben zu verzichten. Das ist insbesondere für Anwendungsfelder relevant, in denen Vertrauen, Nachvollziehbarkeit und Erklärbarkeit entscheidend sind. Wir suchen Industrie- und Forschungspartner für ein Folgeprojekt beim Schweizerischen Nationalfonds (SNF). Bei Interesse an einer Zusammenarbeit kontaktieren Sie bitte die Projektleitung.</p>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Partner</h4><p class='text-sm text-slate-600'>Data Science Lab (Universität Bern)</p></div>",
             "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.ffhs.ch/de/ffhs/news/artikel/2026-03-25-warum-ki-oft-schwer-zu-verstehen-ist' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>FFHS-News lesen</a></div>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Dieses Projekt wurde von <a href='bio-aris.html'>Aris Marcolongo</a> und <a href='bio-danka.html'>Danuta Paraficz</a> durchgeführt und durch die Hasler Stiftung gefördert.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Dieses Projekt wurde von <a href='bio_template.html?bio=bio-aris.html'>Aris Marcolongo</a> und <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a> durchgeführt und durch die Hasler Stiftung gefördert.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/murs.png' alt='MuRS-Projekt' class='w-full h-full object-contain object-center p-2'></div>",
             "</div>"
@@ -453,7 +453,7 @@
             "<div class='grid lg:grid-cols-3 gap-10'>",
             "<div class='lg:col-span-2 prose-text'>",
             "<p class='text-lg text-slate-700 font-medium italic mb-2'>Process engineering firms spend significant time manually creating Piping and Instrumentation Diagrams (P&amp;IDs) for new plant designs, while engineering students often struggle to interpret these complex schematics. This project leverages Large Language Models (LLMs) to develop intelligent applications that help P&amp;ID generation and enhance P&amp;ID learning and interpretation.</p>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>This project is done by <a href='bio-aris.html'>Aris Marcolongo</a> with partners FHNW and AITEXA.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>This project is done by <a href='bio_template.html?bio=bio-aris.html'>Aris Marcolongo</a> with partners FHNW and AITEXA.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/pid.png' alt='AITEXA project' class='w-full h-full object-contain object-center p-2'></div>",
             "</div>"
@@ -462,7 +462,7 @@
             "<div class='grid lg:grid-cols-3 gap-10'>",
             "<div class='lg:col-span-2 prose-text'>",
             "<p class='text-lg text-slate-700 font-medium italic mb-2'>Unternehmen im Prozessengineering investieren viel Zeit in die manuelle Erstellung von Rohrleitungs- und Instrumentierungsdiagrammen (R&amp;I) für neue Anlagendesigns, während Studierende diese komplexen Schemata oft nur schwer interpretieren können. Dieses Projekt nutzt Large Language Models (LLMs), um intelligente Anwendungen für die Erstellung, das Lernen und die Interpretation von R&amp;I-Fließbildern zu entwickeln.</p>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Dieses Projekt wird von <a href='bio-aris.html'>Aris Marcolongo</a> zusammen mit den Partnern FHNW und AITEXA durchgeführt.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Dieses Projekt wird von <a href='bio_template.html?bio=bio-aris.html'>Aris Marcolongo</a> zusammen mit den Partnern FHNW und AITEXA durchgeführt.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/pid.png' alt='AITEXA-Projekt' class='w-full h-full object-contain object-center p-2'></div>",
             "</div>"
@@ -518,7 +518,7 @@
             "<div class='lg:col-span-2 prose-text'>",
             "<p>This project introduces a cutting-edge <strong>Agentic-RAG (Retrieval-Augmented Generation)</strong> system specifically engineered for the unique demands of the timber construction and architecture industry.</p>",
             "<p>By moving beyond generic AI, the platform acts as an intelligent assistant capable of navigating vast archives of technical documents, norms, and project data with unprecedented precision.</p>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio-danka.html'>Danuta Paraficz</a> and <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a> and <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/holzbau.jpg' alt='Timber construction quality control' class='w-full h-full object-cover'></div>",
             "</div>"
@@ -528,7 +528,7 @@
             "<div class='lg:col-span-2 prose-text'>",
             "<p>Dieses Projekt führt ein innovatives <strong>Agentic-RAG-System (Retrieval-Augmented Generation)</strong> ein, das speziell auf die Anforderungen der Holzbau- und Architekturbranche zugeschnitten ist.</p>",
             "<p>Durch den Fokus auf domänenspezifische Inhalte statt generischer KI fungiert die Plattform als intelligenter Assistent, der große Archive technischer Dokumente, Normen und Projektdaten mit hoher Präzision erschließt.</p>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio-danka.html'>Danuta Paraficz</a> und <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a> und <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/holzbau.jpg' alt='Qualitätskontrolle im Holzbau' class='w-full h-full object-cover'></div>",
             "</div>"
@@ -588,7 +588,7 @@
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Core Challenge</h4><p class='text-sm text-slate-600'>Critical observatory knowledge is distributed across technical manuals, instrument notes, and historical logs. Traditional search workflows are time-consuming and can make it difficult to retrieve context quickly during operations.</p></div>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Technical Approach</h4><ul class='text-sm space-y-2 text-slate-600'><li>&bull; <strong>Document Retrieval Layer:</strong> Indexing trusted observatory sources for relevant context selection.</li><li>&bull; <strong>Grounded Generation:</strong> Generating answers conditioned on retrieved evidence, not on model memory alone.</li><li>&bull; <strong>Citation and Verifiability:</strong> Returning source-linked responses to support transparent decision-making.</li></ul></div>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Expected Impact</h4><p class='text-sm text-slate-600'>The platform reduces search friction, accelerates expert workflows, and lowers the risk of unsupported responses by grounding outputs in trusted records. This creates a practical AI assistant tailored to scientific infrastructure environments.</p></div>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio-danka.html'>Danuta Paraficz</a> and <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a> and <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/not.png' alt='Nordic Optical Telescope' class='w-full h-full object-cover'></div>",
             "</div>"
@@ -602,7 +602,7 @@
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Kernherausforderung</h4><p class='text-sm text-slate-600'>Kritisches Observatoriumswissen ist auf technische Handbücher, Instrumentennotizen und historische Logs verteilt. Klassische Suchworkflows sind zeitintensiv und erschweren den schnellen Zugriff auf relevanten Kontext im Betrieb.</p></div>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Technischer Ansatz</h4><ul class='text-sm space-y-2 text-slate-600'><li>&bull; <strong>Dokumenten-Retrieval-Layer:</strong> Indexierung vertrauenswürdiger Observatoriumsquellen zur kontextrelevanten Auswahl.</li><li>&bull; <strong>Grounded Generation:</strong> Generierung von Antworten auf Basis abgerufener Evidenz statt reinem Modellgedächtnis.</li><li>&bull; <strong>Zitierbarkeit und Verifizierbarkeit:</strong> Ausgabe quellenverknüpfter Antworten für transparente Entscheidungen.</li></ul></div>",
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Erwarteter Nutzen</h4><p class='text-sm text-slate-600'>Die Plattform reduziert Suchaufwand, beschleunigt Expertenworkflows und senkt das Risiko unbelegter Antworten, indem Ergebnisse in verlässlichen Quellen verankert werden. So entsteht ein praxistauglicher KI-Assistent für wissenschaftliche Infrastrukturen.</p></div>",
-            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio-danka.html'>Danuta Paraficz</a> und <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
+            "<div class='project-credit mt-4'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a> und <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a>.</p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/not.png' alt='Nordic Optical Telescope' class='w-full h-full object-cover'></div>",
             "</div>"
@@ -679,7 +679,7 @@
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Scientific Impact</h4><p class='text-sm text-slate-600'>Partnering with a world-class academic team provides the project's research with substantial scientific credibility, which is essential when a small volunteer-led organization presents its findings to the broader scientific community.</p></div>",
             "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>Future Vision</h3>",
             "<p>While currently focused on bird populations and migratory patterns, the Society hopes to expand the project to identify other fauna, such as bats and small mammals. There is also interest in potentially using bird data to draw inferences about fish populations.</p>",
-            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio-joachim.html'>Joachim Steinwendner</a> and <a href='bio-danka.html'>Danuta Paraficz</a></p></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio_template.html?bio=bio-joachim.html'>Joachim Steinwendner</a> and <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a></p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/birdss.jpg' alt='Bird in forest' class='w-full h-full object-cover'></div>",
             "</div>",
@@ -698,7 +698,7 @@
             "<div class='border-l-4 border-blue-600 pl-6 my-6 py-2 bg-blue-50 rounded-r'><h4 class='font-bold mb-2 text-xs uppercase tracking-widest text-blue-700'>Wissenschaftlicher Impact</h4><p class='text-sm text-slate-600'>Die Zusammenarbeit mit einem hochkarätigen akademischen Team verleiht der Forschung des Projekts hohe wissenschaftliche Glaubwürdigkeit. Das ist besonders wichtig, wenn eine kleine, ehrenamtlich geführte Organisation ihre Erkenntnisse in die Fachcommunity einbringt.</p></div>",
             "<h3 class='text-xl font-bold mt-8 mb-3 text-slate-900'>Zukünftige Perspektive</h3>",
             "<p>Aktuell liegt der Fokus auf Vogelpopulationen und Zugmustern. Künftig soll das Projekt auf weitere Fauna wie Fledermäuse und kleine Säugetiere ausgeweitet werden. Zudem besteht Interesse, aus Vogeldaten Rückschlüsse auf Fischpopulationen abzuleiten.</p>",
-            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio-joachim.html'>Joachim Steinwendner</a> und <a href='bio-danka.html'>Danuta Paraficz</a></p></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio_template.html?bio=bio-joachim.html'>Joachim Steinwendner</a> und <a href='bio_template.html?bio=bio-danka.html'>Danuta Paraficz</a></p></div>",
             "</div>",
             "<div class='h-72 rounded-xl overflow-hidden border border-slate-200'><img src='images/birdss.jpg' alt='Vogel im Wald' class='w-full h-full object-cover'></div>",
             "</div>",
@@ -782,7 +782,7 @@
             "<p>The final step in our processing pipeline is information validation. We calculate semantic similarity between word phrases using output feature vectors from the BERT model and mean pooling.</p>",
             "<div class='border-l-4 border-slate-400 pl-6 my-6 py-2 bg-slate-50 rounded-r'><p class='text-sm text-slate-600'><strong>Conference:</strong> Swiss Text Analytics Conference (SwissText) 2022</p><p class='text-sm text-slate-600'><strong>Presentation:</strong> <a href='https://www.youtube.com/watch?v=i7viysHUwcA'>SwissText 2022</a></p></div>",
             "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>View on ARAMIS</a></div>",
-            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a> and <a href='bio-beatrice.html'>Beatrice Paoli</a>.</p></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Contributors: <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a> and <a href='bio_template.html?bio=bio-beatrice.html'>Beatrice Paoli</a>.</p></div>",
             "</div>"
           ],
           "de": [
@@ -794,7 +794,7 @@
             "<p>Der letzte Schritt ist die Informationsvalidierung. Dazu berechnen wir semantische Ähnlichkeiten zwischen Begriffen mithilfe von BERT-Feature-Vektoren und Mean Pooling.</p>",
             "<div class='border-l-4 border-slate-400 pl-6 my-6 py-2 bg-slate-50 rounded-r'><p class='text-sm text-slate-600'><strong>Konferenz:</strong> Swiss Text Analytics Conference (SwissText) 2022</p><p class='text-sm text-slate-600'><strong>Vortrag:</strong> <a href='https://www.youtube.com/watch?v=i7viysHUwcA'>SwissText 2022</a></p></div>",
             "<div class='flex flex-wrap gap-3 mt-4'><a href='https://www.aramis.admin.ch/Beteiligte/?ProjectID=47079' target='_blank' rel='noopener noreferrer' class='inline-block text-xs font-bold uppercase tracking-widest text-blue-600 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition'>Auf ARAMIS anzeigen</a></div>",
-            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio-natasa.html'>Natasa Sarafijanovic-Djukic</a> und <a href='bio-beatrice.html'>Beatrice Paoli</a>.</p></div>",
+            "<div class='project-credit'><p class='text-sm text-slate-700 mb-0'>Mitwirkende: <a href='bio_template.html?bio=bio-natasa.html'>Natasa Sarafijanovic-Djukic</a> und <a href='bio_template.html?bio=bio-beatrice.html'>Beatrice Paoli</a>.</p></div>",
             "</div>"
           ]
         },
