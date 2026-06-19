@@ -55,6 +55,27 @@
     host.appendChild(wrapper);
   }
 
+  function getPortraitData(bioFile, bio) {
+    var defaults = {
+      "bio-beatrice.html": { src: "images/bea.jpg", alt: "Portrait of Prof. Dr. Beatrice Paoli" },
+      "bio-joachim.html": { src: "images/joachim.jpg", alt: "Portrait of Prof. Dr. Joachim Steinwendner" },
+      "bio-danka.html": { src: "images/danka.png", alt: "Portrait of Dr. Danuta Paraficz" },
+      "bio-natasa.html": { src: "images/natasa.jpg", alt: "Portrait of Dr. Natasa Sarafijanovic-Djukic" },
+      "bio-aris.html": { src: "images/aris.jpg", alt: "Portrait of Dr. Aris Marcolongo" },
+      "bio-ralf.html": { src: "images/ralf.jpg", alt: "Portrait of Ralf Jandl" },
+      "bio-ann-karin.html": { src: "images/ann-karin.jpeg", alt: "Portrait of Dr. Ann-Karin Sanchez" }
+    };
+
+    var custom = bio && bio.portrait ? bio.portrait : {};
+    var fallback = defaults[bioFile] || { src: "images/logo.png", alt: "ADA Institute logo" };
+
+    return {
+      src: custom.src || fallback.src,
+      alt: custom.alt || fallback.alt,
+      fitClass: custom.fitClass || "object-cover"
+    };
+  }
+
   function renderHeader(bio) {
     var header = createElement("div", "max-w-6xl mx-auto px-6 py-10 border-b border-gray-100");
     var row = createElement("div", "flex flex-col md:flex-row justify-between items-start md:items-center gap-4");
@@ -86,8 +107,19 @@
     return header;
   }
 
-  function renderInfoCard(bio) {
+  function renderInfoCard(bioFile, bio) {
     var aside = createElement("aside", "space-y-8");
+
+    var portraitData = getPortraitData(bioFile, bio);
+    var portraitCard = createElement("section", "border border-slate-200 rounded-2xl p-4");
+    var portraitWrap = createElement("div", "w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-white");
+    var portrait = document.createElement("img");
+    portrait.src = portraitData.src;
+    portrait.alt = portraitData.alt;
+    portrait.className = "w-full h-full " + portraitData.fitClass;
+    portraitWrap.appendChild(portrait);
+    portraitCard.appendChild(portraitWrap);
+    aside.appendChild(portraitCard);
 
     var officeCard = createElement("section", "border border-slate-200 rounded-2xl p-6");
     officeCard.appendChild(createLangBlock("h3", "text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-4 italic", "Office", "Standort"));
@@ -116,7 +148,7 @@
     return aside;
   }
 
-  function renderMain(bio) {
+  function renderMain(bioFile, bio) {
     var wrapper = createElement("div");
     wrapper.id = "home-view";
 
@@ -126,7 +158,7 @@
     appendParagraphs(prose, bio.bio && bio.bio.en, "lang-en");
     appendParagraphs(prose, bio.bio && bio.bio.de, "lang-de");
     bioSection.appendChild(prose);
-    bioSection.appendChild(renderInfoCard(bio));
+    bioSection.appendChild(renderInfoCard(bioFile, bio));
     wrapper.appendChild(bioSection);
 
     var relatedSection = createElement("section", "mt-16");
@@ -183,7 +215,7 @@
     var footerTarget = clearTarget("[data-bio-footer]");
 
     if (headerTarget) headerTarget.appendChild(renderHeader(bio));
-    if (mainTarget) mainTarget.appendChild(renderMain(bio));
+    if (mainTarget) mainTarget.appendChild(renderMain(bioFile, bio));
     if (footerTarget) footerTarget.appendChild(renderFooter(bio));
 
     window.__bioPageReady = true;
