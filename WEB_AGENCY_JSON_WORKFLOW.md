@@ -6,26 +6,21 @@ The goal is fast, low-risk updates when new projects or bios are added.
 
 ## Core Idea
 - One shared bio page template: `bio_template.html`
-- One bio data source: `bios.json`
-- One main content data source: `content.json`
+- Modular data folder: `data/` (for frequently-updated content)
+- Root-level metadata file: `content.json` (site, hero, research fields, navigation, UI)
 - JavaScript renders pages from JSON automatically.
 
-Result: when the institute sends updated JSON with predefined keys, all necessary pages are populated without manual page-by-page editing.
+Result: when the institute sends updated JSON files with predefined keys, all necessary pages are populated without manual page-by-page editing.
 
 ## Files and Responsibilities
 - `content.json`
-  - Main site content (home, projects, research fields, news, nav labels)
-  - Top-level keys in current implementation:
-    - `site`
-    - `hero`
-    - `researchFields`
-    - `projects`
-    - `news`
-    - `navigation`
-    - `ui`
-
-- `bios.json`
-  - All person bios in one file under `bios`
+  - Site metadata (site info, hero, research fields, navigation, UI)
+- `data/projects.json`
+  - All active/archive projects and detail content
+- `data/news.json`
+  - News block content
+- `data/bios.json`
+  - All person bios under `bios`
   - Bio entries are keyed by bio identifier, e.g. `bio-ralf.html`
 
 - `bio_template.html`
@@ -34,7 +29,7 @@ Result: when the institute sends updated JSON with predefined keys, all necessar
     - `bio_template.html?bio=bio-ralf.html`
 
 ## Required Keywords for New Projects
-For each new project in `content.json` -> `projects[]`, include at minimum:
+For each new project in `data/projects.json` (array entry), include at minimum:
 - `id` (unique, URL-safe)
 - `status` (`active` or `archive`)
 - `title` (`en`/`de`)
@@ -50,9 +45,9 @@ Recommended:
 - `people` (array of bio identifiers, e.g. `"people": ["bio-danka.html", "bio-ralf.html"]`)
 
 ## Update Workflow (Agency + Institute)
-1. Institute sends updated `content.json` and/or `bios.json`.
+1. Institute sends updated files: `data/projects.json`, `data/news.json`, and/or `data/bios.json` (and optionally `content.json` if metadata changes).
 2. Keep the same key names and structure.
-3. Deploy the JSON updates with related media files in `images/`.
+3. Deploy JSON updates with related media files in `images/`.
 4. No new HTML page per person is needed.
 
 ## Why This Model

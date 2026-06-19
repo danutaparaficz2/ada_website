@@ -1,14 +1,27 @@
 class DataRenderer {
-  constructor(contentUrl = 'content.json') {
+  constructor() {
     this.content = null;
     this.currentLang = this.getStoredLanguage();
-    this.loadContent(contentUrl);
+    this.loadContent();
   }
 
-  async loadContent(url) {
+  async fetchJson(path) {
+    const response = await fetch(path);
+    if (!response.ok) {
+      throw new Error(`Failed to load ${path}`);
+    }
+    return response.json();
+  }
+
+  async loadContent() {
     try {
-      const response = await fetch(url);
-      this.content = await response.json();
+      const [metadata, projects, news] = await Promise.all([
+        this.fetchJson('content.json?v=20260618a'),
+        this.fetchJson('data/projects.json?v=20260618a'),
+        this.fetchJson('data/news.json?v=20260618a')
+      ]);
+
+      this.content = { ...metadata, projects, news };
       this.render();
     } catch (error) {
       console.error('Failed to load content:', error);
@@ -491,5 +504,5 @@ class DataRenderer {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-  window.contentRenderer = new DataRenderer('content.json?v=20260511b');
+  window.contentRenderer = new DataRenderer();
 });

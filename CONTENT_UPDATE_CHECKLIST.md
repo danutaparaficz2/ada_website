@@ -3,11 +3,17 @@
 Use this checklist before publishing any content change.
 
 ## 1) Single Source of Truth
-- Update content in _content.json_ first.
-- The homepage and projects views are rendered automatically from content.json by data-renderer.js.
-- If content is changed in _content.json_, the following pages update automatically after reload:
+- Update content in _content.json_ (metadata) and _data/_ (projects, news, bios).
+- Main files:
+	- _content.json_ - site metadata, hero, research fields, navigation, UI labels
+	- _data/projects.json_ - all projects
+	- _data/bios.json_ - all person bios
+	- _data/news.json_ - news items
+- The homepage and projects views are rendered automatically by data-renderer.js.
+- If content is changed, the following pages update automatically after reload:
 	- _ada_better.html_
 	- _projects.html_
+	- _bio_template.html_
 - Language labels and some UI text are also adjusted by language-switcher.js.
 
 ## 2) Required JSON Structure
@@ -42,11 +48,11 @@ Each project object in projects[] should include:
 
 ### 2.4 Media and File Paths
 - Store local media in images/.
-- Use images/... paths in content.json for image and PDF links.
+- Use images/... paths in data JSON files or content.json for image and PDF links.
 
 
 ## 3) Copy-Paste Project Template
-Use this as a starting point when adding a new project to projects[] in content.json.
+Use this as a starting point when adding a new project to projects[] in data/projects.json.
 
 ```json
 {
@@ -115,16 +121,16 @@ Use this as a starting point when adding a new project to projects[] in content.
 ## 4) Automatic Bio Project Linking
 
 ### 4.1 How It Works
-- All bio pages (bio-*.html) automatically display related projects from content.json.
-- The bio-projects.js script runs on page load and matches projects to the current person.
-- **No manual edits to bio pages are needed.** Update content.json only.
+- The shared bio page (bio_template.html) automatically displays related projects from data/projects.json.
+- The bio-related-projects.js script runs on page load and matches projects to the current person.
+- **No manual edits to per-person bio pages are needed.** Update data/projects.json and data/bios.json only.
 
 ### 4.2 How Projects Get Linked to People
 
-Projects appear on a bio page when the project entry in content.json matches the person through any of these methods (in priority order):
+Projects appear on a bio page when the project entry in data/projects.json matches the person through any of these methods (in priority order):
 
 1. **Explicit "people" array** (strongest, recommended):
-   - Add a `"people"` array to the project object in content.json.
+   - Add a `"people"` array to the project object in data/projects.json.
 	- List the bio identifiers used by the shared bio template (e.g., `["bio-aris.html", "bio-natasa.html"]`, which map to `bio_template.html?bio=...`).
    - Example:
      ```json

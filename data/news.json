@@ -1,0 +1,22 @@
+[
+  {
+    "badge": {
+      "en": "Winner: Hackathon 2024",
+      "de": "Gewinner: Hackathon 2024"
+    },
+    "title": {
+      "en": "ADA Team Wins Big for Milano-Cortina 2026",
+      "de": "ADA-Team gewinnt beim Milano-Cortina-2026-Hackathon"
+    },
+    "description": {
+      "en": "Under the leadership of Dr. Danuta Paraficz, our team of students developed a strong application concept presented for the Olympic Winter Games. The project highlights our commitment to real-world AI impact on an international stage.",
+      "de": "Unter der Leitung von Dr. Danuta Paraficz entwickelte unser Studierendenteam ein starkes Anwendungskonzept für die Olympischen Winterspiele. Das Projekt zeigt unser Engagement für reale KI-Wirkung auf internationaler Bühne."
+    },
+    "link": "https://www.ffhs.ch/de/ffhs/events/detail/2026-02-17-ffhs-studierende-praesentieren-app-bei-den-olympischen-winterspielen-in-mailand",
+    "linkText": {
+      "en": "Read the full story →",
+      "de": "Zur ganzen Meldung →"
+    },
+    "image": "images/win.jpeg"
+  }
+]

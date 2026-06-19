@@ -42,9 +42,9 @@
       main.innerHTML = '<div class="text-sm text-slate-500">Loading bio...</div>';
     }
 
-    fetch("bios.json?v=20260618a")
+    fetch("data/bios.json?v=20260618a")
       .then(function (response) {
-        if (!response.ok) throw new Error("Failed to load bios.json");
+        if (!response.ok) throw new Error("Failed to load data/bios.json");
         return response.json();
       })
       .then(function (data) {

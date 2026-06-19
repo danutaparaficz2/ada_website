@@ -174,13 +174,15 @@
       maybeRenderProjects();
     });
 
-    fetch("content.json?v=20260511c")
+    fetch("data/projects.json?v=20260618a")
       .then(function (response) {
-        if (!response.ok) throw new Error("Failed to load content.json");
+        if (!response.ok) throw new Error("Failed to load data/projects.json");
         return response.json();
       })
-      .then(function (content) {
-        cachedProjects = Array.isArray(content.projects) ? content.projects : [];
+      .then(function (projects) {
+        cachedProjects = Array.isArray(projects)
+          ? projects
+          : (Array.isArray(projects.projects) ? projects.projects : []);
         bioReady = !!window.__bioPageReady;
         maybeRenderProjects();
       })
