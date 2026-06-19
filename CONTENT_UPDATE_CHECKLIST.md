@@ -123,6 +123,7 @@ Use this as a starting point when adding a new project to projects[] in data/pro
 ### 4.1 How It Works
 - The shared bio page (bio_template.html) automatically displays related projects from data/projects.json.
 - The bio-related-projects.js script runs on page load and matches projects to the current person.
+- Bio content in data/bios.json is stored as structured text fields, not embedded page HTML.
 - **No manual edits to per-person bio pages are needed.** Update data/projects.json and data/bios.json only.
 
 ### 4.2 How Projects Get Linked to People

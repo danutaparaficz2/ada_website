@@ -22,6 +22,7 @@ Result: when the institute sends updated JSON files with predefined keys, all ne
 - `data/bios.json`
   - All person bios under `bios`
   - Bio entries are keyed by bio identifier, e.g. `bio-ralf.html`
+  - Keep this file HTML-free; store plain content fields and let `bio-renderer.js` build the page
 
 - `bio_template.html`
   - Single HTML shell used for all people
