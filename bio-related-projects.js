@@ -155,26 +155,36 @@
   var cachedProjects = null;
   var bioReady = !!window.__bioPageReady;
 
+  function getProjectsHost() {
+    return document.querySelector("[data-bio-projects]");
+  }
+
+  function setLoadingState() {
+    var host = getProjectsHost();
+    if (!host) return;
+    host.innerHTML = '<div class="text-sm text-slate-500">Loading related projects...</div>';
+  }
+
   function maybeRenderProjects() {
-    var host = document.querySelector("[data-bio-projects]");
+    var host = getProjectsHost();
     if (!host || !cachedProjects || !bioReady) return;
 
     renderProjects(cachedProjects, getCurrentBioFile());
   }
 
   function initBioProjects() {
-    var host = document.querySelector("[data-bio-projects]");
-    if (!host) return;
+    setLoadingState();
 
-    var bioFile = getCurrentBioFile();
-    host.innerHTML = '<div class="text-sm text-slate-500">Loading related projects...</div>';
-
-    window.addEventListener("bio:loaded", function () {
+    function onBioLoaded() {
       bioReady = true;
+      setLoadingState();
       maybeRenderProjects();
-    });
+    }
 
-    fetch("data/projects.json?v=20260618a")
+    window.addEventListener("bio:loaded", onBioLoaded);
+    document.addEventListener("bio:loaded", onBioLoaded);
+
+    fetch("data/projects.json?v=20260619a")
       .then(function (response) {
         if (!response.ok) throw new Error("Failed to load data/projects.json");
         return response.json();
@@ -187,6 +197,8 @@
         maybeRenderProjects();
       })
       .catch(function () {
+        var host = getProjectsHost();
+        if (!host) return;
         host.innerHTML =
           '<div class="border border-dashed border-amber-300 bg-amber-50 text-amber-900 rounded-lg p-4 text-sm">' +
           '<span class="lang-en">Could not load related projects.</span>' +
@@ -195,6 +207,7 @@
       });
 
     document.addEventListener("ada:languagechange", function () {
+      var host = getProjectsHost();
       if (!host) return;
       var lang = getCurrentLang();
       host.setAttribute("data-lang", lang);
